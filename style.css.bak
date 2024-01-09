@@ -1,0 +1,90 @@
+/* Basic menu bar styling */
+nav {
+  background-color: Black;
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+* {
+			margin-right:20px;
+			margin-left:10px;
+            text-decoration: none;
+        }
+  #home-details a {
+            color: #12AD2B;
+        
+        }
+		.headco
+		{
+		color:#12AD2B
+		}
+		.latest
+		{
+		color:#Blue;
+		}
+	.unavailable {
+            color:maroon;
+        }
+.unavailablee {
+            color: red;
+            font-weight: bold;
+        }
+/*#flex-box{
+display:flex;
+gap:50px;
+justify-content:space-around;
+}
+
+#flex-box > div{
+box-shadow:20px 20px 10px;
+border-radius:200px;
+border:20px;
+width:250px;
+padding:10px;
+text-align:center;
+}*/
+.custom-box {
+	  margin-right:10px;
+	  margin-left:20px;
+	  margin-top:5px;
+	  text-align:center;
+      border: 2px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #f8f8f8;
+    }
+.email-box {
+	  margin-right:20px;
+	  margin-left:100px;
+	  margin-top:5px;
+	  text-align:center;
+      border: 2px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #f8f8f8;
+    }
+
+	.containerr {
+      display: flex;
+    }
+
+    .box {
+	margin-top:5px;
+	margin-left:70px;
+	text-align:center;
+      width: 7cm;
+      height: 7cm;
+      border: 3px solid #000; /* border for visualization, you can adjust or remove it */
+      margin-right: 10px; /* adjust margin as needed */
+    }
