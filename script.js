@@ -37,7 +37,7 @@
 	
 
     const fileUrls = {
-      GWH: "C:\\Users\\hp\\Desktop\\AGR\\GWH.pdf",
+      GWH: "GWH.pdf",
 	  ES: "C:\\Users\\hp\\Desktop\\AGR\\Electrical Systems.pdf",
       MEFA: "C:\\Users\\hp\\Desktop\\AGR\\MEFA  ALL.pdf",
 	  FMOH: "C:\\Users\\hp\\Desktop\\AGR\\FMOH.pdf",
