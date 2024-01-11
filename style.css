@@ -88,3 +88,17 @@ text-align:center;
       border: 3px solid #000; /* border for visualization, you can adjust or remove it */
       margin-right: 10px; /* adjust margin as needed */
     }
+
+
+/*blinking*/
+	@keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .blinking-text {
+      animation: blink 2s infinite;
+	  color:rgb(255, 0, 255);
+	  margin-left:20px;
+    }
