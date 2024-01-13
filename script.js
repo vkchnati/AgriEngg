@@ -250,4 +250,20 @@ function showContactDetails() {
     }
   }
 }
+//visting 
+document.addEventListener('DOMContentLoaded', function () {
+    // Increment and display the visitor count
+    incrementAndDisplayCount();
+});
 
+function incrementAndDisplayCount() {
+    let visitorCount = localStorage.getItem('visitorCount') || 0;
+    visitorCount = parseInt(visitorCount, 10) + 1;
+
+    // Update the local storage with the new count
+    localStorage.setItem('visitorCount', visitorCount);
+
+    // Display the count on the webpage
+    const countElement = document.getElementById('visitor-count');
+    countElement.textContent = `Witnessed by Connoisseurs(Total Visitors): ${visitorCount}`;
+}
