@@ -102,3 +102,9 @@ text-align:center;
 	  color:rgb(255, 0, 255);
 	  margin-left:20px;
     }
+/*Visting count*/
+	#visitor-count {
+    /*color: #666;*/
+	color: red;
+	text-align:Center;
+}
