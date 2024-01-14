@@ -250,20 +250,16 @@ function showContactDetails() {
     }
   }
 }
-//visting 
-document.addEventListener('DOMContentLoaded', function () {
-    // Increment and display the visitor count
-    incrementAndDisplayCount();
-});
+// Retrieve existing count from localStorage, or set to 0 if not found
+let visitCount = localStorage.getItem('visitCount') || 0;
 
-function incrementAndDisplayCount() {
-    let visitorCount = localStorage.getItem('visitorCount') || 0;
-    visitorCount = parseInt(visitorCount, 10) + 1;
+// Increment the count
+visitCount++;
 
-    // Update the local storage with the new count
-    localStorage.setItem('visitorCount', visitorCount);
+// Display the updated count
+const visitorCountDisplay = document.getElementById('visitorCount');
+visitorCountDisplay.textContent = visitCount;
 
-    // Display the count on the webpage
-    const countElement = document.getElementById('visitor-count');
-    countElement.textContent = `Witnessed by Connoisseurs(Total Visitors): ${visitorCount}`;
-}
+// Store the updated count in localStorage
+localStorage.setItem('visitCount', visitCount);
+
