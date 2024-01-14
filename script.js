@@ -250,16 +250,3 @@ function showContactDetails() {
     }
   }
 }
-// Retrieve existing count from localStorage, or set to 0 if not found
-let visitCount = localStorage.getItem('visitCount') || 0;
-
-// Increment the count
-visitCount++;
-
-// Display the updated count
-const visitorCountDisplay = document.getElementById('visitorCount');
-visitorCountDisplay.textContent = visitCount;
-
-// Store the updated count in localStorage
-localStorage.setItem('visitCount', visitCount);
-
