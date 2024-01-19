@@ -1,5 +1,5 @@
-    const downloadGWHButton = document.getElementById("downloadGWH");
-    const downloadMEFAButton = document.getElementById("downloadMEFA");
+	const downloadGWHButton = document.getElementById("downloadGWH");
+	const downloadMEFAButton = document.getElementById("downloadMEFA");
 	const downloadFMOHButton = document.getElementById("downloadFMOH");
 	const downloadAPEButton = document.getElementById("downloadAPE");
 	const downloadDFEButton = document.getElementById("downloadDFE");
@@ -20,26 +20,27 @@
 	const downloadMMIButton = document.getElementById("downloadMMI");
 	const downloadORButton = document.getElementById("downloadOR");
 	const downloadPHEButton = document.getElementById("downloadPHE");
-    const downloadPSMButton = document.getElementById("downloadPSM");
-    const downloadSWHButton = document.getElementById("downloadSWH");
-    const downloadSURVEYButton = document.getElementById("downloadSURVEY");
-    const downloadSWCEButton = document.getElementById("downloadSWCE");
-    const downloadTDRSButton = document.getElementById("downloadTDRS");
-    const downloadTOMButton = document.getElementById("downloadTOM");
-    const downloadTOSButton = document.getElementById("downloadTOS");
-    const downloadWATERButton = document.getElementById("downloadWATER");
+	const downloadPSMButton = document.getElementById("downloadPSM");
+	const downloadSWHButton = document.getElementById("downloadSWH");
+	const downloadSURVEYButton = document.getElementById("downloadSURVEY");
+	const downloadSWCEButton = document.getElementById("downloadSWCE");
+	const downloadTDRSButton = document.getElementById("downloadTDRS");
+	const downloadTOMButton = document.getElementById("downloadTOM");
+	const downloadTOSButton = document.getElementById("downloadTOS");
+	const downloadWATERButton = document.getElementById("downloadWATER");
 	const downloadESButton = document.getElementById("downloadES");
 	const downloadAETBMButton = document.getElementById("downloadAETBM");
 	const downloadPVTSButton = document.getElementById("downloadPVTS");
+        const downloadDAMButton = document.getElementById("downloadDAM");
 	const downloadFPDMButton = document.getElementById("downloadFPDM");
 	const downloadAIBUButton = document.getElementById("downloadAIBU");
 	
 	
 
     const fileUrls = {
-      GWH: "GWH.pdf",
+          GWH: "GWH.pdf",
 	  ES: "Electrical Systems.pdf",
-      MEFA: "MEFA  ALL.pdf",
+          MEFA: "MEFA  ALL.pdf",
 	  FMOH: "FMOH.pdf",
 	  APE:"Agricultural Process Engineering.pdf",
 	  DFE: "DAIRY AND FOOD ENGINEERING.pdf",
@@ -71,6 +72,7 @@
 	  AETBM: "AET&BM.pdf",
 	  FPDM: "FPD&M.pdf",
 	  AIBU: "AI&BU.pdf",
+	  DAM: "DAM.pdf",
 	  PVTS: "PVT&S.pdf"
     };
 
@@ -174,6 +176,9 @@
     });
 	downloadPVTSButton.addEventListener("click", () => {
       downloadFile(fileUrls.PVTS, "PVT&S.pdf");
+    });
+downloadDAMButton.addEventListener("click", () => {
+      downloadFile(fileUrls.DAM, "DAM.pdf");
     });
 	downloadFPDMButton.addEventListener("click", () => {
       downloadFile(fileUrls.FPDM, "FPD&M.pdf");
