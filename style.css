@@ -97,14 +97,28 @@ text-align:center;
       100% { opacity: 1; }
     }
 
-    .blinking-text {
+ .blinking-text {
       animation: blink 2s infinite;
-	  color:rgb(255, 0, 255);
+	  color:red /*rgb(255, 0, 255)*/;
 	  margin-left:20px;
     }
-/*Visting count*/
-	#visitor-count {
-    /*color: #666;*/
-	color: red;
-	text-align:Center;
-}
+
+
+	/*BLinking image-----ANG.Jpeg*/
+	.image-container {
+    display: flex;
+    justify-content:;
+    align-items:;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+
+  /* Apply blinking animation to the image */
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .blinking {
+    animation: blink 2s infinite;
+  }
