@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <title>AgriEngineer</title>
 <link rel="stylesheet" href="style.css">
+<!--
+<link rel="stylesheet" href="mcq.css">-->
 </head>
 <body>
 <h1>
-  <img src="./agrilogo.png" alt="Logo" style="height: 150px; width: 60%;margin-right: 20px;">
+  <img src="agrilogo.png" alt="Logo" style="height: 150px; width: 60%;margin-right: 20px;">
 </h1>
 
 <nav>
@@ -20,11 +22,16 @@
         <i class="fas fa-stream"></i>
         <span>Materials</span>
       </a>
-   <!--<li><a href="#">About</a></li>-->
-    <a href="#" onclick="showContactDetails()">
+	  <!--Quiz-->
+	    <a href="#" onclick="openQuiz()">
         <i class="fas fa-stream"></i>
-        <span>Contact</span>
+        <span>Quiz</span>
       </a>
+   <!--<li><a href="#">About</a></li>-->
+   <a href="#" onclick="showContactDetails()">
+      <i class="fas fa-stream"></i>
+      <span>Contact</span>
+    </a>
 </nav>
 
 
@@ -39,41 +46,9 @@
 						<p>Stay informed with the latest advancements in agricultural engineering and related research.</p>
 						<ul>
 							<li>Groundbreaking Research on Precision Agriculture Engineering.</li><br>
-							<li>New Collaborations with Industry Leaders</li><br>
-												<!--<li class="blinking-text">ANGRAU AGRI-BUSINESS INCUBATOR</li>
-											<div class="image-container" >
-											 < <img src="ang.jpeg" alt="Latest News Image" class="blinking" style="width: 8cm; height: 8cm;">
-															
-											   <h5>
-											       <ol>
-														<li>SANKALP- 2024 (Agripreneurship Orientation Programme)<br>
-																	- Inviting Entrepreneurs with innovative ideas
-																	<br>
-																	- 8 weeks/ 60 hours of specialized training
-																	<br>
-																	- Up to 5 Lakh Grant in Aid (Pre-Seed Funding)<br>
-																	To apply:<a href="https://rb.gy/hvvhwq"target="_blank" >https://rb.gy/hvvhwq </a></li>
-												       <li>
-													   SAMVRUDDHI-2024 (Agri-Business Incubation Programme)
-																- Inviting Agri-startups with innovative prototype.<br>
-																- 8 weeks/ 60 hours of incubation training<br>
-																-Up to 25 lakh Grant in Aid (Seed stage Funding)<br>
-																	To apply: <a href="https://rb.gy/tvbp0u"target="_blank">https://rb.gy/tvbp0u</a>
-													   </li>
-													   <p class="blinking-text" >NOTE:Apply for the program using the above link. <br>
-																Eligibility criteria: Age:18+. <br>
-																<strong>Program is free of cost!!!<strong><br>
-																Application Deadline: 31st, January 2024.</p>
-
-												   </ol>
-											   </h5>
-											</div>-->
-
-
-							
+							<li>New Collaborations with Industry Leaders</li>
 						</ul>
 					</div>
-
 						<div>
 						<h2 class="unavailablee">Subject Unavailability</h2>
 						<ul>
@@ -83,7 +58,7 @@
 						</ul>
 						<p class="unavailable">The mentioned subjects may not be available at the moment. Rest assured, we are working to update our offerings.</p>
 						</div>
-						<h3 class="blinking-text">JNTUK R23 Syllabus & Materials will be update As Earliest As Possible</h3>
+						<h3 class="blinking-text">JNTUK R23 Materials will be update As Earliest As Possible</h3>
 				
 				<div id="flex-box">
 				<div id="home-details">
@@ -92,13 +67,13 @@
 						<a target="_blank" href="https://drive.google.com/file/d/1Fhy10p3ryjpQgorjFmEVOPPRvpmcUGiZ/view?usp=drive_link">Agriculture Engineering R19 Syllabus</a>
 						<br>
 						<br>
-						<a target="_blank" href="https://drive.google.com/file/d/1fciLyKVVgQZIVgH927bZe2G35EipHHuJ/view?usp=drive_link">Agriculture Engineering R20 Syllabus</a>
+						<a target="_framename" href="https://drive.google.com/file/d/1fciLyKVVgQZIVgH927bZe2G35EipHHuJ/view?usp=drive_link">Agriculture Engineering R20 Syllabus</a>
 					</div>
 				</div>
 				</div>
 				</div>
+			  
 </div>
-	
 
 	<div id="materials-list" style="display: none;">
         <h2>Available Materials</h2>
@@ -112,7 +87,7 @@
 						Surveying<button id="downloadSURVEY">DOWNLOAD</button>
 						</p></li>
 						<li><p>
-						Fluid Mechanics&Open Channels<button id="downloadFMOH">DOWNLOAD</button>
+						 Fluid Mechanics&Open Channels<button id="downloadFMOH">DOWNLOAD</button>
 						</p></li>
 						<li><p> 
 						Electrical Systems<button id="downloadES">DOWNLOAD</button> 
@@ -174,7 +149,7 @@
 						</p></li>
 						<li><p> 
 						Human Engineering Safety <button id="downloadHES">DOWNLOAD</button> 
-						</p></li>
+						</p</li>
 						<li><p> 
 						Food Packing Technology<button id="downloadFOODPACK">DOWNLOAD</button> 
 						</p></li>
@@ -196,7 +171,7 @@
 						<li><p>
 						Photo Voltic Technology & System<button id="downloadPVTS">DOWNLOAD</button>
 						</p></li>
-		   				<li><p>
+						<li><p>
 						Design of Agriculture Machinery<button id="downloadDAM">DOWNLOAD</button>
 						</p></li>
 						<li><p>
@@ -214,38 +189,56 @@
            </ol>
 	</div>
 
+<!--Quiz Section open-->
+<div id="quiz-details" style="display: none;">
+		
+		<div class="qcontainer">
+			<h2 >Quiz for Students</h2>
+			<select id="subjectSelect" onchange="showStartQuizButton()">
+				<option value="AgriImplements">Agriculture Implements</option>
+				<option value="FarmPowerAndTractorSystems">FarmPower And Tractor Systems</option>
+			</select>
+			<div id="quiz"></div>
+					<div id="aut">
+						<button id="startButton" onclick="startQuiz()">Start Quiz</button>
+						<button id="submitButton" style="display:none;" onclick="checkAnswers()">Submit</button>
+						<div id="final"></div>
+						<button id="startAgainButton" style="display:none;" onclick="startAgain()">Start Quiz Again</button>
+					</div>
+			</div>					
+    
+        </div>
+</div>
+<!--Quiz Section Ended-->
 
 <!--Contact-->
 
-        <div id="contact-details" style="display: none;" >
+        <div id="contact-details" style="display: none;">
                   <div class="custom-box">
-		               <H1><img src="./contact.png">Meet Us<br>Share Your Excitement With Us</h2>
+		               <H1><img src="contact.png">Meet Us<br>Share Your Excitement With Us</h2>
 				  </div>
         <div class="container">
 
        <div class="containerr">
 
-				  <div class="box"><p>  <img src="./mail.png"><br>Email-agriengg.noreply@gmail.com 
+				  <div class="box"><p>  <img src="mail.png"><br>Email-agriengg.noreply@gmail.com 
 				       <a href="mailto:agriengg.noreply@gmail.com"><br>Write your query</a><p>&nbsp
 				  </div>
 
-				  <div class="box"><p><img src="./whatsapp.png"><br>WhatsApp Message
+				  <div class="box"><p><img src="whatsapp.png"><br>WhatsApp Message
                       <a href="https://wa.me/qr/5Z3QQLDSFIBWF1" target="_blank"><br>Send us a WhatsApp message</a>
-                      <p>
-					  <p><img src="./group.png"><br>WhatsApp Group
+					  <p><img src="group.png"><br>WhatsApp Group
                       <a href="https://chat.whatsapp.com/FkL2Q0f835a3gFyc3tUDL6" target="_blank"><br>Join our WhatsApp Group</a>
                       </p>
 			      </div>
 
                   <div class="box">
-			             <p><img src="./instagram.png"><br>Instagram
+			             <p><img src=".\instagram.png"><br>Instagram
                         <a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s" target="_blank"><br>Follow our Instagram Page</a><p>
 			      </div>
         </div>
-
-
   <script src="script.js"></script>
-   
+<script src="mul.js"></script>
 </body>
 </html>
 
