@@ -122,3 +122,59 @@ text-align:center;
   .blinking {
     animation: blink 2s infinite;
   }
+  /*Quiz CSS STARTED*/
+#quiz-details {
+  display: none;
+
+
+.qcontainer {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.qcontainer h2 {
+  text-align: center;
+}
+
+#subjectSelect, button {
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.question p {
+  margin: 0;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.score-box {
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+}
