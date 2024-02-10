@@ -1,5 +1,5 @@
-	const downloadGWHButton = document.getElementById("downloadGWH");
-	const downloadMEFAButton = document.getElementById("downloadMEFA");
+  const downloadGWHButton = document.getElementById("downloadGWH");
+  const downloadMEFAButton = document.getElementById("downloadMEFA");
 	const downloadFMOHButton = document.getElementById("downloadFMOH");
 	const downloadAPEButton = document.getElementById("downloadAPE");
 	const downloadDFEButton = document.getElementById("downloadDFE");
@@ -20,60 +20,60 @@
 	const downloadMMIButton = document.getElementById("downloadMMI");
 	const downloadORButton = document.getElementById("downloadOR");
 	const downloadPHEButton = document.getElementById("downloadPHE");
-	const downloadPSMButton = document.getElementById("downloadPSM");
-	const downloadSWHButton = document.getElementById("downloadSWH");
-	const downloadSURVEYButton = document.getElementById("downloadSURVEY");
-	const downloadSWCEButton = document.getElementById("downloadSWCE");
-	const downloadTDRSButton = document.getElementById("downloadTDRS");
-	const downloadTOMButton = document.getElementById("downloadTOM");
-	const downloadTOSButton = document.getElementById("downloadTOS");
-	const downloadWATERButton = document.getElementById("downloadWATER");
+  const downloadPSMButton = document.getElementById("downloadPSM");
+  const downloadSWHButton = document.getElementById("downloadSWH");
+  const downloadSURVEYButton = document.getElementById("downloadSURVEY");
+  const downloadSWCEButton = document.getElementById("downloadSWCE");
+  const downloadTDRSButton = document.getElementById("downloadTDRS");
+  const downloadTOMButton = document.getElementById("downloadTOM");
+  const downloadTOSButton = document.getElementById("downloadTOS");
+  const downloadWATERButton = document.getElementById("downloadWATER");
 	const downloadESButton = document.getElementById("downloadES");
 	const downloadAETBMButton = document.getElementById("downloadAETBM");
 	const downloadPVTSButton = document.getElementById("downloadPVTS");
-        const downloadDAMButton = document.getElementById("downloadDAM");
+	const downloadDAMButton = document.getElementById("downloadDAM");
 	const downloadFPDMButton = document.getElementById("downloadFPDM");
 	const downloadAIBUButton = document.getElementById("downloadAIBU");
 	
 	
 
     const fileUrls = {
-          GWH: "GWH.pdf",
-	  ES: "Electrical Systems.pdf",
-          MEFA: "MEFA  ALL.pdf",
-	  FMOH: "FMOH.pdf",
-	  APE:"Agricultural Process Engineering.pdf",
-	  DFE: "DAIRY AND FOOD ENGINEERING.pdf",
-	  DSWCFS: "DSWCFS.pdf",
-	  EPBM: "EPBM.pdf",
-	  FMTS: "Farm Power and Tractor Systems.pdf",
-	  FMEI: "FME-I.pdf",
-          FMEII: "FME-II.pdf",
-	  FOODPACK: "Food Packaging.pdf",
-	  FQC: "Food Quality & Control.pdf",
-	  GIS: "GIS & REMOTE SENSING.pdf",
-	  GHT: "GREEN HOUSE TECHNOLOGY.pdf",
-	  HMT: "HEAT AND MASS TRANSFER.pdf",
-	  HES: "HES.pdf",
-	  IDE: "Irrigation&Drainage Engineering.pdf",
-	  MIII: "Mathematics-III.pdf",
-	  MI: "MICRO IRRIGATION.pdf",
-	  MMI: "MMI.pdf",
-	  OR: "OPERATION RESEARCH.pdf",
-	  PHE: "PHE&HP.pdf",
-	  PSM: "PSM.pdf",
-	  SWH: "SURFACE WATER HYDROLOGY.pdf",
-	  SURVEY: "SURVEYING.pdf",
-	  SWCE: "SWCE MATERIAL.pdf",
-	  TDRS: "TD&RS MATERIAL.pdf",
-	  TOM: "THEORY OF MACHINES.pdf",
-	  TOS: "THEORY OF STRUCTURES.pdf",
-	  WATER: "Watershed Management.pdf",
-	  AETBM: "AET&BM.pdf",
-	  FPDM: "FPD&M.pdf",
-	  AIBU: "AI&BU.pdf",
-	  DAM: "DAM.pdf",
-	  PVTS: "PVT&S.pdf"
+      GWH: "C:\\Users\\hp\\Desktop\\AGR\\GWH.pdf",
+	  ES: "C:\\Users\\hp\\Desktop\\AGR\\Electrical Systems.pdf",
+      MEFA: "C:\\Users\\hp\\Desktop\\AGR\\MEFA  ALL.pdf",
+	  FMOH: "C:\\Users\\hp\\Desktop\\AGR\\FMOH.pdf",
+	  APE:"C:\\Users\\hp\\Desktop\\AGR\\Agricultural Process Engineering.pdf",
+	  DFE: "C:\\Users\\hp\\Desktop\\AGR\\DAIRY AND FOOD ENGINEERING.pdf",
+	  DSWCFS: "C:\\Users\\hp\\Desktop\\AGR\\DSWCFS.pdf",
+	  EPBM: "C:\\Users\\hp\\Desktop\\AGR\\EPBM.pdf",
+	  FMTS: "C:\\Users\\hp\\Desktop\\AGR\\Farm Power and Tractor Systems.pdf",
+	  FMEI: "C:\\Users\\hp\\Desktop\\AGR\\FME-I.pdf",
+		  FMEII: "C:\\Users\\hp\\Desktop\\AGR\\FME-II.pdf",
+	  FOODPACK: "C:\\Users\\hp\\Desktop\\AGR\\Food Packaging.pdf",
+	  FQC: "C:\\Users\\hp\\Desktop\\AGR\\Food Quality & Control.pdf",
+	  GIS: "C:\\Users\\hp\\Desktop\\AGR\\GIS & REMOTE SENSING.pdf",
+	  GHT: "C:\\Users\\hp\\Desktop\\AGR\\GREEN HOUSE TECHNOLOGY.pdf",
+	  HMT: "C:\\Users\\hp\\Desktop\\AGR\\HEAT AND MASS TRANSFER.pdf",
+	  HES: "C:\\Users\\hp\\Desktop\\AGR\\HES.pdf",
+	  IDE: "C:\\Users\\hp\\Desktop\\AGR\\Irrigation&Drainage Engineering.pdf",
+	  MIII: "C:\\Users\\hp\\Desktop\\AGR\\Mathematics-III.pdf",
+	  MI: "C:\\Users\\hp\\Desktop\\AGR\\MICRO IRRIGATION.pdf",
+	  MMI: "C:\\Users\\hp\\Desktop\\AGR\\MMI.pdf",
+	  OR: "C:\\Users\\hp\\Desktop\\AGR\\OPERATION RESEARCH.pdf",
+	  PHE: "C:\\Users\\hp\\Desktop\\AGR\\PHE&HP.pdf",
+	  PSM: "C:\\Users\\hp\\Desktop\\AGR\\PSM.pdf",
+	  SWH: "C:\\Users\\hp\\Desktop\\AGR\\SURFACE WATER HYDROLOGY.pdf",
+	  SURVEY: "C:\\Users\\hp\\Desktop\\AGR\\SURVEYING.pdf",
+	  SWCE: "C:\\Users\\hp\\Desktop\\AGR\\SWCE MATERIAL.pdf",
+	  TDRS: "C:\\Users\\hp\\Desktop\\AGR\\TD&RS MATERIAL.pdf",
+	  TOM: "C:\\Users\\hp\\Desktop\\AGR\\THEORY OF MACHINES.pdf",
+	  TOS: "C:\\Users\\hp\\Desktop\\AGR\\THEORY OF STRUCTURES.pdf",
+	  WATER: "C:\\Users\\hp\\Desktop\\AGR\\Watershed Management.pdf",
+	  AETBM: "C:\\Users\\hp\\Desktop\\AGR\\AET&BM.pdf",
+	  FPDM: "C:\\Users\\hp\\Desktop\\AGR\\FPD&M.pdf",
+	  AIBU: "C:\\Users\\hp\\Desktop\\AGR\\AI&BU.pdf",
+	  PVTS: "C:\\Users\\hp\\Desktop\\AGR\\PVT&S.pdf",
+	  DAM: "C:\\Users\\hp\\Desktop\\AGR\\DAM.pdf"
     };
 
     downloadGWHButton.addEventListener("click", () => {
@@ -177,9 +177,10 @@
 	downloadPVTSButton.addEventListener("click", () => {
       downloadFile(fileUrls.PVTS, "PVT&S.pdf");
     });
-downloadDAMButton.addEventListener("click", () => {
+	downloadDAMButton.addEventListener("click", () => {
       downloadFile(fileUrls.DAM, "DAM.pdf");
     });
+
 	downloadFPDMButton.addEventListener("click", () => {
       downloadFile(fileUrls.FPDM, "FPD&M.pdf");
     });
@@ -196,47 +197,45 @@ downloadDAMButton.addEventListener("click", () => {
       link.download = fileName;
       link.click();
     }
-  
-	function showMaterials() {
-    var homeDetails = document.getElementById('home-details');
-    homeDetails.style.display = 'none';
+ 
+// Function to show materials section
+function showMaterials() {
+    document.getElementById('home-details').style.display = 'none';
+    document.getElementById('materials-list').style.display = 'block';
+    document.getElementById('contact-details').style.display = 'none';
+    document.getElementById('quiz-details').style.display = 'none';
+}
 
-    var materialsList = document.getElementById('materials-list');
-    materialsList.style.display = 'block';
+// Function to show home section
+function showHome() {
+    document.getElementById('home-details').style.display = 'block';
+    document.getElementById('materials-list').style.display = 'none';
+    document.getElementById('contact-details').style.display = 'none';
+    document.getElementById('quiz-details').style.display = 'none';
+}
 
-	var contactDetails = document.getElementById('contact-details');
-      contactDetails.style.display = 'none';
-  }
+// Function to open quiz section
+function openQuiz() {
+    document.getElementById('quiz-details').style.display = 'block';
+    document.getElementById('home-details').style.display = 'none';
+    document.getElementById('materials-list').style.display = 'none';
+    document.getElementById('contact-details').style.display = 'none';
+}
 
-  function showHome() {
-    var homeDetails = document.getElementById('home-details');
-    homeDetails.style.display = 'block';
-
-    var materialsList = document.getElementById('materials-list');
-    materialsList.style.display = 'none';
-
-	 var contactDetails = document.getElementById('contact-details');
-      contactDetails.style.display = 'none';
-  }
-  // Open materials in new tabs
-  const materialLinks = document.querySelectorAll('#materials-list li a');
-  for (const link of materialLinks) {
-    link.target = '_blank';
-  }
-
-  // Contact
+// Function to show contact details
 function showContactDetails() {
-      var contactDetails = document.getElementById('contact-details');
-      contactDetails.style.display = 'block';
+    document.getElementById('contact-details').style.display = 'block';
+    document.getElementById('home-details').style.display = 'none';
+    document.getElementById('materials-list').style.display = 'none';
+    document.getElementById('quiz-details').style.display = 'none';
+}
 
-      var homeDetails = document.getElementById('home-details');
-      homeDetails.style.display = 'none';
+// Activate the home link to trigger showHome()
+document.querySelector('nav a[href="#"]').addEventListener('click', showHome);
 
-      var materialsList = document.getElementById('materials-list');
-      materialsList.style.display = 'none';
-    }
-  // Activate the home link to trigger showHome()
-  document.querySelector('nav a[href="#"]').addEventListener('click', showHome);
+// Activate the contact link to trigger showContactDetails()
+document.querySelector('nav a[href="#c"]').addEventListener('click', showContactDetails);
+
 
  function searchMaterials() {
   const searchTerm = document.getElementById("search-bar").value.toLowerCase();
@@ -255,138 +254,353 @@ function showContactDetails() {
     }
   }
 }
-
-const quizData = {
-  AgriImplements: [
-      { question: "The first operation in the production of crops is?", answers: ["tillage", "sowing", "harvesting", "irrigation"], correct: "tillage" },
-      { question: "What is rotary tillage?", answers: ["operations employing rotary action to cut, break and mix the soil", "ploughing with a rotating blade", "planting with a rotating mechanism", "irrigation using rotary sprinklers"], correct: "operations employing rotary action to cut, break and mix the soil" },
-      { question: "What is left in between two adjacent strips of land after finishing ploughing?", answers: ["dead furrow", "ridge", "trench", "slope"], correct: "dead furrow" },
-      { question: "What is the weight range of the puddler including its beam?", answers: ["20-30 kg", "30-40 kg", "40-50 kg", "50-60 kg"], correct: "30-40 kg" },
-      { question: "What is the curved part of the plough which lifts and turns the furrow slice?", answers: ["mould board", "share", "beam", "land wheel"], correct: "mould board" },
-      { question: "What is the wheel of the plough which runs on the unploughed land?", answers: ["land wheel", "beam", "mould board", "furrow"], correct: "land wheel" },
-      { question: "What is a unit draft?", answers: ["draft per unit area of land", "draft per unit cross-sectional area of the furrow", "draft per unit volume of soil", "draft per unit weight of soil"], correct: "draft per unit cross-sectional area of the furrow" },
-      { question: "What is the mass of soil cut, lifted, and thrown to one side called?", answers: ["furrow slice", "plough bottom", "beam", "mould board"], correct: "furrow slice" },
-      { question: "What is the purpose of a green manure tamper implement?", answers: ["to trample and press the green manure crop", "to cut the green manure crop", "to water the green manure crop", "to harvest the green manure crop"], correct: "to trample and press the green manure crop" },
-      { question: "What is the device called that is used to cut the furrow slice vertically from the land ahead of the plough bottom?", answers: ["coulter", "mould board", "beam", "land wheel"], correct: "coulter" },
-      { question: "What is the perpendicular distance between the point of share and the lower position of the beam of the plough called?", answers: ["throat clearance", "draft", "beam distance", "plough height"], correct: "throat clearance" },
-      { question: "Where is the offset disc harrow most useful?", answers: ["orchards and gardens", "large fields", "paddy fields", "desert areas"], correct: "orchards and gardens" },
-      { question: "What is the size of the concave discs in tractor-drawn disc harrows?", answers: ["35-40 cm diameter", "20-25 cm diameter", "45-50 cm diameter", "10-15 cm diameter"], correct: "35-40 cm diameter" },
-      { question: "What is used to separate and keep two adjacent discs in position in a disc harrow?", answers: ["spool", "beam", "mould board", "coulter"], correct: "spool" },
-      { question: "What is a rotary cultivator?", answers: ["cultivator with tines or blades mounted on a power-driven horizontal shaft", "cultivator with rotating wheels", "cultivator powered by wind energy", "cultivator with a rotating seed dispenser"], correct: "cultivator with tines or blades mounted on a power-driven horizontal shaft" },
-      { question: "What is the main purpose of puddling?", answers: ["to reduce leaching of water", "to increase water evaporation", "to improve soil aeration", "to control pests"], correct: "to reduce leaching of water" },
-      { question: "What type of mechanism do most fertilizer drills in the country use to drop fertilizer in the field?", answers: ["auger feed type", "sprayer type", "manual type", "conveyor belt type"], correct: "auger feed type" },
-      { question: "What is a transplanter fitted with an engine called?", answers: ["self-propelled transplanter", "manual transplanter", "tractor-driven transplanter", "walk-behind transplanter"], correct: "self-propelled transplanter" },
-      { question: "In which crops is the transplanting method adopted for planting seedlings?", answers: ["paddy and vegetables", "wheat and barley", "corn and soybeans", "cotton and sugarcane"], correct: "paddy and vegetables" },
-      { question: "What is the term for the art of placing seeds in the soil to obtain good germination?", answers: ["sowing", "harvesting", "transplanting", "tillage"], correct: "sowing" }
-  ],
-  FarmPowerAndTractorSystems: [
-      { question: "Marginal farmers having land ?", answers: ["less than 1 ha", " greater than 2 ha", " less than 5 ha", " greater than 10 ha"], correct: "less than 1 ha" },
-      { question: "Small farmers having land ?", answers: ["1-7 ha ", "2-4 ha", "1-2 ha", "1-5 ha"], correct: "1-2 ha" },
-      { question: "Marginal farmers having land?", answers: ["less than 1 ha", "greater than 2 ha", "less than 5 ha", "greater than 10 ha"], correct: "less than 1 ha" },
-      { question: "Small farmers having land?", answers: ["1-7 ha", "2-4 ha", "1-2 ha", "1-5 ha"], correct: "2-4 ha" },
-      { question: "Medium farmers having land?", answers: ["2-4 ha", "4-10 ha", "1-5 ha", "greater than 10 ha"], correct: "4-10 ha" },
-      { question: "Large farmers having land?", answers: ["less than 1 ha", "greater than 2 ha", "greater than 10 ha", "5-10 ha"], correct: "greater than 10 ha" },
-      { question: "How much land can an average man develop?", answers: ["0.01 ha", "0.1 ha", "1 ha", "0.5 ha"], correct: "0.1 ha" },
-      { question: "How many crop cattle does India have?", answers: ["22.68", "20.68", "25.68", "30.68"], correct: "22.68" },
-      { question: "How much power is developed by an average pair of bullocks?", answers: ["1 hp", "2 hp", "0.5 hp", "0.1 hp"], correct: "1 hp" },
-      { question: "What is the average force a bullock can exert?", answers: ["1/5th of its body weight", "1/10th of its body weight", "1/3rd of its body weight", "1/8th of its body weight"], correct: "1/10th of its body weight" },
-      { question: "What is the efficiency of a diesel engine?", answers: ["32-38%", "25-32%", "20-25%", "38-40%"], correct: "32-38%" },
-      { question: "What is the efficiency of a petrol engine?", answers: ["32-38%", "25-32%", "20-25%", "38-40%"], correct: "25-32%" },
-      { question: "Where can wind mills be used for lifting water?", answers: ["where wind velocity is less than 32 kmph", "where wind velocity is more than 32 kmph", "in urban areas", "in coastal areas"], correct: "where wind velocity is more than 32 kmph" },
-      { question: "What is the average capacity of a wind mill?", answers: ["1 hp", "0.5 hp", "2 hp", "0.1 hp"], correct: "0.5 hp" },
-      { question: "How many wind mills are there in India?", answers: ["2000", "3000", "4000", "2540"], correct: "2540" },
-      { question: "Examples of renewable energy sources are?", answers: ["nuclear energy", "solar energy", "coal energy", "hydro energy"], correct: "solar energy, wind, biomass, thermal energy" },
-      { question: "How many watts is equal to 1 hp?", answers: ["500 watts", "746 watts", "1000 watts", "2000 watts"], correct: "746 watts" }
-  ]
-};
-
-const subjectSelect = document.getElementById('subjectSelect');
-const quizContainer = document.getElementById('quiz');
-const finalMessage = document.getElementById('final');
-const startButton = document.getElementById('startButton');
-const submitButton = document.getElementById('submitButton');
-const startAgainButton = document.getElementById('startAgainButton');
-
-function generateQuiz() {
-  const selectedSubject = subjectSelect.value;
-  const questions = quizData[selectedSubject];
-  let quizHTML = '';
+//QuizSection
+const AgriImplementsQuizData = [   
+  {
+      question: "What is the first operation in the production of crops?",
+      a: "Tillage",
+      b: "Sowing",
+      c: "Harvesting",
+      d: "Irrigation",
+      correct: "a"
+      },
+      {
+      question: "What is rotary tillage?",
+      a: "Operations employing rotary action to cut, break and mix the soil",
+      b: "Ploughing with a rotating blade",
+      c: "Planting with a rotating mechanism",
+      d: "Irrigation using rotary sprinklers",
+      correct: "a"
+      },
+      {
+      question: "What is left in between two adjacent strips of land after finishing ploughing?",
+      a: "Dead furrow",
+      b: "Ridge",
+      c: "Trench",
+      d: "Slope",
+      correct: "a"
+      },
+      {
+      question: "What is the weight range of the puddler including its beam?",
+      a: "20-30 kg",
+      b: "30-40 kg",
+      c: "40-50 kg",
+      d: "50-60 kg",
+      correct: "b"
+      },
+      {
+      question: "What is the curved part of the plough which lifts and turns the furrow slice?",
+      a: "Mould board",
+      b: "Share",
+      c: "Beam",
+      d: "Land wheel",
+      correct: "a"
+      },
+      {
+      question: "What is the wheel of the plough which runs on the unploughed land?",
+      a: "Land wheel",
+      b: "Beam",
+      c: "Mould board",
+      d: "Furrow",
+      correct: "a"
+      },
+      {
+      question: "What is a unit draft?",
+      a: "Draft per unit area of land",
+      b: "Draft per unit cross-sectional area of the furrow",
+      c: "Draft per unit volume of soil",
+      d: "Draft per unit weight of soil",
+      correct: "b"
+      },
+      {
+      question: "What is the mass of soil cut, lifted, and thrown to one side called?",
+      a: "Furrow slice",
+      b: "Plough bottom",
+      c: "Beam",
+      d: "Mould board",
+      correct: "a"
+      },
+      {
+      question: "What is the purpose of a green manure tamper implement?",
+      a: "To trample and press the green manure crop",
+      b: "To cut the green manure crop",
+      c: "To water the green manure crop",
+      d: "To harvest the green manure crop",
+      correct: "a"
+      },
+      {
+      question: "What is the device called that is used to cut the furrow slice vertically from the land ahead of the plough bottom?",
+      a: "Coulter",
+      b: "Mould board",
+      c: "Beam",
+      d: "Land wheel",
+      correct: "a"
+      },
+      {
+      question: "What is the perpendicular distance between the point of share and the lower position of the beam of the plough called?",
+      a: "Throat clearance",
+      b: "Draft",
+      c: "Beam distance",
+      d: "Plough height",
+      correct: "a"
+      },
+      {
+      question: "Where is the offset disc harrow most useful?",
+      a: "Orchards and gardens",
+      b: "Large fields",
+      c: "Paddy fields",
+      d: "Desert areas",
+      correct: "a"
+      },
+      {
+      question: "What is the size of the concave discs in tractor-drawn disc harrows?",
+      a: "35-40 cm diameter",
+      b: "20-25 cm diameter",
+      c: "45-50 cm diameter",
+      d: "10-15 cm diameter",
+      correct: "a"
+      },
+      {
+      question: "What is used to separate and keep two adjacent discs in position in a disc harrow?",
+      a: "Spool",
+      b: "Beam",
+      c: "Mould board",
+      d: "Coulter",
+      correct: "a"
+      },
+      {
+      question: "What is a rotary cultivator?",
+      a: "Cultivator with tines or blades mounted on a power-driven horizontal shaft",
+      b: "Cultivator with rotating wheels",
+      c: "Cultivator powered by wind energy",
+      d: "Cultivator with a rotating seed dispenser",
+      correct: "a"
+      },
+      {
+      question: "What is the main purpose of puddling?",
+      a: "To reduce leaching of water",
+      b: "To increase water evaporation",
+      c: "To improve soil aeration",
+      d: "To control pests",
+      correct: "a"
+      },
+      {
+      question: "What type of mechanism do most fertilizer drills in the country use to drop fertilizer in the field?",
+      a: "Auger feed type",
+      b: "Sprayer type",
+      c: "Manual type",
+      d: "Conveyor belt type",
+      correct: "a"
+      },
+      {
+      question: "What is a transplanter fitted with an engine called?",
+      a: "Self-propelled transplanter",
+      b: "Manual transplanter",
+      c: "Tractor-driven transplanter",
+      d: "Walk-behind transplanter",
+      correct: "a"
+      },
+      {
+      question: "In which crops is the transplanting method adopted for planting seedlings?",
+      a: "Paddy and vegetables",
+      b: "Wheat and barley",
+      c: "Corn and soybeans",
+      d: "Cotton and sugarcane",
+      correct: "a"
+      },
+      {
+      question: "What is the term for the art of placing seeds in the soil to obtain good germination?",
+      a: "Sowing",
+      b: "Harvesting",
+      c: "Transplanting",
+      d: "Tillage",
+      correct: "a"
+      },
+      {
+          question: "Which HTML tag is used for creating an unordered list?",
+          a: "<ul>",
+          b: "<ol>",
+          c: "<li>",
+          d: "<list>",
+          correct: "a",
+      },
+      // Add more HTML questions here
+  ];
   
-  questions.forEach((question, index) => {
-      quizHTML += `<div class="question">
-          <h3>Question ${index + 1}:</h3>
-          <p>${question.question}</p>
-          <ul>`;
-      
-      question.answers.forEach((answer, ansIndex) => {
-          quizHTML += `<li><label><input type="radio" name="question${index}" value="${answer}"> ${answer}</label></li>`;
-      });
-      
-      quizHTML += `</ul></div>`;
-  });
+  const cssQuizData = [
+      {
+          question: "What does CSS stand for?",
+          a: "Central StyleSheets",
+          b: "Cascading Style Sheets",
+          c: "Cascading Simple Sheets",
+          d: "Cute Styles and Shapes",
+          correct: "b",
+      },
+      {
+          question: "Which CSS property is used to change the text color of an element?",
+          a: "font-color",
+          b: "color",
+          c: "text-color",
+          d: "font-style",
+          correct: "b",
+      },
+      // Add more CSS questions here
+  ];
+
+  const subjectSelect = document.getElementById('subject');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const startQuizBtn = document.getElementById('start-quiz');
+  const quizContainer = document.getElementById('quiz');
+  const initialDetails = document.getElementById('initial-details');
+  const answerEls = document.querySelectorAll('.answer');
+  const questionEl = document.getElementById('question');
+  const a_text = document.getElementById('a_text');
+  const b_text = document.getElementById('b_text');
+  const c_text = document.getElementById('c_text');
+  const d_text = document.getElementById('d_text');
+  const nextBtn = document.getElementById('next');
+  const prevBtn = document.getElementById('prev');
+  const submitBtn = document.getElementById('submit');
+  const reloadBtn = document.getElementById('reload');
+  const scoreEle = document.getElementById('score');
+  const resultEle = document.getElementById('result');
+  const finalMessage = document.getElementById('final-message');
+
+  let currentQtn = 0;
+    let score = 0;
+    let percentage = 0;
+    let submitted = false;
+    let selectedQuizData = [];
+
+// Function to start the quiz
+  function startQuiz() {
+    const selectedSubject = subjectSelect.value;
+    const userName = nameInput.value.trim();
+    const userEmail = emailInput.value.trim();
+
+    if (userName === '' || userEmail === '') {
+        alert('Please fill in your name and email.');
+        return;
+    }
+
+    if (selectedSubject === 'AgriImplements') {
+        selectedQuizData = AgriImplementsQuizData;
+    } else if (selectedSubject === 'css') {
+        selectedQuizData = cssQuizData;
+    } else {
+        alert('Please select a valid subject.');
+        return;
+    }
+
+    initialDetails.style.display = 'none';
+    quizContainer.style.display = 'block';
+
+    loadQuestion();
+}
+
+function loadQuestion() {
+    const currentQtnData = selectedQuizData[currentQtn];
+    questionEl.innerText = currentQtnData.question;
+    a_text.innerText = currentQtnData.a;
+    b_text.innerText = currentQtnData.b;
+    c_text.innerText = currentQtnData.c;
+    d_text.innerText = currentQtnData.d;
+    deselectAnswer();
+}
+
   
-  quizContainer.innerHTML = quizHTML;
-}
-
-function showStartQuizButton() {
-  startButton.style.display = 'block';
-  submitButton.style.display = 'none';
-  finalMessage.innerHTML = '';
-  quizContainer.innerHTML = '';
-}
-
-function startQuiz() {
-  generateQuiz();
-  startButton.style.display = 'none';
-  submitButton.style.display = 'block';
-  subjectSelect.style.display = 'none'; // Hide subject select options
-}
-
-function checkAnswers() {
-  const selectedSubject = subjectSelect.value;
-  const questions = quizData[selectedSubject];
-  let score = 0;
-  let quizHTML = '';
-
-  questions.forEach((question, index) => {
-      const selectedAnswer = document.querySelector(`input[name="question${index}"]:checked`);
-      
-      if (selectedAnswer) {
-          if (selectedAnswer.value === question.correct) {
-              score++;
-              quizHTML += `<div class="question correct">`;
-          } else {
-              quizHTML += `<div class="question incorrect">`;
+  // Function to get the selected answer
+  function getSelectedAnswer() {
+      let answer;
+      answerEls.forEach(answerEl => {
+          if (answerEl.checked) {
+              answer = answerEl.id;
           }
-      } else {
-          quizHTML += `<div class="question">`;
-      }
-      
-      quizHTML += `<h3>Question ${index + 1}:</h3>
-          <p>${question.question}</p>
-          <p>Your Answer: ${selectedAnswer ? selectedAnswer.value : "No answer provided"}</p>
-          <p>Correct Answer: ${question.correct}</p>
-      </div>`;
-  });
-
-  const percentage = (score / questions.length) * 100;
-
-  let message = '';
-  if (percentage > 75) {
-      message = `Congratulations on achieving ${score}/${questions.length} (${percentage.toFixed(2)}%)! You're on the right track. Keep exploring the topics that spark your curiosity, and you'll keep achieving amazing things! ✨`;
-  } else if (percentage >= 50) {
-      message = `Hey there! Your score of ${score}/${questions.length} (${percentage.toFixed(2)}%) is a solid start! Take another crack at the quiz and see if you can climb the leaderboard. Remember, every attempt helps you learn and grow.`;
-  } else {
-      message = `Everyone makes mistakes! Your score of ${score}/${questions.length} (${percentage.toFixed(2)}%) is a chance to learn and grow. Take another shot at the quiz, focus on understanding the concepts, and you'll see progress in no time!`;
+      });
+      return answer;
   }
-
-  finalMessage.innerHTML = `<div class="score-box">${message}</div>`;
-  quizContainer.innerHTML = quizHTML;
-  startAgainButton.style.display = 'block'; // Show "Start Quiz Again" button
-}
-
-function startAgain() {
-  showStartQuizButton(); // Show subject select options and hide other elements
-  startAgainButton.style.display = 'none'; // Hide "Start Quiz Again" button
-  subjectSelect.style.display = 'block'; // Show subject select options
-}
+  
+  // Function to clear answer selection
+  function deselectAnswer() {
+      answerEls.forEach(answerEl => {
+          answerEl.checked = false;
+      });
+  }
+  
+  // Function to load the next question
+  function loadNextQuestion() {
+      const answer = getSelectedAnswer();
+      if (!submitted) {
+          if (!answer) {
+              alert('Please select an answer.');
+              return;
+          }
+          if (answer === selectedQuizData[currentQtn].correct) {
+              score++;
+          }
+      }
+      deselectAnswer();
+      currentQtn++;
+      if (currentQtn < selectedQuizData.length) {
+          loadQuestion();
+          prevBtn.disabled = false;
+          prevBtn.classList.remove('disabled');
+      } else {
+          showResult();
+      }
+  }
+  
+  // Function to load the previous question
+  function loadPreviousQuestion() {
+      getSelectedAnswer();
+      if (currentQtn > 0) {
+          currentQtn--;
+          if (currentQtn === 0) {
+              prevBtn.disabled = true;
+              prevBtn.classList.add('disabled');
+          }
+          loadQuestion();
+      }
+  }
+  
+  // Function to submit the quiz
+  function submitQuiz() {
+      if (getSelectedAnswer()) {
+          submitted = true;
+          showResult();
+      } else {
+          alert('Please select an answer.');
+      }
+  }
+  
+  // Function to show the result
+  function showResult() {
+      quizContainer.style.display = 'none';
+      resultEle.style.display = 'block';
+      scoreEle.innerHTML = `${score}/${selectedQuizData.length} questions answered correctly`;
+      calculateAndShowFinalMessage(); // Call the function to calculate and show the final message
+  }
+  
+  // Function to calculate the percentage and show the final message
+  function calculateAndShowFinalMessage() {
+      percentage = (score / selectedQuizData.length) * 100;
+      let message = '';
+  
+      if (percentage > 75) {
+          message = `Congratulations on achieving ${percentage.toFixed(2)}%! You're on the right track. Keep exploring the topics that spark your curiosity, and you'll keep achieving amazing things! ✨`;
+      } else if (percentage >= 50) {
+          message = `Hey there! Your score of ${percentage.toFixed(2)}% is a solid start! Take another crack at the quiz and see if you can climb the leaderboard. Remember, every attempt helps you learn and grow.`;
+      } else {
+          message = `Everyone makes mistakes! Your score of ${percentage.toFixed(2)}% is a chance to learn and grow. Take another shot at the quiz, focus on understanding the concepts, and you'll see progress in no time!`;
+      }
+  
+      finalMessage.innerHTML = `<div class="score-box">${message}</div>`;
+  }
+  
+  // Event listeners
+  startQuizBtn.addEventListener('click', startQuiz);
+  prevBtn.addEventListener('click', loadPreviousQuestion);
+  nextBtn.addEventListener('click', loadNextQuestion);
+  submitBtn.addEventListener('click', submitQuiz);
+  reloadBtn.addEventListener('click', () => location.reload());
