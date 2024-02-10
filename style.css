@@ -98,16 +98,6 @@ nav a {
 	  color:red /*rgb(255, 0, 255)*/;
 	  margin-left:20px;
     }
-
-
-	/*BLinking image-----ANG.Jpeg*/
-	.image-container {
-    display: flex;
-    justify-content:;
-    align-items:;
-    margin-top: 20px; /* Adjust the margin as needed */
-  }
-
   /* Apply blinking animation to the image */
   @keyframes blink {
     0% { opacity: 1; }
