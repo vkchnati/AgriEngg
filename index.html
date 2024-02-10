@@ -14,33 +14,25 @@
 
 <nav>
   <ul>
-    <li>
-      <a href="#" class="active">
+     <a href="#" class="active">
         <i class="fas fa-qrcode"></i>
         <span>Home</span>
       </a>
-    </li>
-    <li>
-      <a href="#" onclick="showMaterials()">
+    <a href="#" onclick="showMaterials()">
         <i class="fas fa-stream"></i>
         <span>Materials</span>
       </a>
-    </li>
-    <li>
-      <a href="#" onclick="openQuiz()">
+	  <!--Quiz-->
+	    <a href="#" onclick="openQuiz()">
         <i class="fas fa-stream"></i>
         <span>Quiz</span>
       </a>
-    </li>
-    <li>
-      <a href="#" onclick="showContactDetails()">
-        <i class="fas fa-stream"></i>
-        <span>Contact</span>
-      </a>
-    </li>
-  </ul>
+   <!--<li><a href="#">About</a></li>-->
+   <a href="#" onclick="showContactDetails()">
+      <i class="fas fa-stream"></i>
+      <span>Contact</span>
+    </a>
 </nav>
-	
 
 
 <div  id="home-details" >
@@ -55,11 +47,8 @@
 						<ul>
 							<li>Groundbreaking Research on Precision Agriculture Engineering.</li><br>
 							<li>New Collaborations with Industry Leaders</li>
-							<li><h4 class="blinking-text">Quiz Option Still Disabled,We will Enable As soon As Possible</h4></li>
 						</ul>
-						
 					</div>
-		
 						<div>
 						<h2 class="unavailablee">Subject Unavailability</h2>
 						<ul>
@@ -202,23 +191,76 @@
 
 <!--Quiz Section open-->
 <div id="quiz-details" style="display: none;">
-		
-		<div class="qcontainer">
-			<h2 >Quiz for Students</h2>
-			<select id="subjectSelect" onchange="showStartQuizButton()">
-				<option value="AgriImplements">Agriculture Implements</option>
-				<option value="FarmPowerAndTractorSystems">FarmPower And Tractor Systems</option>
-			</select>
-			<div id="quiz">
-					<div id="aut">
-						<button id="startButton" onclick="startQuiz()">Start Quiz</button>
-						<button id="submitButton" style="display:none;" onclick="checkAnswers()">Submit</button>
-						<div id="final"></div>
-						<button id="startAgainButton" style="display:none;" onclick="startAgain()">Start Quiz Again</button>
-					</div>
-			</div>					
-    
-        </div>
+	<div class="qbody">
+	<div class="qat">
+	<!-- Content from 2.html -->
+	<!-- You can directly copy the content of 2.html here -->
+	<div class="initial-details" id="initial-details">
+		<div class="quizz-containerr">
+				<h1>E-cet Quiz</h1>
+				<label for="name">Name:</label>
+				<input type="text" id="name"><br>
+				<br>
+				<label for="email">Email:</label>
+				<br>
+				<input type="email" id="email"><br>
+				<br>
+				<label for="subject"  >Select Subject:</label>
+				<select id="subject" >
+					<option value="" disabled selected>Select Subject</option>
+					<option value="AgriImplements">Agricultural Implements</option>
+					<option value="css">CSS</option>
+					<!-- Add more options for other subjects -->
+				</select>
+				<br>
+				<h6></h6>
+				<br>
+				<button id="start-quiz" onclick="startQuiz()">Start Quiz</button>
+				<br>
+			</div>
+	</div>
+
+	<div class="quiz-container" id="quiz">
+		<div class="quiz-header">
+			<h2 id="question">Question text</h2>
+			<ul class="options">
+				<li>
+					<input type="radio" name="answer" id="a" class="answer">
+					<label for="a" class="op_label" id="a_text"> Option</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="b" class="answer">
+					<label for="b" class="op_label" id="b_text"> Option</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="c" class="answer">
+					<label for="c" class="op_label" id="c_text"> Option</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="d" class="answer">
+					<label for="d" class="op_label" id="d_text"> Option</label>
+				</li>
+			</ul>
+			<div class="actions">
+				
+				<button id="prev" disabled>Prev</button>
+				<button id="next">Next</button>
+				<button id="submit">Submit</button>
+				<button onclick="location.reload()" id="reload">Reload</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="result-container" id="result">
+		<h2 id="score"></h2>
+		<div class="actions">
+			<button onclick="location.reload()">Reload</button>
+			<button onclick="loadAnswers()">Show Answers</button>
+		</div>
+		<div id="final-message"></div>
+	</div>
+	</div>
+	</div>
 </div>
 <!--Quiz Section Ended-->
 
@@ -251,5 +293,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
