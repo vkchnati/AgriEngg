@@ -176,15 +176,7 @@ const AgriImplementsQuizData = [
         d: "Tillage",
         correct: "a"
         },
-        {
-            question: "Which HTML tag is used for creating an unordered list?",
-            a: "<ul>",
-            b: "<ol>",
-            c: "<li>",
-            d: "<list>",
-            correct: "a",
-        },
-        // Add more HTML questions here
+      // Add more HTML questions here
     ];
     
     const FarmPowerAndTractorSystemsQuizData = [  {
