@@ -1,3 +1,20 @@
+const AgronomyQuizData=[
+    {
+       
+    }
+];
+const IrrigationsoQuizData=[
+    {
+        
+    },
+];
+const soilsciencesoQuizData=[
+    {
+       
+    },
+];
+
+
 const AgriImplementsQuizData = [   
     {
         question: "What is the first operation in the production of crops?",
@@ -170,24 +187,331 @@ const AgriImplementsQuizData = [
         // Add more HTML questions here
     ];
     
-    const cssQuizData = [
-        {
-            question: "What does CSS stand for?",
-            a: "Central StyleSheets",
-            b: "Cascading Style Sheets",
-            c: "Cascading Simple Sheets",
-            d: "Cute Styles and Shapes",
-            correct: "b",
-        },
-        {
-            question: "Which CSS property is used to change the text color of an element?",
-            a: "font-color",
-            b: "color",
-            c: "text-color",
-            d: "font-style",
-            correct: "b",
-        },
-        // Add more CSS questions here
+    const FarmPowerAndTractorSystemsQuizData = [  {
+        question: "The first operation in the production of crops is?",
+        a: "Tillage",
+        b: "Sowing",
+        c: "Harvesting",
+        d: "Irrigation",
+        correct: "a"
+    },
+    {
+        question: "What is rotary tillage?",
+        a: "Operations employing rotary action to cut, break and mix the soil",
+        b: "Ploughing with a rotating blade",
+        c: "Planting with a rotating mechanism",
+        d: "Irrigation using rotary sprinklers",
+        correct: "a"
+    },
+    {
+        question: "What is left in between two adjacent strips of land after finishing ploughing?",
+        a: "Dead furrow",
+        b: "Ridge",
+        c: "Trench",
+        d: "Slope",
+        correct: "a"
+    },
+    {
+        question: "What is the weight range of the puddler including its beam?",
+        a: "20-30 kg",
+        b: "30-40 kg",
+        c: "40-50 kg",
+        d: "50-60 kg",
+        correct: "b"
+    },
+    {
+        question: "What is the curved part of the plough which lifts and turns the furrow slice?",
+        a: "Mould board",
+        b: "Share",
+        c: "Beam",
+        d: "Land wheel",
+        correct: "a"
+    },
+    {
+        question: "What is the wheel of the plough which runs on the unploughed land?",
+        a: "Land wheel",
+        b: "Beam",
+        c: "Mould board",
+        d: "Furrow",
+        correct: "a"
+    },
+    {
+        question: "What is a unit draft?",
+        a: "Draft per unit area of land",
+        b: "Draft per unit cross-sectional area of the furrow",
+        c: "Draft per unit volume of soil",
+        d: "Draft per unit weight of soil",
+        correct: "b"
+    },
+    {
+        question: "What is the mass of soil cut, lifted, and thrown to one side called?",
+        a: "Furrow slice",
+        b: "Plough bottom",
+        c: "Beam",
+        d: "Mould board",
+        correct: "a"
+    },
+    {
+        question: "What is the purpose of a green manure tamper implement?",
+        a: "To trample and press the green manure crop",
+        b: "To cut the green manure crop",
+        c: "To water the green manure crop",
+        d: "To harvest the green manure crop",
+        correct: "a"
+    },
+    {
+        question: "What is the device called that is used to cut the furrow slice vertically from the land ahead of the plough bottom?",
+        a: "Coulter",
+        b: "Mould board",
+        c: "Beam",
+        d: "Land wheel",
+        correct: "a"
+    },
+    {
+        question: "What is the perpendicular distance between the point of share and the lower position of the beam of the plough called?",
+        a: "Throat clearance",
+        b: "Draft",
+        c: "Beam distance",
+        d: "Plough height",
+        correct: "a"
+    },
+    {
+        question: "Where is the offset disc harrow most useful?",
+        a: "Orchards and gardens",
+        b: "Large fields",
+        c: "Paddy fields",
+        d: "Desert areas",
+        correct: "a"
+    },
+    {
+        question: "What is the size of the concave discs in tractor-drawn disc harrows?",
+        a: "35-40 cm diameter",
+        b: "20-25 cm diameter",
+        c: "45-50 cm diameter",
+        d: "10-15 cm diameter",
+        correct: "a"
+    },
+    {
+        question: "What is used to separate and keep two adjacent discs in position in a disc harrow?",
+        a: "Spool",
+        b: "Beam",
+        c: "Mould board",
+        d: "Coulter",
+        correct: "a"
+    },
+    {
+        question: "What is a rotary cultivator?",
+        a: "Cultivator with tines or blades mounted on a power-driven horizontal shaft",
+        b: "Cultivator with rotating wheels",
+        c: "Cultivator powered by wind energy",
+        d: "Cultivator with a rotating seed dispenser",
+        correct: "a"
+    },
+    {
+        question: "What is the main purpose of puddling?",
+        a: "To reduce leaching of water",
+        b: "To increase water evaporation",
+        c: "To improve soil aeration",
+        d: "To control pests",
+        correct: "a"
+    },
+    {
+        question: "What type of mechanism do most fertilizer drills in the country use to drop fertilizer in the field?",
+        a: "Auger feed type",
+        b: "Sprayer type",
+        c: "Manual type",
+        d: "Conveyor belt type",
+        correct: "a"
+    },
+    {
+        question: "What is a transplanter fitted with an engine called?",
+        a: "Self-propelled transplanter",
+        b: "Manual transplanter",
+        c: "Tractor-driven transplanter",
+        d: "Walk-behind transplanter",
+        correct: "a"
+    },
+    {
+        question: "In which crops is the transplanting method adopted for planting seedlings?",
+        a: "Paddy and vegetables",
+        b: "Wheat and barley",
+        c: "Corn and soybeans",
+        d: "Cotton and sugarcane",
+        correct: "a"
+    },
+    {
+        question: "What is the term for the art of placing seeds in the soil to obtain good germination?",
+        a: "Sowing",
+        b: "Harvesting",
+        c: "Transplanting",
+        d: "Tillage",
+        correct: "a"
+    },
+    ];
+    
+    
+    
+    WorkshopTechnologyQuizData=[
+    {
+        question: "What is the art and science of manufacturing items out of wood with the help of tools known as?",
+        a: "Carpentry",
+        b: "Blacksmithing",
+        c: "Masonry",
+        d: "Metalworking",
+        correct: "a"
+    },
+    {
+        question: "Which carpentry tool is used to mark and measure an angle of 45 degrees?",
+        a: "Miter square",
+        b: "Bevel square",
+        c: "Try square",
+        d: "Compass",
+        correct: "a"
+    },
+    {
+        question: "What are cross-cut saws also called?",
+        a: "Hand saws",
+        b: "Circular saws",
+        c: "Jigsaws",
+        d: "Miter saws",
+        correct: "a"
+    },
+    {
+        question: "______is used for measuring outside diameter of bars and the thickness of piece ?",
+        a: "Outside Caliper",
+        b: "Inside Caliper",
+        c: "Divider Caliper",
+        d: "None of the above",
+        correct: "a"
+    },
+    {
+        question: "How many teeth per 25 mm does a panel saw have?",
+        a: "5-8 teeth",
+        b: "10-12 teeth",
+        c: "15-18 teeth",
+        d: "20-22 teeth",
+        correct: "b"
+    },
+    {
+        question: "What is the blade width of a trying plane?",
+        a: "40 mm",
+        b: "50 mm",
+        c: "60 mm",
+        d: "70 mm",
+        correct: "c"
+    },
+    {
+        question: "What is a bradawl used for?",
+        a: "Boring small holes in soft wood",
+        b: "Cutting metal",
+        c: "Measuring angles",
+        d: "Smoothing surfaces",
+        correct: "a"
+    },
+    {
+        question: "What is a brace used for?",
+        a: "Holding and turning a bit for boring holes",
+        b: "Measuring angles",
+        c: "Cutting wood",
+        d: "Smoothing surfaces",
+        correct: "a"
+    },
+    {
+        question: "What is a centre bit used for?",
+        a: "Boring shallow holes across the grains",
+        b: "Measuring distances",
+        c: "Cutting metal",
+        d: "Smoothing surfaces",
+        correct: "a"
+    },
+    {
+        question: "Which hammer serves the dual purpose as a hammer and a pair of pincers?",
+        a: "Claw hammer",
+        b: "Sledgehammer",
+        c: "Ball peen hammer",
+        d: "Cross peen hammer",
+        correct: "a"
+    },
+    {
+        question: "What is a G-cramp used for?",
+        a: "Holding smaller work",
+        b: "Measuring angles",
+        c: "Cutting metal",
+        d: "Smoothing surfaces",
+        correct: "a"
+    },
+    {
+        question: "What operation is chiseling used for?",
+        a: "Cutting small stock of wood to produce the desired shape",
+        b: "Measuring distances",
+        c: "Boring holes",
+        d: "Smoothing surfaces",
+        correct: "a"
+    },
+    {
+        question: "What are disc sanders used for?",
+        a: "Sanding curved surfaces by using an abrasive disc",
+        b: "Polishing metal surfaces",
+        c: "Cutting metal",
+        d: "Measuring distances",
+        correct: "a"
+    },
+    {
+        question: "What is fitting in carpentry?",
+        a: "Assembling the parts together and removing metals to secure the necessary fit",
+        b: "Measuring angles",
+        c: "Boring holes",
+        d: "Smoothing surfaces",
+        correct: "a"
+    },
+    {
+        question: "What is a pin vice used for?",
+        a: "Holding round material of small diameter such as wire and pins",
+        b: "Cutting metal",
+        c: "Measuring distances",
+        d: "Boring holes",
+        correct: "a"
+    },
+    {
+        question: "What type of hammer is a cross peen hammer?",
+        a: "Has a peen at right angles (across) to the axis of the shaft or eye",
+        b: "Has a peen at a slight angle to the axis of the shaft or eye",
+        c: "Has a round peen",
+        d: "Has a flat peen",
+        correct: "a"
+    },
+    {
+        question: "What is the distance from the point to the heel without the tang called for a file?",
+        a: "Size or length",
+        b: "Width",
+        c: "Thickness",
+        d: "Depth",
+        correct: "a"
+    },
+    {
+        question: "What material are scrapers made of?",
+        a: "Good quality forged steel or sometimes made from old worn-out files",
+        b: "Aluminum",
+        c: "Plastic",
+        d: "Wood",
+        correct: "a"
+    },
+    {
+        question: "What are hand taps squared on the shank end to receive?",
+        a: "Tap wrench",
+        b: "Screwdriver",
+        c: "Hammer",
+        d: "File",
+        correct: "a"
+    },
+    {
+        question: "What is a thickness gauge also called?",
+        a: "Feeler gauge",
+        b: "Dial gauge",
+        c: "Vernier caliper",
+        d: "Micrometer",
+        correct: "a"
+    }
     ];
   
     const subjectSelect = document.getElementById('subject');
@@ -207,6 +531,7 @@ const AgriImplementsQuizData = [
     const submitBtn = document.getElementById('submit');
     const reloadBtn = document.getElementById('reload');
     const scoreEle = document.getElementById('score');
+    const showAnswersBtn = document.getElementById('show-answers');
     const resultEle = document.getElementById('result');
     const finalMessage = document.getElementById('final-message');
   
@@ -216,6 +541,33 @@ const AgriImplementsQuizData = [
       let submitted = false;
       let selectedQuizData = [];
   
+//
+function changeQuizGroup() {
+  const quizGroup = document.getElementById('quiz-group').value;
+    const subjectSelect = document.getElementById('subject');
+     //Clearingpreviousoptions 
+     subjectSelect.innerHTML = '';
+
+    //Adding options based on the selected quiz group
+    if (quizGroup === 'ecet') {
+        addOptionsToSubjectSelect(['Select subject','Agricultural_Implements','Farm_Power_Tractor_Systems','WorkShop_Technology']);
+    } else if (quizGroup === 'ibps') {
+        addOptionsToSubjectSelect(['Select subject','Agronomy', 'Seed Science']);
+    }
+}
+function addOptionsToSubjectSelect(options) {
+    const subjectSelect = document.getElementById('subject');
+    options.forEach(option => {
+        const optionElement = document.createElement('option');
+        optionElement.value = option;
+        optionElement.text = option;
+        subjectSelect.appendChild(optionElement);
+    });
+}
+// Add this line at the end of your JavaScript code
+changeQuizGroup();
+
+
   // Function to start the quiz
     function startQuiz() {
       const selectedSubject = subjectSelect.value;
@@ -226,12 +578,21 @@ const AgriImplementsQuizData = [
           alert('Please fill in your name and email.');
           return;
       }
-  
-      if (selectedSubject === 'AgriImplements') {
+      
+      if (selectedSubject === 'Agronomy') {
+        selectedQuizData = AgronomyQuizData;
+    } else if (selectedSubject === 'soilScience') {
+        selectedQuizData = soilsciencesoQuizData;
+    }
+
+     else if (selectedSubject === 'Agricultural_Implements') {
           selectedQuizData = AgriImplementsQuizData;
-      } else if (selectedSubject === 'css') {
-          selectedQuizData = cssQuizData;
-      } else {
+      } else if (selectedSubject === 'Farm_Power_Tractor_Systems') {
+          selectedQuizData = FarmPowerAndTractorSystemsQuizData;
+      } 
+      else if (selectedSubject === 'Workshop_Technology') {
+        selectedQuizData = FarmPowerAndTractorSystemsQuizData;
+    }else {
           alert('Please select a valid subject.');
           return;
       }
@@ -244,7 +605,14 @@ const AgriImplementsQuizData = [
   
   function loadQuestion() {
       const currentQtnData = selectedQuizData[currentQtn];
-      questionEl.innerText = currentQtnData.question;
+      questionEl.innerText = `Question ${currentQtn + 1}: ${currentQtnData.question}`;
+      const options = document.querySelectorAll(`#quiz-container .options li`);
+      //questionEl.innerText = currentQtnData.question;
+      options.forEach(option => {
+        const optionLabel = option.querySelector('.op_label');
+        optionLabel.classList.remove('correct', 'wrong');
+    });
+
       a_text.innerText = currentQtnData.a;
       b_text.innerText = currentQtnData.b;
       c_text.innerText = currentQtnData.c;
@@ -292,8 +660,7 @@ const AgriImplementsQuizData = [
         } else {
             showResult();
         }
-    }
-    
+    }    
     // Function to load the previous question
     function loadPreviousQuestion() {
         getSelectedAnswer();
@@ -317,12 +684,13 @@ const AgriImplementsQuizData = [
         }
     }
     
-    // Function to show the result
+   
     function showResult() {
         quizContainer.style.display = 'none';
         resultEle.style.display = 'block';
         scoreEle.innerHTML = `${score}/${selectedQuizData.length} questions answered correctly`;
         calculateAndShowFinalMessage(); // Call the function to calculate and show the final message
+        loadAnswers(); // Call the function to load the answers
     }
     
     // Function to calculate the percentage and show the final message
@@ -340,6 +708,45 @@ const AgriImplementsQuizData = [
     
         finalMessage.innerHTML = `<div class="score-box">${message}</div>`;
     }
+    function loadAnswers() {
+        resultEle.style.display = 'block';
+        scoreEle.innerHTML = `${score}/${selectedQuizData.length} questions answered correctly`;
+        calculateAndShowFinalMessage(); // Calculate and show final message
+
+        selectedQuizData.forEach((questionData, questionIndex) => {
+    const correctAnswer = questionData.correct;
+    const options = document.querySelectorAll(`#quiz-container .options li`);
+
+    // Highlight correct answer
+    options.forEach((option, index) => {
+      const optionLabel = option.querySelector('.op_label');
+      if (index === correctAnswer.charCodeAt(0) - 97) {
+        optionLabel.classList.add('correct');
+      }
+    });
+
+    // Optionally reveal user's selected answer (if any)
+    const userAnswer = getSelectedAnswerForQuestion(questionIndex);
+    if (userAnswer) {
+      const userAnswerOption = document.getElementById(userAnswer);
+      userAnswerOption.querySelector('.op_label').classList.add('user-selected');
+    }
+  });
+
+    }
+
+function getSelectedAnswerForQuestion(questionIndex) {
+    const questionAnswerEls = document.querySelectorAll(`#quiz-container #question-${questionIndex} .answer`);
+    let selectedAnswer = '';
+    questionAnswerEls.forEach(answerEl => {
+        if (answerEl.checked) {
+            selectedAnswer = answerEl.id;
+        }
+    });
+    return selectedAnswer;
+}
+
+
     
     // Event listeners
     startQuizBtn.addEventListener('click', startQuiz);
@@ -347,3 +754,4 @@ const AgriImplementsQuizData = [
     nextBtn.addEventListener('click', loadNextQuestion);
     submitBtn.addEventListener('click', submitQuiz);
     reloadBtn.addEventListener('click', () => location.reload());
+    showAnswersBtn.addEventListener('click', loadAnswers);
