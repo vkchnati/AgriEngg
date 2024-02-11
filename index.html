@@ -45,7 +45,7 @@
 						<h2 class="latest">Latest News</h2>
 						<p>Stay informed with the latest advancements in agricultural engineering and related research.</p>
 						<ul>
-							<li>Groundbreaking Research on Precision Agriculture Engineering.</li>
+							<li>Groundbreaking Research on Precision Agriculture Engineering.</li><br>
 							<li>New Collaborations with Industry Leaders</li>
 						</ul>
 					</div>
@@ -191,78 +191,86 @@
 
 <!--Quiz Section open-->
 <div id="quiz-details" style="display: none;">
-	<div class="qbody">
-	<div class="qat">
-	<!-- Content from 2.html -->
-	<!-- You can directly copy the content of 2.html here -->
-	<div class="initial-details" id="initial-details">
-		<div class="quizz-containerr">
-				<h1>E-cet Quiz</h1>
-				<label for="name">Name:</label>
-				<input type="text" id="name"><br>
-				<br>
-				<label for="email">Email:</label>
-				<br>
-				<input type="email" id="email"><br>
-				<br>
-				<label for="subject"  >Select Subject:</label>
-				<select id="subject" >
-					<option value="" disabled selected>Select Subject</option>
-					<option value="AgriImplements">Agricultural Implements</option>
-					<option value="css">ThermoDynamics</option>
-					<!-- Add more options for other subjects -->
-				</select>
-				<br>
-				<h6></h6>
-				<br>
-				<button id="start-quiz" onclick="startQuiz()">Start Quiz</button>
-				<br>
-			</div>
-	</div>
+	
+    <div class="qbody">
+		<h1>Step right up and challenge yourself in the ultimate quiz zone!<br>The quiz section awaits</h1>
+		<h3 class="blinking-text"> IBPS So/IBPS AFO Quiz not be available at the moment. Rest assured, we are working to update our offerings.<br>For Ecet Students few Subjects are updated, remaing will be Updated As Earliest As Possible</h3>
+        <div class="qat">
+            
+            <div class="initial-details" id="initial-details">
+                <div class="quizz-containerr">
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email"><br><br>
 
-	<div class="quiz-container" id="quiz">
-		<div class="quiz-header">
-			<h2 id="question">Question text</h2>
-			<ul class="options">
-				<li>
-					<input type="radio" name="answer" id="a" class="answer">
-					<label for="a" class="op_label" id="a_text"> Option</label>
-				</li>
-				<li>
-					<input type="radio" name="answer" id="b" class="answer">
-					<label for="b" class="op_label" id="b_text"> Option</label>
-				</li>
-				<li>
-					<input type="radio" name="answer" id="c" class="answer">
-					<label for="c" class="op_label" id="c_text"> Option</label>
-				</li>
-				<li>
-					<input type="radio" name="answer" id="d" class="answer">
-					<label for="d" class="op_label" id="d_text"> Option</label>
-				</li>
-			</ul>
-			<div class="actions">
-				
-				<button id="prev" disabled>Prev</button>
-				<button id="next">Next</button>
-				<button id="submit">Submit</button>
-				<button onclick="location.reload()" id="reload">Reload</button>
-			</div>
-		</div>
-	</div>
+					<label for="quiz-group">Select Quiz Group:</label><br>
+						<select id="quiz-group" onchange="changeQuizGroup()">
+							<option value="ecet">E-cet Quiz</option>
+							<option value="ibps">IBPS SO/IBPS AFO</option>
+						</select>
+						<br>
+						<br>
 
-	<div class="result-container" id="result">
-		<h2 id="score"></h2>
-		<div class="actions">
-			<button onclick="location.reload()">Reload</button>
-			<button onclick="loadAnswers()">Show Answers</button>
-		</div>
-		<div id="final-message"></div>
-	</div>
-	</div>
-	</div>
+
+                    <label for="subject">Select Subject:</label>
+                    <select id="subject">
+                        <option value="" disabled selected>Select Subject</option>
+                        
+                        <!-- Add more options for other subjects -->
+                    </select>
+                    <br><br>
+                    <button id="start-quiz" onclick="startQuiz()">Start Quiz</button>
+                    <br>
+                </div>
+            </div>
+
+            <div class="quiz-container" id="quiz" style="display: none;">
+                <div class="quiz-header">
+                    <h2 id="question">Question text</h2>
+                    <ul class="options">
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" class="op_label" id="a_text"> Option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" class="op_label" id="b_text"> Option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" class="op_label" id="c_text"> Option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="d" class="answer">
+                            <label for="d" class="op_label" id="d_text"> Option</label>
+                        </li>
+                    </ul>
+                    <div class="actions">
+                        <button id="prev" disabled>Prev</button>
+                        <button id="next">Next</button>
+                        <button id="submit" style="display: none;">Submit</button>
+                        <button id="reload" style="display: none;" onclick="location.reload()">Reload</button>
+                        <button id="show-answers"  style="display: none;"onclick="loadAnswers()">Show Answers</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-container" id="result" style="display: none;">
+                <h2 id="score"></h2>
+                <div class="actions">
+                    <button onclick="location.reload()">Reload</button>
+                    <button onclick="loadAnswers()">Show Answers</button>
+                </div>
+                <div id="final-message"></div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--Quiz Section Ended-->
+
+
 
 <!--Contact-->
 
