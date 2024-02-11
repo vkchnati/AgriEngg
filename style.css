@@ -20,17 +20,7 @@ nav a {
 			margin-right:20px;
 			margin-left:10px;
             text-decoration: none;
-        }
-
-/*body {
-	margin-top:40px;
-    background-image: url('agrtp.png'); /* Replace 'path-to-your-image' with the correct relative path or URL
-    background-size: cover;s
-    background-position: center;
-    background-repeat: no-repeat;
-	opacity:1;
-}*/
-
+}
   #home-details a {
             color: #12AD2B;
         
@@ -98,6 +88,9 @@ nav a {
 	  color:red /*rgb(255, 0, 255)*/;
 	  margin-left:20px;
     }
+
+
+
   /* Apply blinking animation to the image */
   @keyframes blink {
     0% { opacity: 1; }
@@ -109,9 +102,7 @@ nav a {
     animation: blink 2s infinite;
   }
 
-  /*Quiz CSS STARTED*/
- 
-     /* Quiz CSS STARTED */
+/*Quiz CSS STARTED*/
 .qat {
   margin: 0;
   padding: 0;
@@ -121,13 +112,15 @@ nav a {
   display:none; /* Initially hide the quiz container */
 }
 
+
+
 #quiz-details .qbody {
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-color: #0083bb;
+  background-color:#52ec6c;
 }
 
 .quizz-containerr{
@@ -145,6 +138,14 @@ nav a {
   border-radius: 2%;
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
   width: 400px;
+}
+
+.qbody h1 {
+  padding: 10px;
+  text-align: center;
+  Color:white;
+  margin: 0;
+  font-size: 30px;
 }
 
 .qbody h2 {
