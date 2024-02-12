@@ -179,170 +179,128 @@ const AgriImplementsQuizData = [
       // Add more HTML questions here
     ];
     
-    const FarmPowerAndTractorSystemsQuizData = [  {
-        question: "The first operation in the production of crops is?",
-        a: "Tillage",
-        b: "Sowing",
-        c: "Harvesting",
-        d: "Irrigation",
-        correct: "a"
+    const FarmPowerAndTractorSystemsQuizData =[
+    {
+        question: "Marginal farmers having land?",
+        a: "less than 1 ha",
+        b: "greater than 2 ha",
+        c: "less than 5 ha",
+        d: "greater than 10 ha",
+        correct: "less than 1 ha"
     },
     {
-        question: "What is rotary tillage?",
-        a: "Operations employing rotary action to cut, break and mix the soil",
-        b: "Ploughing with a rotating blade",
-        c: "Planting with a rotating mechanism",
-        d: "Irrigation using rotary sprinklers",
-        correct: "a"
+        question: "Small farmers having land?",
+        a: "1-7 ha",
+        b: "2-4 ha",
+        c: "1-2 ha",
+        d: "1-5 ha",
+        correct: "2-4 ha"
     },
     {
-        question: "What is left in between two adjacent strips of land after finishing ploughing?",
-        a: "Dead furrow",
-        b: "Ridge",
-        c: "Trench",
-        d: "Slope",
-        correct: "a"
+        question: "Medium farmers having land?",
+        a: "2-4 ha",
+        b: "4-10 ha",
+        c: "1-5 ha",
+        d: "greater than 10 ha",
+        correct: "4-10 ha"
     },
     {
-        question: "What is the weight range of the puddler including its beam?",
-        a: "20-30 kg",
-        b: "30-40 kg",
-        c: "40-50 kg",
-        d: "50-60 kg",
-        correct: "b"
+        question: "Large farmers having land?",
+        a: "less than 1 ha",
+        b: "greater than 2 ha",
+        c: "greater than 10 ha",
+        d: "5-10 ha",
+        correct: "greater than 10 ha"
     },
     {
-        question: "What is the curved part of the plough which lifts and turns the furrow slice?",
-        a: "Mould board",
-        b: "Share",
-        c: "Beam",
-        d: "Land wheel",
-        correct: "a"
+        question: "How much land can an average man develop?",
+        a: "0.01 ha",
+        b: "0.1 ha",
+        c: "1 ha",
+        d: "0.5 ha",
+        correct: "0.1 ha"
     },
     {
-        question: "What is the wheel of the plough which runs on the unploughed land?",
-        a: "Land wheel",
-        b: "Beam",
-        c: "Mould board",
-        d: "Furrow",
-        correct: "a"
+        question: "How many crop cattle does India have?",
+        a: "22.68",
+        b: "20.68",
+        c: "25.68",
+        d: "30.68",
+        correct: "22.68"
     },
     {
-        question: "What is a unit draft?",
-        a: "Draft per unit area of land",
-        b: "Draft per unit cross-sectional area of the furrow",
-        c: "Draft per unit volume of soil",
-        d: "Draft per unit weight of soil",
-        correct: "b"
+        question: "How much power is developed by an average pair of bullocks?",
+        a: "1 hp",
+        b: "2 hp",
+        c: "0.5 hp",
+        d: "0.1 hp",
+        correct: "1 hp"
     },
     {
-        question: "What is the mass of soil cut, lifted, and thrown to one side called?",
-        a: "Furrow slice",
-        b: "Plough bottom",
-        c: "Beam",
-        d: "Mould board",
-        correct: "a"
+        question: "What is the average force a bullock can exert?",
+        a: "1/5th of its body weight",
+        b: "1/10th of its body weight",
+        c: "1/3rd of its body weight",
+        d: "1/8th of its body weight",
+        correct: "1/10th of its body weight"
     },
     {
-        question: "What is the purpose of a green manure tamper implement?",
-        a: "To trample and press the green manure crop",
-        b: "To cut the green manure crop",
-        c: "To water the green manure crop",
-        d: "To harvest the green manure crop",
-        correct: "a"
+        question: "What is the efficiency of a diesel engine?",
+        a: "32-38%",
+        b: "25-32%",
+        c: "20-25%",
+        d: "38-40%",
+        correct: "32-38%"
     },
     {
-        question: "What is the device called that is used to cut the furrow slice vertically from the land ahead of the plough bottom?",
-        a: "Coulter",
-        b: "Mould board",
-        c: "Beam",
-        d: "Land wheel",
-        correct: "a"
+        question: "What is the efficiency of a petrol engine?",
+        a: "32-38%",
+        b: "25-32%",
+        c: "20-25%",
+        d: "38-40%",
+        correct: "25-32%"
     },
     {
-        question: "What is the perpendicular distance between the point of share and the lower position of the beam of the plough called?",
-        a: "Throat clearance",
-        b: "Draft",
-        c: "Beam distance",
-        d: "Plough height",
-        correct: "a"
+        question: "Where can wind mills be used for lifting water?",
+        a: "where wind velocity is less than 32 kmph",
+        b: "where wind velocity is more than 32 kmph",
+        c: "in urban areas",
+        d: "in coastal areas",
+        correct: "where wind velocity is more than 32 kmph"
     },
     {
-        question: "Where is the offset disc harrow most useful?",
-        a: "Orchards and gardens",
-        b: "Large fields",
-        c: "Paddy fields",
-        d: "Desert areas",
-        correct: "a"
+        question: "What is the average capacity of a wind mill?",
+        a: "1 hp",
+        b: "0.5 hp",
+        c: "2 hp",
+        d: "0.1 hp",
+        correct: "0.5 hp"
     },
     {
-        question: "What is the size of the concave discs in tractor-drawn disc harrows?",
-        a: "35-40 cm diameter",
-        b: "20-25 cm diameter",
-        c: "45-50 cm diameter",
-        d: "10-15 cm diameter",
-        correct: "a"
+        question: "How many wind mills are there in India?",
+        a: "2000",
+        b: "3000",
+        c: "4000",
+        d: "2540",
+        correct: "2540"
     },
     {
-        question: "What is used to separate and keep two adjacent discs in position in a disc harrow?",
-        a: "Spool",
-        b: "Beam",
-        c: "Mould board",
-        d: "Coulter",
-        correct: "a"
+        question: "Examples of renewable energy sources are?",
+        a: "nuclear energy",
+        b: "solar energy",
+        c: "coal energy",
+        d: "hydro energy",
+        correct: "solar energy, wind, biomass, thermal energy"
     },
     {
-        question: "What is a rotary cultivator?",
-        a: "Cultivator with tines or blades mounted on a power-driven horizontal shaft",
-        b: "Cultivator with rotating wheels",
-        c: "Cultivator powered by wind energy",
-        d: "Cultivator with a rotating seed dispenser",
-        correct: "a"
-    },
-    {
-        question: "What is the main purpose of puddling?",
-        a: "To reduce leaching of water",
-        b: "To increase water evaporation",
-        c: "To improve soil aeration",
-        d: "To control pests",
-        correct: "a"
-    },
-    {
-        question: "What type of mechanism do most fertilizer drills in the country use to drop fertilizer in the field?",
-        a: "Auger feed type",
-        b: "Sprayer type",
-        c: "Manual type",
-        d: "Conveyor belt type",
-        correct: "a"
-    },
-    {
-        question: "What is a transplanter fitted with an engine called?",
-        a: "Self-propelled transplanter",
-        b: "Manual transplanter",
-        c: "Tractor-driven transplanter",
-        d: "Walk-behind transplanter",
-        correct: "a"
-    },
-    {
-        question: "In which crops is the transplanting method adopted for planting seedlings?",
-        a: "Paddy and vegetables",
-        b: "Wheat and barley",
-        c: "Corn and soybeans",
-        d: "Cotton and sugarcane",
-        correct: "a"
-    },
-    {
-        question: "What is the term for the art of placing seeds in the soil to obtain good germination?",
-        a: "Sowing",
-        b: "Harvesting",
-        c: "Transplanting",
-        d: "Tillage",
-        correct: "a"
-    },
-    ];
-    
-    
-    
+        question: "How many watts is equal to 1 hp?",
+        a: "500 watts",
+        b: "746 watts",
+        c: "1000 watts",
+        d: "2000 watts",
+        correct: "746 watts"
+    }
+];  
     WorkshopTechnologyQuizData=[
     {
         question: "What is the art and science of manufacturing items out of wood with the help of tools known as?",
@@ -582,8 +540,8 @@ changeQuizGroup();
       } else if (selectedSubject === 'Farm_Power_Tractor_Systems') {
           selectedQuizData = FarmPowerAndTractorSystemsQuizData;
       } 
-      else if (selectedSubject === 'Workshop_Technology') {
-        selectedQuizData = FarmPowerAndTractorSystemsQuizData;
+      else if (selectedSubject === 'WorkShop_Technology') {
+        selectedQuizData = WorkshopTechnologyQuizData;
     }else {
           alert('Please select a valid subject.');
           return;
