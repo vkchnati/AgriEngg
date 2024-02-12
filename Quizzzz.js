@@ -186,7 +186,7 @@ const AgriImplementsQuizData = [
         b: "greater than 2 ha",
         c: "less than 5 ha",
         d: "greater than 10 ha",
-        correct: "less than 1 ha"
+        correct: "a"
     },
     {
         question: "Small farmers having land?",
@@ -194,7 +194,7 @@ const AgriImplementsQuizData = [
         b: "2-4 ha",
         c: "1-2 ha",
         d: "1-5 ha",
-        correct: "2-4 ha"
+        correct: "b"
     },
     {
         question: "Medium farmers having land?",
@@ -202,7 +202,7 @@ const AgriImplementsQuizData = [
         b: "4-10 ha",
         c: "1-5 ha",
         d: "greater than 10 ha",
-        correct: "4-10 ha"
+        correct: "b"
     },
     {
         question: "Large farmers having land?",
@@ -210,7 +210,7 @@ const AgriImplementsQuizData = [
         b: "greater than 2 ha",
         c: "greater than 10 ha",
         d: "5-10 ha",
-        correct: "greater than 10 ha"
+        correct: "c"
     },
     {
         question: "How much land can an average man develop?",
@@ -218,7 +218,7 @@ const AgriImplementsQuizData = [
         b: "0.1 ha",
         c: "1 ha",
         d: "0.5 ha",
-        correct: "0.1 ha"
+        correct: "b"
     },
     {
         question: "How many crop cattle does India have?",
@@ -226,7 +226,7 @@ const AgriImplementsQuizData = [
         b: "20.68",
         c: "25.68",
         d: "30.68",
-        correct: "22.68"
+        correct: "a"
     },
     {
         question: "How much power is developed by an average pair of bullocks?",
@@ -234,7 +234,7 @@ const AgriImplementsQuizData = [
         b: "2 hp",
         c: "0.5 hp",
         d: "0.1 hp",
-        correct: "1 hp"
+        correct: "a"
     },
     {
         question: "What is the average force a bullock can exert?",
@@ -242,7 +242,7 @@ const AgriImplementsQuizData = [
         b: "1/10th of its body weight",
         c: "1/3rd of its body weight",
         d: "1/8th of its body weight",
-        correct: "1/10th of its body weight"
+        correct: "b"
     },
     {
         question: "What is the efficiency of a diesel engine?",
@@ -250,7 +250,7 @@ const AgriImplementsQuizData = [
         b: "25-32%",
         c: "20-25%",
         d: "38-40%",
-        correct: "32-38%"
+        correct: "a"
     },
     {
         question: "What is the efficiency of a petrol engine?",
@@ -258,7 +258,7 @@ const AgriImplementsQuizData = [
         b: "25-32%",
         c: "20-25%",
         d: "38-40%",
-        correct: "25-32%"
+        correct: "b"
     },
     {
         question: "Where can wind mills be used for lifting water?",
@@ -266,15 +266,15 @@ const AgriImplementsQuizData = [
         b: "where wind velocity is more than 32 kmph",
         c: "in urban areas",
         d: "in coastal areas",
-        correct: "where wind velocity is more than 32 kmph"
+        correct: "b"
     },
     {
         question: "What is the average capacity of a wind mill?",
         a: "1 hp",
-        b: "0.5 hp",
-        c: "2 hp",
+        b: "2 hp",
+        c: "0.5 hp",
         d: "0.1 hp",
-        correct: "0.5 hp"
+        correct: "c"
     },
     {
         question: "How many wind mills are there in India?",
@@ -282,7 +282,7 @@ const AgriImplementsQuizData = [
         b: "3000",
         c: "4000",
         d: "2540",
-        correct: "2540"
+        correct: "d"
     },
     {
         question: "Examples of renewable energy sources are?",
@@ -290,7 +290,7 @@ const AgriImplementsQuizData = [
         b: "solar energy",
         c: "coal energy",
         d: "hydro energy",
-        correct: "solar energy, wind, biomass, thermal energy"
+        correct: "b"
     },
     {
         question: "How many watts is equal to 1 hp?",
@@ -298,7 +298,7 @@ const AgriImplementsQuizData = [
         b: "746 watts",
         c: "1000 watts",
         d: "2000 watts",
-        correct: "746 watts"
+        correct: "b"
     }
 ];  
     WorkshopTechnologyQuizData=[
