@@ -39,7 +39,7 @@ function startQuiz() {
         alert("Please fill all details and select a subject to start the quiz.");
         return;
     }
-    alert("A 45-second time limit applies to each question. The system will automatically move to the next question if no response is registered within this period.");
+    alert("Just a heads-up, you can't go back and check previous questions once you answer them!");
 
     // Get the questions for the selected subject
     const questions = questionsBySubject[selectedSubject];
