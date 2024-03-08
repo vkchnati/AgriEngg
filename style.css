@@ -65,21 +65,20 @@ nav a {
 
 /* Images */
 .box img {
-  width: 100%; /* Set image width to 100% for responsiveness */
+  width: 100px; /* Set image width to 100% for responsiveness */
   max-width: 100px; /* Set a maximum width to prevent overflow */
   margin-bottom: 10px; /* Add some margin for better spacing */
 }
 
 /* Media Queries (add more as needed) */
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
+.containerr {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
   }
 
   .box {
-    width: 50%;
-    margin: 10px auto;
-    float: none; /* Remove float for smaller screens */
+    width: 80%; /* Adjust width to take up full width on smaller screens */
   }
 }
 
@@ -150,6 +149,9 @@ nav a {
 
 	.containerr {
       display: flex;
+	  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  justify-content: space-around; /* Distribute items evenly across the container */
+  align-items: center; /* Center items vertically */
     }
 
     .box {
