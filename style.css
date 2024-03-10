@@ -190,15 +190,6 @@ nav a {
   .blinking {
     animation: blink 2s infinite;
   }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
 /*Quiz CSS STARTED*/
 /* Add this to aviii.css */
 
