@@ -135,7 +135,32 @@ function startQuizWithQuestions(questions) {
         quizContainer.appendChild(questionElement);
     }
 
+    // Function to start the timer
+    //function startTimer() {
+      //  const timerElement = document.getElementById("timer");
+        //let timeLeft = 45; // 45 seconds per question
+        //timerElement.textContent = `Time Left: ${formatTime(timeLeft)}`; // Initial display
+
+        //quizTimer = setInterval(() => {
+          //  timeLeft--;
+            //if (timeLeft >= 0) {
+              //  timerElement.textContent = `Time Left: ${formatTime(timeLeft)}`;
+            //} else {
+              //  clearInterval(quizTimer);
+                //showNextQuestion();
+           // }
+        //}, 1000);
+
+        //function formatTime(seconds) {
+          //  const minutes = Math.floor(seconds / 60);
+            //const remainingSeconds = seconds % 60;
+            //return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        //}
+    //}
     
+    
+    
+
     // Function to show the score
     function showScore() {
         const quizContainer = document.querySelector(".quiz-container");
