@@ -1,3 +1,8 @@
+function openQuiz() {
+    document.getElementById("quiz-details").style.display = "block";
+    document.getElementById("home-details").style.display = "none";
+    document.getElementById("contact-details").style.display = "none";
+}
 /// Define an event listener for the Start Quiz button
 const startQuizButton = document.getElementById("start-quiz-btn");
 startQuizButton.addEventListener("click", startQuiz);
@@ -39,7 +44,7 @@ function startQuiz() {
         alert("Please fill all details and select a subject to start the quiz.");
         return;
     }
-    alert("Just a heads-up, you can't go back and check previous questions once you answer them!");
+    alert("A 45-second time limit applies to each question. The system will automatically move to the next question if no response is registered within this period.");
 
     // Get the questions for the selected subject
     const questions = questionsBySubject[selectedSubject];
@@ -130,32 +135,7 @@ function startQuizWithQuestions(questions) {
         quizContainer.appendChild(questionElement);
     }
 
-    // Function to start the timer
-    //function startTimer() {
-      //  const timerElement = document.getElementById("timer");
-        //let timeLeft = 45; // 45 seconds per question
-        //timerElement.textContent = `Time Left: ${formatTime(timeLeft)}`; // Initial display
-
-        //quizTimer = setInterval(() => {
-          //  timeLeft--;
-            //if (timeLeft >= 0) {
-              //  timerElement.textContent = `Time Left: ${formatTime(timeLeft)}`;
-            //} else {
-              //  clearInterval(quizTimer);
-                //showNextQuestion();
-           // }
-        //}, 1000);
-
-        //function formatTime(seconds) {
-          //  const minutes = Math.floor(seconds / 60);
-            //const remainingSeconds = seconds % 60;
-            //return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
-        //}
-    //}
     
-    
-    
-
     // Function to show the score
     function showScore() {
         const quizContainer = document.querySelector(".quiz-container");
