@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>AgriEngineer</title>
-<link rel="stylesheet" href="style.css">
-<!--
-<link rel="stylesheet" href="mcq.css">-->
-<style>
+  <title>Agriculture Engineering</title>
+  <link rel="stylesheet" href="nagr.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
     footer {
       background-color: #001e4d; /* Adjust the color as needed */
       color: #fff;
@@ -19,187 +17,173 @@
     </style>
 </head>
 <body>
-<h1>
-  <img src="agrilogo.png" alt="Logo" style="height: 150px; width: 60%;margin-right: 20px;">
-</h1>
+  <img src="agrilogo.png" alt="Logo" class="logo">
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showHome()" class="active">Home</a></li>
+        <li><a href="#" onclick="showMaterials()">Materials</a></li>
+        <li><a href="#" onclick="openQuiz()" class="nav-link">Quiz</a></li>
+        <li><a href="#" onclick="showContactDetails()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav>
-  <ul>
-     <a href="#" class="active">
-        <i class="fas fa-qrcode"></i>
-        <span>Home</span>
-      </a>
-    <a href="#" onclick="showMaterials()">
-        <i class="fas fa-stream"></i>
-        <span>Materials</span>
-      </a>
-	  <!--Quiz-->
-	    <a href="#" onclick="openQuiz()">
-        <i class="fas fa-stream"></i>
-        <span>Quiz</span>
-      </a>
-   <!--<li><a href="#">About</a></li>-->
-   <a href="#" onclick="showContactDetails()">
-      <i class="fas fa-stream"></i>
-      <span>Contact</span>
-    </a>
-</nav>
+  <div  id="home-details" >
+    <div>
+      <h2 class="headco" >Welcome to Our Agricultural Engineering Education Hub!</h2>
+      <p>Empowering the Future of Agriculture through Innovative Engineering Education.</p>
+    </div>
 
-
-<div  id="home-details" >
-					<div>
-						<h2 class="headco" >Welcome to Our Agricultural Engineering Education Hub!</h2>
-						<p>Empowering the Future of Agriculture through Innovative Engineering Education.</p>
-					</div>
-
-					<div>
-						<h2 class="latest">Latest News</h2>
-						<p>Stay informed with the latest advancements in agricultural engineering and related research.</p>
-						<ul>
-							<li>Groundbreaking Research on Precision Agriculture Engineering.</li><br>
-							<li>New Collaborations with Industry Leaders</li>
-						</ul>
-					</div>
-						<div>
-						<h2 class="unavailablee">Subject Unavailability</h2>
-						<ul>
-						<li>
-						<p >Process Equipment Design</p></li>
-						<li><p >Seed Processing and Storage Engineering</p></li>
-						</ul>
-						<p class="unavailable">The mentioned subjects may not be available at the moment. Rest assured, we are working to update our offerings.</p>
-						</div>
-						<h3 class="blinking-text">JNTUK R23 Materials will be update As Earliest As Possible</h3>
-				
-				<div id="flex-box">
-				<div id="home-details">
-					<div>
-						<h3>Syllabus</h3>
-						<a target="_blank" href="https://drive.google.com/file/d/1Fhy10p3ryjpQgorjFmEVOPPRvpmcUGiZ/view?usp=drive_link">Agriculture Engineering R19 Syllabus</a>
-						<br>
-						<br>
-						<a target="_framename" href="https://drive.google.com/file/d/1fciLyKVVgQZIVgH927bZe2G35EipHHuJ/view?usp=drive_link">Agriculture Engineering R20 Syllabus</a>
-					</div>
-				</div>
-				</div>
-				</div>
-			  
+    <div>
+      <h2 class="latest">Latest News</h2>
+      <p>Stay informed with the latest advancements in agricultural engineering and related research.</p>
+      <ul>
+        <li>Groundbreaking Research on Precision Agriculture Engineering.</li><br>
+        <li>New Collaborations with Industry Leaders</li>
+      </ul>
+    </div>
+      <div>
+      <h2 class="unavailablee">Subject Unavailability</h2>
+      <ul>
+      <li>
+      <p >Process Equipment Design</p></li>
+      <li><p >Seed Processing and Storage Engineering</p></li>
+      </ul>
+      <p class="unavailable">The mentioned subjects may not be available at the moment. Rest assured, we are working to update our offerings.</p>
+      </div>
+      <h3 class="blinking-text">JNTUK R23 Materials will be update As Earliest As Possible</h3>
+  
+  <div id="flex-box">
+  <div id="home-details">
+    <div>
+      <h3>Syllabus</h3>
+      <a target="_blank" href="https://drive.google.com/file/d/1Fhy10p3ryjpQgorjFmEVOPPRvpmcUGiZ/view?usp=drive_link">Agriculture Engineering R19 Syllabus</a>
+      <br>
+      <br>
+      <a target="_framename" href="https://drive.google.com/file/d/1fciLyKVVgQZIVgH927bZe2G35EipHHuJ/view?usp=drive_link">Agriculture Engineering R20 Syllabus</a><br>
+    </div>
+  </div>
+  </div>
+  </div>
+  
 </div>
-
-	<div id="materials-list" style="display: none;">
-        <h2>Available Materials</h2>
-		<input type="text" id="search-bar" placeholder="Search materials">
-    <button onclick="searchMaterials()">Search</button>
-           <ol>
-						<li><p> 
-						Mathematics-III <button id="downloadMIII">DOWNLOAD</button> 
-						</p></li>
-						<li><p>
-						Surveying<button id="downloadSURVEY">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						 Fluid Mechanics&Open Channels<button id="downloadFMOH">DOWNLOAD</button>
-						</p></li>
-						<li><p> 
-						Electrical Systems<button id="downloadES">DOWNLOAD</button> 
-						</p></li>
-						<li><p>
-						Properties and Strength of Material<button id="downloadPSM">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Suface Water Hydrology<button id="downloadSWH">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Watershed Management<button id="downloadWATER">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Soil & Water Conservation Engineering<button id="downloadSWCE">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Thermodynamics and Refrigeration Systems<button id="downloadTDRS">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Theory Of Machines<button id="downloadTOM">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Theory of Structure<button id="downloadTOS">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Ground water Hydrology<button id="downloadGWH">DOWNLOAD</button>
-						</p></li>
-						<li><p> 
-						Farm Power & Tractor Systems <button id="downloadFPTS">DOWNLOAD</button> 
-						</p></li>
-						<li><p> Farm Machinery Equipment-I <button id="downloadFMEI">DOWNLOAD</button> 
-						</p></li>
-						<li><p> Farm Machinery Equipment-II <button id="downloadFMEII">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Agricultural process Engineering<button id="downloadAPE">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Dairy & Food Engineering <button id="downloadDFE">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Food Quality&Control <button id="downloadFQC">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Opearation Research <button id="downloadOR">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Micro Irrigation <button id="downloadMI">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						GIS & Remote Sensing <button id="downloadGIS">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Green House Technoogy <button id="downloadGHT">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Heat and Mass Transfer <button id="downloadHMT">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Human Engineering Safety <button id="downloadHES">DOWNLOAD</button> 
-						</p</li>
-						<li><p> 
-						Food Packing Technology<button id="downloadFOODPACK">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Food Plant Design and Management <button id="downloadFPDM">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Irrigation & Drinage Engineering <button id="downloadIDE">DOWNLOAD</button> 
-						</p></li>
-						<li><p>
-						Managerial Economics and Financial Analysis <button id="downloadMEFA">DOWNLOAD</button>
-						</p></li>
-						<li><p> 
-						Engineering Properties of Biological Materials<button id="downloadEPBM">DOWNLOAD</button> 
-						</p></li>
-						<li><p> 
-						Mechanical Measurements and Instrumentation <button id="downloadMMI">DOWNLOAD</button> 
-						</p></li>
-						<li><p>
-						Photo Voltic Technology & System<button id="downloadPVTS">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Design of Agriculture Machinery<button id="downloadDAM">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Agro Industries and By-Products Utilization<button id="downloadAIBU">DOWNLOAD</button>
-						</p></li>
-						<li><p>
-						Post Harvesting Engineering & Horticulture Produce<button id="downloadPHE">DOWNLOAD</button>
-						</p></li>
-						<li><p> 
-						Design of Soil and Water Conservation and Form Systems<button id="downloadDSWCFS">DOWNLOAD</button> 
-						</p></li>
-						<li><p>
-						Agricultural Extension Techniques and Business Management<button id="downloadAETBM">DOWNLOAD</button>
-						</p></li>		
-           </ol>
-	</div>
-
+<div>
+<div id="materials-list" style="display: none;">
+  <h2>Available Materials</h2>
+ <input type="text" id="search-bar" placeholder="Search materials">
+ <button onclick="searchMaterials()">Search</button>
+     <ol>
+      <li><p> 
+      Mathematics-III <button id="downloadMIII">DOWNLOAD</button> 
+      </p></li>
+      <li><p>
+      Surveying<button id="downloadSURVEY">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+       Fluid Mechanics&Open Channels<button id="downloadFMOH">DOWNLOAD</button>
+      </p></li>
+      <li><p> 
+      Electrical Systems<button id="downloadES">DOWNLOAD</button> 
+      </p></li>
+      <li><p>
+      Properties and Strength of Material<button id="downloadPSM">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Suface Water Hydrology<button id="downloadSWH">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Watershed Management<button id="downloadWATER">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Soil & Water Conservation Engineering<button id="downloadSWCE">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Thermodynamics and Refrigeration Systems<button id="downloadTDRS">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Theory Of Machines<button id="downloadTOM">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Theory of Structure<button id="downloadTOS">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Ground water Hydrology<button id="downloadGWH">DOWNLOAD</button>
+      </p></li>
+      <li><p> 
+      Farm Power & Tractor Systems <button id="downloadFPTS">DOWNLOAD</button> 
+      </p></li>
+      <li><p> Farm Machinery Equipment-I <button id="downloadFMEI">DOWNLOAD</button> 
+      </p></li>
+      <li><p> Farm Machinery Equipment-II <button id="downloadFMEII">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Agricultural process Engineering<button id="downloadAPE">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Dairy & Food Engineering <button id="downloadDFE">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Food Quality&Control <button id="downloadFQC">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Opearation Research <button id="downloadOR">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Micro Irrigation <button id="downloadMI">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      GIS & Remote Sensing <button id="downloadGIS">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Green House Technoogy <button id="downloadGHT">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Heat and Mass Transfer <button id="downloadHMT">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Human Engineering Safety <button id="downloadHES">DOWNLOAD</button> 
+      </p</li>
+      <li><p> 
+      Food Packing Technology<button id="downloadFOODPACK">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Food Plant Design and Management <button id="downloadFPDM">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Irrigation & Drinage Engineering <button id="downloadIDE">DOWNLOAD</button> 
+      </p></li>
+      <li><p>
+      Managerial Economics and Financial Analysis <button id="downloadMEFA">DOWNLOAD</button>
+      </p></li>
+      <li><p> 
+      Engineering Properties of Biological Materials<button id="downloadEPBM">DOWNLOAD</button> 
+      </p></li>
+      <li><p> 
+      Mechanical Measurements and Instrumentation <button id="downloadMMI">DOWNLOAD</button> 
+      </p></li>
+      <li><p>
+      Photo Voltic Technology & System<button id="downloadPVTS">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Design of Agriculture Machinery<button id="downloadDAM">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Agro Industries and By-Products Utilization<button id="downloadAIBU">DOWNLOAD</button>
+      </p></li>
+      <li><p>
+      Post Harvesting Engineering & Horticulture Produce<button id="downloadPHE">DOWNLOAD</button>
+      </p></li>
+      <li><p> 
+      Design of Soil and Water Conservation and Form Systems<button id="downloadDSWCFS">DOWNLOAD</button> 
+      </p></li>
+      <li><p>
+      Agricultural Extension Techniques and Business Management<button id="downloadAETBM">DOWNLOAD</button>
+      </p></li>		
+     </ol>
+</div>
+</div>
 <!--Quiz Section open-->
 <div id="quiz-details" style="display: none;">
 	<div id="bg">
@@ -255,35 +239,45 @@
 
 
 
+
+
+
 <!--Contact-->
 
-        <div id="contact-details" style="display: none;">
-                  <div class="custom-box">
-		               <H1><img src="contact.png">Meet Us<br>Share Your Excitement With Us</h2>
-				  </div>
-        <div class="container">
+<div id="contact-details" style="display: none;">
+  <div class="custom-box">
+   <H1><img src="contact.png">Meet Us<br>Share Your Excitement With Us</h2>
+</div>
+<div class="container">
 
-       <div class="containerr">
+<div class="containerr">
 
-				  <div class="box"><p>  <img src="mail.png"><br>Email-agriengg.noreply@gmail.com 
-				       <a href="mailto:agriengg.noreply@gmail.com"><br>Write your query</a><p>&nbsp
-				  </div>
+<div class="box"><p>  <img src="mail.png"><br>Email-agriengg.noreply@gmail.com 
+<a href="mailto:agriengg.noreply@gmail.com"><br>Write your query</a><p>&nbsp
+</div>
 
-				  <div class="box"><p><img src="whatsapp.png"><br>WhatsApp Message
-                      <a href="https://wa.me/qr/5Z3QQLDSFIBWF1" target="_blank"><br>Send us a WhatsApp message</a>
-					  <p><img src="group.png"><br>WhatsApp Group
-                      <a href="https://chat.whatsapp.com/FkL2Q0f835a3gFyc3tUDL6" target="_blank"><br>Join our WhatsApp Group</a>
-                      </p>
-			      </div>
+<div class="box">
+<p><img src="group.png"><br>WhatsApp Channel
+      <a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02
+" target="_blank"><br>Join our WhatsApp Channel</a>
+      </p>
+</div>
 
-                  <div class="box">
-			             <p><img src=".\instagram.png"><br>Instagram
-                        <a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s" target="_blank"><br>Follow our Instagram Page</a><p>
-			      </div>
-        </div>
-  <script src="script.js"></script>
-  <script src="aviii.js"></script>
+  <div class="box">
+   <p><img src=".\instagram.png"><br>Instagram
+        <a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s" target="_blank"><br>Follow our Instagram Page</a><p>
+</div>
+</div>
+</div>
+</div>
+<br>
+<footer>
+
+<p>Agricultural Engineering &copy; 2024-All Rights Reserved</p>
+</footer>
+<script src="nagr.js"></script>
+<script src="aviii.js"></script
+
 </body>
 </html>
-
 
