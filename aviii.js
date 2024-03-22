@@ -1,6 +1,7 @@
 function openQuiz() {
     document.getElementById("quiz-details").style.display = "block";
     document.getElementById("home-details").style.display = "none";
+    document.getElementById("materials-list").style.display = "none";
     document.getElementById("contact-details").style.display = "none";
 }
 /// Define an event listener for the Start Quiz button
