@@ -23,7 +23,7 @@ function populateSubjects() {
     // Populate subject options based on the selected category
     switch(selectedCategory) {
         case 'ecet':
-            subjectOptions = '<option value="Agri implements">Agri implements</option><option value="Farm Power & Tractor Systems">Farm Power & Tractor Systems</option>';
+            subjectOptions = '<option value="Agri implements">Agri implements</option><option value="Farm Power & Tractor Systems">Farm Power & Tractor Systems</option><option value="Hydrology&WatershedManagement">Hydrology & Watershed Management</option> <option value="Surveying&Levelling-I">Surveying & Levelling-I</option>';
             break;
         case 'ibps':
             subjectOptions = '<option value="Agronomy">Agronomy</option><option value="Soil Science">Soil Science</option>';
@@ -563,6 +563,192 @@ const questionsBySubject = {
         }
         // Add more questions for Farm Power Machiner as needed
     ],
+
+"Hydrology&WatershedManagement": [
+            {
+                "question": "The sheet of water flowing through a notch is called __________.",
+                "answers": [
+                    {"text": "Orifice", "correct": false},
+                    {"text": "Nappe", "correct": true},
+                    {"text": "Crest", "correct": false},
+                    {"text": "Weir", "correct": false}
+                ]
+            },
+            {
+                "question": "If the fluid particles rotate about their mass centers, then the flow is known as_________.",
+                "answers": [
+                    {"text": "Irrotational flow", "correct": false},
+                    {"text": "Rotational flow", "correct": true},
+                    {"text": "3-dimensional flow", "correct": false},
+                    {"text": "Steady flow", "correct": false}
+                ]
+            },
+            {
+                "question": "Angle of divergent cone varies from ________.",
+                "answers": [
+                    {"text": "50-150", "correct": true},
+                    {"text": "15-200", "correct": false},
+                    {"text": "250-300", "correct": false},
+                    {"text": "20-250", "correct": false}
+                ]
+            },
+            {
+                "question": "For measuring very small pressure difference ____________ are used.",
+                "answers": [
+                    {"text": "Inverted u-tube manometers", "correct": false},
+                    {"text": "Piezometers", "correct": false},
+                    {"text": "U-tube manometers", "correct": false},
+                    {"text": "Micro manometers", "correct": true}
+                ]
+            },
+            {
+                "question": "An air tight passage which houses the impeller is __________.",
+                "answers": [
+                    {"text": "Suction pipe", "correct": false},
+                    {"text": "Casing", "correct": true},
+                    {"text": "Strainer", "correct": false},
+                    {"text": "Valve", "correct": false}
+                ]
+            },
+            {
+                "question": "The property of the liquid which enables to resist tensile force is ________.",
+                "answers": [
+                    {"text": "Capillarity", "correct": false},
+                    {"text": "Adhesion", "correct": false},
+                    {"text": "Surface tension", "correct": true},
+                    {"text": "Compressibility", "correct": false}
+                ]
+            },
+            {
+                "question": "If the liquid level on the downstream side of the weir is lower than the crest level, the weir is called ____________.",
+                "answers": [
+                    {"text": "Fully discharging weir", "correct": false},
+                    {"text": "Freely discharging weir", "correct": true},
+                    {"text": "Submerged weir", "correct": false},
+                    {"text": "Partially discharging weir", "correct": false}
+                ]
+            },
+            {
+                "question": "The ratio between loss of head in the orifice to the head above the orifice is known as _________.",
+                "answers": [
+                    {"text": "Co-efficient of resistance", "correct": true},
+                    {"text": "Co-efficient of contraction", "correct": false},
+                    {"text": "Co-efficient of discharge", "correct": false},
+                    {"text": "Co-efficient of velocity", "correct": false}
+                ]
+            },
+            {
+                "question": "Venturi meter was invented by ____________.",
+                "answers": [
+                    {"text": "Chezy", "correct": false},
+                    {"text": "J.B. Francis", "correct": false},
+                    {"text": "Bazin", "correct": false},
+                    {"text": "Clemens Herchel", "correct": true}
+                ]
+            },
+            {
+                "question": "Formula for discharge over a triangular notch Q is equal to _________.",
+                "answers": [
+                    {"text": "0.417 H^5/2", "correct": false},
+                    {"text": "2.417 H^5/2", "correct": false},
+                    {"text": "1.417 H^5/2", "correct": true},
+                    {"text": "3.417 H^5/2", "correct": false}
+                ]
+            }
+        ],
+    
+        "Surveying&Levelling-I": [
+            {
+                "question": "The main principle of surveying is to work from ___",
+                "answers": [
+                    {"text": "Higher to lower level", "correct": false},
+                    {"text": "Lower to higher level", "correct": false},
+                    {"text": "Whole to part", "correct": true},
+                    {"text": "Part to whole", "correct": false}
+                ]
+            },
+            {
+                "question": "The sketch that is prepared during reconnaissance survey is",
+                "answers": [
+                    {"text": "Key plan", "correct": false},
+                    {"text": "Reference sketch", "correct": true},
+                    {"text": "Map", "correct": false},
+                    {"text": "Figure", "correct": false}
+                ]
+            },
+            {
+                "question": "The very first reading taken on a bench mark after setting up of the instrument",
+                "answers": [
+                    {"text": "Back sight", "correct": false},
+                    {"text": "Fore sight", "correct": true},
+                    {"text": "Change point", "correct": false},
+                    {"text": "Intermediate sight", "correct": false}
+                ]
+            },
+            {
+                "question": "The most commonly used datum in levelling is",
+                "answers": [
+                    {"text": "Fore bearing", "correct": false},
+                    {"text": "Reduced level", "correct": false},
+                    {"text": "Mean Sea Level", "correct": true},
+                    {"text": "Change point", "correct": false}
+                ]
+            },
+            {
+                "question": "The instrument that is made of brass of conical shape and is suspended from a thread, attached at its top is",
+                "answers": [
+                    {"text": "Optical square", "correct": false},
+                    {"text": "Plumbob", "correct": true},
+                    {"text": "Abney level", "correct": false},
+                    {"text": "Lathe", "correct": false}
+                ]
+            },
+            {
+                "question": "The method of ranging that is possible when two terminal points of a survey line are mutually intervisible is",
+                "answers": [
+                    {"text": "Reciprocal Ranging", "correct": false},
+                    {"text": "Indirect Ranging", "correct": false},
+                    {"text": "Direct Ranging", "correct": true},
+                    {"text": "Random Ranging", "correct": false}
+                ]
+            },
+            {
+                "question": "The length of engineer’s chain is",
+                "answers": [
+                    {"text": "100 feet", "correct": true},
+                    {"text": "150 feet", "correct": false},
+                    {"text": "66 feet", "correct": false},
+                    {"text": "75 feet", "correct": false}
+                ]
+            },
+            {
+                "question": "The fixed line of a reference is called",
+                "answers": [
+                    {"text": "Meridian", "correct": true},
+                    {"text": "Bearing", "correct": false},
+                    {"text": "Ranging", "correct": false},
+                    {"text": "Plumbob", "correct": false}
+                ]
+            },
+            {
+                "question": "The type of levelling, in which levelling procedure starts from a bench mark and end on a bench mark is",
+                "answers": [
+                    {"text": "Differential Levelling", "correct": true},
+                    {"text": "Profile Levelling", "correct": false},
+                    {"text": "Simple Levelling", "correct": false},
+                    {"text": "Reciprocal Levelling", "correct": false}
+                ]
+            },
+            {
+                "question": "The angle of intersection of the plane mirrors of an optical square is",
+                "answers": [
+                    {"text": "30°", "correct": false},
+                    {"text": "45°", "correct": true},
+                    {"text": "60°", "correct": false},
+                    {"text": "90°", "correct": false}
+                ]
+            }
+        ],
     "Agronomy": [
         {
             question: "Question 1 for Agronomy",
