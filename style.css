@@ -58,13 +58,16 @@ nav a {
   transition: background-color 0.3s ease; /* Smooth color transition */
 }
 
-nav a:hover {
-  background-color: #36743a; /* Darker green on hover */
+
+
+/* Apply hover effect to the active link (selected material) */
+nav li a.active {
+  background-color: #028f3d; /* Lighter green for active link */
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-nav a.active {
-  background-color: #36743a; /* Darker green for active link */
-}
 
 nav i {
   margin-right: 5px; /* Spacing between icon and text */
@@ -294,4 +297,93 @@ background: #9aeabc;
 
 #quiz-details .incorrect {
 background: #ff9393;
+}
+.followus{
+  color: #fff;
+  text-align: center;
+  background-color: #12AD2B;/*hsl(237, 56%, 12%)*/
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+.footer__icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+/*Contact*/
+.contactcontainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#response {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  position: relative; /* Add position relative to make absolute positioning work */
+}
+
+.search-container button {
+  margin-right: 200px; /* Adjust the margin-right value as needed */
+  height: fit-content;
+}
+
+#search-bar {
+  margin-right: 10px; /* Adjust the margin-right value as needed */
+}
+
+/* Adjust the position of the search container */
+.search-container {
+  position: absolute;
+  right: 40px; /* Adjust the right position as needed */
+}
+table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
 }
