@@ -211,6 +211,8 @@ downloadAIBUButton.addEventListener("click", () => {
     document.getElementById("materials-list").style.display = "none";
     document.getElementById("quiz-details").style.display = "none";
     document.getElementById("contact-details").style.display = "none";
+
+    
   });
 
   materialLink.addEventListener("click", function() {
@@ -237,7 +239,23 @@ downloadAIBUButton.addEventListener("click", () => {
     document.getElementById("contact-details").style.display = "block";
   });
 
-
+  function searchMaterials() {
+    const searchTerm = document.getElementById("search-bar").value.trim().toLowerCase();
+    const materialRows = document.querySelectorAll('#materials-list table tbody tr');
+  
+    materialRows.forEach(row => {
+      const materialName = row.querySelector("td:first-child").textContent.trim().toLowerCase();
+      const downloadButton = row.querySelector("button");
+  
+      if (materialName.includes(searchTerm)) {
+        row.style.display = "table-row";
+        downloadButton.style.display = "block";
+      } else {
+        row.style.display = "none";
+        downloadButton.style.display = "none";
+      }
+    });
+  }
 
 // JavaScript code
 function showMaterials() {
