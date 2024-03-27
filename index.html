@@ -326,7 +326,7 @@
               From: "agriengg.noreply@gmail.com",
               ReplyTo: email,
               Subject: subject,
-              Body: message
+              Body: message+','+name+','+email
           }).then(
               message => {
                   alert("Message sent successfully!"); // Display popup message
