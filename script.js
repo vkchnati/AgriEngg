@@ -1,4 +1,3 @@
-
 const downloadGWHButton = document.getElementById("downloadGWH");
 const downloadMEFAButton = document.getElementById("downloadMEFA");
 const downloadFMOHButton = document.getElementById("downloadFMOH");
@@ -35,6 +34,7 @@ const downloadPVTSButton = document.getElementById("downloadPVTS");
       const downloadDAMButton = document.getElementById("downloadDAM");
 const downloadFPDMButton = document.getElementById("downloadFPDM");
 const downloadAIBUButton = document.getElementById("downloadAIBU");
+
 
 
 
@@ -188,21 +188,53 @@ downloadAIBUButton.addEventListener("click", () => {
     downloadFile(fileUrls.AIBU, "AI&BU.pdf");
   });
 
-
-
-
   function downloadFile(fileUrl, fileName) {
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = fileName;
     link.click();
   }
+//ecet
+const downloadSurveyECETButton = document.getElementById("downloadsurveyecet");
+const downloadAgriImplementsButton = document.getElementById("downloadAgriImplements");
+const downloadTractorSystemsButton = document.getElementById("downloadTractorSystems");
 
+// Define the file URLs for ECET materials
+const ecetFileUrls = {
+  SurveyECET: "Surveying&levelingecet.pdf",
+  AgriImplements: "AgriImplements.pdf",
+  TractorSystems: "TractorSystems.pdf"
+};
 
+// Add event listeners to the download buttons
+downloadSurveyECETButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.SurveyECET, "Surveying&levelingecet.pdf");
+});
+
+downloadAgriImplementsButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.AgriImplements, "AgriImplements.pdf");
+});
+
+downloadTractorSystemsButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.TractorSystems, "TractorSystems.pdf");
+});
+
+// Function to download a file
+function downloadFile(fileUrl, fileName) {
+  const link = document.createElement("a");
+  link.href = fileUrl;
+  link.download = fileName;
+  link.click();
+}
+//ecet close
   const homeLink = document.getElementById("home-link");
   const materialLink = document.getElementById("material-link");
   const quizLink = document.getElementById("quiz-link");
   const contactLink = document.getElementById("contact-link");
+  const btechList = document.getElementById("btechlist");
+  const ecetList = document.getElementById("ecetlist");
+  const pgcetList = document.getElementById("pgcetlist");
+  const afoList = document.getElementById("afolist");
 
   // Add click event listeners to the navigation links
   homeLink.addEventListener("click", function() {
@@ -263,6 +295,10 @@ function showMaterials() {
   document.getElementById("quiz-details").style.display = "none";
   document.getElementById("home-details").style.display = "none";
   document.getElementById("contact-details").style.display = "none";
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
 }
 
 function openQuiz() {
@@ -270,6 +306,10 @@ function openQuiz() {
   document.getElementById("quiz-details").style.display = "block";
   document.getElementById("home-details").style.display = "none";
   document.getElementById("contact-details").style.display = "none";
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
 }
 
 function showContactDetails() {
@@ -277,6 +317,10 @@ function showContactDetails() {
   document.getElementById("quiz-details").style.display = "none";
   document.getElementById("home-details").style.display = "none";
   document.getElementById("contact-details").style.display = "block";
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
 }
 
 function showHome() {
@@ -284,6 +328,49 @@ function showHome() {
   document.getElementById("quiz-details").style.display = "none";
   document.getElementById("home-details").style.display = "block";
   document.getElementById("contact-details").style.display = "none";
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
 }
-
+function showbtech() {
+  document.getElementById("btechlist").style.display = "block";
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
+  document.getElementById("materials-list").style.display = "none";
+  document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("home-details").style.display = "none";
+  document.getElementById("contact-details").style.display = "none";
+}
+function showecet() {
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("ecetlist").style.display = "block";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
+  document.getElementById("materials-list").style.display = "none";
+  document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("home-details").style.display = "none";
+  document.getElementById("contact-details").style.display = "none";
+}
+function showafo() {
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "block";
+  document.getElementById("pgcetlist").style.display = "none";
+  document.getElementById("materials-list").style.display = "none";
+  document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("home-details").style.display = "none";
+  document.getElementById("contact-details").style.display = "none";
+}
+function showpgcet() {
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "block";
+  document.getElementById("afolist").style.display = "none"; 
+  document.getElementById("materials-list").style.display = "none";
+  document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("home-details").style.display = "none";
+  document.getElementById("contact-details").style.display = "none";
+}
 window.onload = showHome;
