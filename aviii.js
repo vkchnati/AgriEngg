@@ -1,9 +1,4 @@
-function openQuiz() {
-    document.getElementById("quiz-details").style.display = "block";
-    document.getElementById("home-details").style.display = "none";
-    document.getElementById("materials-list").style.display = "none";
-    document.getElementById("contact-details").style.display = "none";
-}
+
 /// Define an event listener for the Start Quiz button
 const startQuizButton = document.getElementById("start-quiz-btn");
 startQuizButton.addEventListener("click", startQuiz);
@@ -23,7 +18,7 @@ function populateSubjects() {
     // Populate subject options based on the selected category
     switch(selectedCategory) {
         case 'ecet':
-            subjectOptions = '<option value="Agri implements">Agri implements</option><option value="Farm Power & Tractor Systems">Farm Power & Tractor Systems</option><option value="Hydrology&WatershedManagement">Hydrology & Watershed Management</option> <option value="Surveying&Levelling-I">Surveying & Levelling-I</option>';
+            subjectOptions = '<option value="Agri implements">Agri implements</option><option value="Farm Power & Tractor Systems">Farm Power & Tractor Systems</option> <option value="Hydrology&WatershedManagement">Hydrology & Watershed Management</option> <option value="Surveying&Levelling-I">Surveying & Levelling-I</option>';
             break;
         case 'ibps':
             subjectOptions = '<option value="Agronomy">Agronomy</option><option value="Soil Science">Soil Science</option>';
@@ -564,7 +559,7 @@ const questionsBySubject = {
         // Add more questions for Farm Power Machiner as needed
     ],
 
-"Hydrology&WatershedManagement": [
+        "Hydrology&WatershedManagement": [
             {
                 "question": "The sheet of water flowing through a notch is called __________.",
                 "answers": [
@@ -749,6 +744,7 @@ const questionsBySubject = {
                 ]
             }
         ],
+    
     "Agronomy": [
         {
             question: "Question 1 for Agronomy",
