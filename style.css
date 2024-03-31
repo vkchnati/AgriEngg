@@ -1,389 +1,418 @@
+
 /* Styles for screens wider than 768px */
 @media (min-width: 768px) {
-  .container {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .box {
-    width: 20%;
-  }
-}
-
-/* Styles for screens smaller than 768px */
-@media (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
-
-  .box {
-    width: 50%;
-    margin: 10px auto;
-  }
-}
-
-
-/* Common styles for both nav and header */
-/* Navigation */
-/* Navigation */
-nav {
-  background-color: #4CAF50; /* Green background color */
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Center items vertically */
-  border-radius: 10px;
-}
-.logo {
-  height: 150px;
-  width: 60%;
-  margin-right: 20px;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 15px; /* Add padding to make clickable area larger */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth color transition */
-}
-
-
-
-/* Apply hover effect to the active link (selected material) */
-nav li a.active {
-  background-color: #028f3d; /* Lighter green for active link */
-  color: white;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-
-nav i {
-  margin-right: 5px; /* Spacing between icon and text */
-}
-
-/* Content Sections */
-.container {
-  width: 70%; /* Use a percentage for flexible width */
-  margin: 0 auto; /* Center content horizontally */
-  padding: 20px; /* Add some padding for better spacing */
-}
-
-.box {
-  margin-top: 10px; /* Adjust margin for better layout */
-  text-align: center;
-  width: calc(33% - 20px); /* Calculate width based on container width and margins */
-  float: left; /* Use float for responsive layout (consider flexbox/grid in future updates) */
-  border: 3px solid #000;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-}
-
-/* Images */
-.box img {
-  width: 100px; /* Set image width to 100% for responsiveness */
-  max-width: 100px; /* Set a maximum width to prevent overflow */
-  margin-bottom: 10px; /* Add some margin for better spacing */
-}
-
-/* Media Queries (add more as needed) */
-@media (max-width: 768px) {
-  .containerr {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: center; /* Center items horizontally */
+    .container {
+      width: 70%;
+      margin: 0 auto;
     }
   
     .box {
-      width: 80%; /* Adjust width to take up full width on smaller screens */
+      width: 20%;
     }
   }
-
-  * {
-    margin-right:20px;
-    margin-left:10px;
-          text-decoration: none;
-}
-#home-details a {
-          color: #12AD2B;
-      
-      }
-  .headco
-  {
-  color:#12AD2B
+  
+  /* Styles for screens smaller than 768px */
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+  
+    .box {
+      width: 50%;
+      margin: 10px auto;
+    }
   }
-  .latest
-  {
-  color:Blue;
-  }
-.unavailable {
-          color:maroon;
-      }
-.unavailablee {
-          color: red;
-          font-weight: bold;
-}
-.custom-box {
-  margin-right:10px;
-  margin-left:20px;
-  margin-top:5px;
-  text-align:center;
-    border: 2px solid #ccc;
+  
+  
+  /* Common styles for both nav and header */
+  /* Navigation */
+  /* Navigation */
+  nav {
+    background-color: #4CAF50; /* Green background color */
     padding: 10px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
-  }
-.email-box {
-  margin-right:20px;
-  margin-left:100px;
-  margin-top:5px;
-  text-align:center;
-    border: 2px solid #ccc;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
-  }
-
-.containerr {
     display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-justify-content: space-around; /* Distribute items evenly across the container */
-align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    border-radius: 10px;
   }
-
+  .logo {
+    height: 150px;
+    width: 60%;
+    margin-right: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px; /* Add padding to make clickable area larger */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+  
+  
+  
+  /* Apply hover effect to the active link (selected material) */
+  nav li a.active {
+    background-color: #028f3d; /* Lighter green for active link */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  nav i {
+    margin-right: 5px; /* Spacing between icon and text */
+  }
+  
+  /* Content Sections */
+  .container {
+    width: 70%; /* Use a percentage for flexible width */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px; /* Add some padding for better spacing */
+  }
+  
   .box {
-margin-top:5px;
-margin-left:70px;
-text-align:center;
-    width: 7cm;
-    height: 7cm;
-    border: 3px solid #000; /* border for visualization, you can adjust or remove it */
-    margin-right: 10px; /* adjust margin as needed */
+    margin-top: 10px; /* Adjust margin for better layout */
+    text-align: center;
+    width: calc(33% - 20px); /* Calculate width based on container width and margins */
+    float: left; /* Use float for responsive layout (consider flexbox/grid in future updates) */
+    border: 3px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
   }
-
-
-/*blinking*/
-@keyframes blink {
+  
+  /* Images */
+  .box img {
+    width: 100px; /* Set image width to 100% for responsiveness */
+    max-width: 100px; /* Set a maximum width to prevent overflow */
+    margin-bottom: 10px; /* Add some margin for better spacing */
+  }
+  
+  /* Media Queries (add more as needed) */
+  @media (max-width: 768px) {
+    .containerr {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+      }
+    
+      .box {
+        width: 80%; /* Adjust width to take up full width on smaller screens */
+      }
+    }
+  
+    * {
+      margin-right:20px;
+      margin-left:10px;
+            text-decoration: none;
+  }
+  #home-details a {
+            color: #12AD2B;
+        
+        }
+    .headco
+    {
+    color:#12AD2B
+    }
+    .latest
+    {
+    color:Blue;
+    }
+  .unavailable {
+            color:maroon;
+        }
+  .unavailablee {
+            color: red;
+            font-weight: bold;
+  }
+  .custom-box {
+    margin-right:10px;
+    margin-left:20px;
+    margin-top:5px;
+    text-align:center;
+      border: 2px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #f8f8f8;
+    }
+  .email-box {
+    margin-right:20px;
+    margin-left:100px;
+    margin-top:5px;
+    text-align:center;
+      border: 2px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #f8f8f8;
+    }
+  
+  .containerr {
+      display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  justify-content: space-around; /* Distribute items evenly across the container */
+  align-items: center; /* Center items vertically */
+    }
+  
+    .box {
+  margin-top:5px;
+  margin-left:70px;
+  text-align:center;
+      width: 7cm;
+      height: 7cm;
+      border: 3px solid #000; /* border for visualization, you can adjust or remove it */
+      margin-right: 10px; /* adjust margin as needed */
+    }
+  
+  
+  /*blinking*/
+  @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  
+    .blinking-text {
+      animation: blink 5s infinite;
+    color:red /*rgb(255, 0, 255)*/;
+    margin-left:20px;
+    }
+  
+  
+  
+  /* Apply blinking animation to the image */
+  @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
   }
-
-  .blinking-text {
+  
+  .blinking {
     animation: blink 2s infinite;
-  color:red /*rgb(255, 0, 255)*/;
-  margin-left:20px;
   }
-
-
-
-/* Apply blinking animation to the image */
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.blinking {
-  animation: blink 2s infinite;
-}
-/*Quiz CSS STARTED*/
-/* Add this to aviii.css */
-
-/* Target elements within the quiz container */
-.app {
-background-color:#fff;
-width: 90%;
-max-width: 600px;
-margin: 100px auto 0;
-border-radius: 10px;
-padding: 30px;
-}
-
-#quiz-detailss {
-  background-color:#001e4d;
-}
-#qbody{
-background-color:white;
-}
-#bg{
-background-color: #001e4d;
-}
-.app h1 {
-font-size: 25px;
-color: #001e4d;
-font-weight: 600;
-border-bottom: 1px solid #333;
-padding-bottom: 30px;
-}
-
-.quiz {
-padding: 20px 0;
-}
-
-.quiz h2 {
-font-size: 18px;
-color:#001e4d;
-font-weight: 600;
-}
-#qbody h3{
-text-align: center;
-}
-#bg p{
-color:white;
-text-align: center;
-font-size: 20px;
-}
-#bg h4{
-text-align: center;
-font-size: 20px;
-}
-
-#qbody p{
-font-size: 15px;
-font-style: bold;
-color:red;
-}
-
-.btn {
-background: #fff;
-color: #222;
-font-weight: 500;
-width: 100%;
-border: 1px solid #222;
-padding: 10px;
-margin: 10px 0;
-text-align: left;
-border-radius: 4px;
-cursor: pointer;
-transition: all 0.3s;
-}
-
-.btn:hover:not([disabled]) {
-background: #222;
-color: #fff;
-}
-.btn:disabled{
-cursor: no-drop;
-}
-
-#next-btn {
-background: #001e4d;
-color: #fff;
-font-weight: 500;
-width: 150px;
-border: 0;
-padding: 10px;
-margin: 20px auto 0;
-border-radius: 4px;
-cursor: pointer;
-display: block;
-}
-
-#quiz-details .correct {
-background: #9aeabc;
-}
-
-#quiz-details .incorrect {
-background: #ff9393;
-}
-.followus{
-  color: #fff;
-  text-align: center;
-  background-color: #12AD2B;/*hsl(237, 56%, 12%)*/
-  margin-right: 40px;
-  margin-left: 40px;
-  border-radius: 10px;
-}
-.footer__icon {
-  font-size: 1.5rem;
-  color: #fff;
-}
-/*Contact*/
-.contactcontainer {
+  /*Quiz CSS STARTED*/
+  /* Add this to aviii.css */
+  
+  /* Target elements within the quiz container */
+  .app {
+  background-color:#fff;
+  width: 90%;
   max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  }
+  
+  #quiz-detailss {
+    background-color:#001e4d;
+  }
+  #qbody{
+  background-color:white;
+  }
+  #bg{
+  background-color: #001e4d;
+  }
+  .app h1 {
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+  }
+  
+  .quiz {
+  padding: 20px 0;
+  }
+  
+  .quiz h2 {
+  font-size: 18px;
+  color:#001e4d;
+  font-weight: 600;
+  }
+  #qbody h3{
+  text-align: center;
+  }
+  #bg p{
+  color:white;
+  text-align: center;
+  font-size: 20px;
+  }
+  #bg h4{
+  text-align: center;
+  font-size: 20px;
+  }
+  
+  #qbody p{
+  font-size: 15px;
+  font-style: bold;
+  color:red;
+  }
+  
+  .btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
   border-radius: 4px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-#response {
-  margin-top: 20px;
-  font-weight: bold;
-}
-.search-container {
-  display: flex;
-  justify-content: flex-end;
+  transition: all 0.3s;
+  }
+  
+  .btn:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+  }
+  .btn:disabled{
+  cursor: no-drop;
+  }
+  
+  #next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
   padding: 10px;
-  position: relative; /* Add position relative to make absolute positioning work */
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  }
+  
+  #quiz-details .correct {
+  background: #9aeabc;
+  }
+  
+  #quiz-details .incorrect {
+  background: #ff9393;
+  }
+  .followus{
+    color: #fff;
+    text-align: center;
+    background-color: #12AD2B;/*hsl(237, 56%, 12%)*/
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+  }
+  .footer__icon {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  /*Contact*/
+  .contactcontainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #response {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    position: relative; /* Add position relative to make absolute positioning work */
+  }
+  
+  .search-container button {
+    margin-right: 200px; /* Adjust the margin-right value as needed */
+    height: fit-content;
+  }
+  
+  #search-bar {
+    margin-right: 10px; /* Adjust the margin-right value as needed */
+  }
+  
+  /* Adjust the position of the search container */
+  .search-container {
+    position: absolute;
+    right: 40px; /* Adjust the right position as needed */
+  }
+  table {
+    width: 70%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  /*materials-button*/
+  .materials-button {
+    display: block;
+    
+    border: none;
+    border-radius: 20px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.search-container button {
-  margin-right: 200px; /* Adjust the margin-right value as needed */
-  height: fit-content;
+.materials-button:hover {
+    background-color: #001e4d;
 }
 
-#search-bar {
-  margin-right: 10px; /* Adjust the margin-right value as needed */
+.materials-button:nth-of-type(2n) {
+    background-color: Black;
 }
 
-/* Adjust the position of the search container */
-.search-container {
-  position: absolute;
-  right: 40px; /* Adjust the right position as needed */
-}
-table {
-  width: 70%;
-  border-collapse: collapse;
+.materials-button:nth-of-type(3n) {
+    background-color: #f39c12;
 }
 
-table, th, td {
-  border: 1px solid black;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-}
-
-table th {
-  background-color: #f2f2f2;
+.materials-button:nth-of-type(4n) {
+    background-color: #e74c3c;
 }
