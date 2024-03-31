@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +26,7 @@
     <nav>
       <ul>
         <li><a href="#" onclick="showHome()"class="active">Home</a></li>
-        <li><a href="#" onclick="showMaterials()">Materials</a></li>
+        <li><a href="#" onclick="showMaterials()">Course Materials</a></li>
         <li><a href="#" onclick="openQuiz()" >Quiz</a></li>
         <li><a href="#" onclick="showContactDetails()">Contact</a></li>
       </ul>
@@ -74,7 +75,20 @@
 
 <div>
   <div id="materials-list" style="display: none;">
-    <h2>Available Materials</h2>
+   <br><br><br>
+      <a href="#" onclick="showbtech()"><button class="materials-button">JNTUK B.Tech Materials</button></a>
+    
+      <a href="#" onclick="showafo()"><button class="materials-button">AFO MCQ</button></a>
+     
+      <a href="#" onclick="showecet()"><button class="materials-button">E-CET MCQ</button></a>
+     
+      <a href="#" onclick="showpgcet()"><button class="materials-button">PG-CET MCQ</button></a>
+      <br>
+      <h3 class="blinking-text">AFO MCQ,E-CET,PG-CET MCQ PDFs are Not Will be  update As Earliest As Possible.Rest assured, we are working to update our offerings.</h3>
+  </div>
+  
+      <div id="btechlist" style="display: none;">       
+    <h2>JNTUK B.Tech Agricuture Available Materials</h2>
     <div class="search-container">
       <input type="text" id="search-bar" placeholder="Search materials">
       <button onclick="searchMaterials()">Search</button>
@@ -192,9 +206,45 @@
         <tr><td>
         Agricultural Extension Techniques and Business Management</td><td><button id="downloadAETBM">DOWNLOAD</button>
         </td></tr>		
-      
         </tbody>
     </table>
+            </div>
+            <div  id="ecetlist" style="display: none;">
+              <h2>E-CET MCQs</h2>
+            <table> 
+              <tbody>
+                <thead>
+                  <tr>
+                      <th>Material Name</th>
+                      <th>Action</th>
+                  </tr>
+                </thead>
+                <tr><td>Surveying & Leveling</td><td><button id="downloadsurveyecet">DOWNLOAD</button></td></tr>
+                <tr><td>
+                Agri Implements</td><td><button id="downloadSURVEY">DOWNLOAD</button>
+                </td></tr>
+                <tr><td>
+                 Tractor Systems</td><td><button id="downloadFMOH">DOWNLOAD</button>
+                </td></tr>
+                <tr><td>
+                Electrical Systems</td><td><button id="downloadES">DOWNLOAD</button> 
+                </td></tr>
+                <tr><td>
+                Properties and Strength of Material</td><td><button id="downloadPSM">DOWNLOAD</button>
+                </td></tr>
+                <tr><td>
+                Suface Water Hydrology</td><td><button id="downloadSWH">DOWNLOAD</button>
+                </td></tr>
+              </tbody>
+            </table>
+            </div>
+          
+            <div  id="pgcetlist" style="display: none;">
+
+            </div>
+            <div  id="afolist" style="display: none;">
+
+            </div>
   </div>
 <!--Quiz Section open-->
 <div id="quiz-details" style="display: none;">
@@ -293,6 +343,10 @@
 </div>
 <br>
 <div class="followus">
+
+  </div>
+  
+<footer>
   <h4>Follow Us  On Social Media</h4>
   <div class="footer__sociall">
       <a href="mailto:agriengg.noreply@gmail.com" class="footer__icon"><i class='bx bxl-gmail' target="_blank"></i></a>
@@ -301,14 +355,10 @@
       </a>
       <a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02" class="footer__icon" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
   </div>
-  </div>
-  
-<footer>
-
 <p>Agricultural Engineering &copy; 2024-All Rights Reserved</p>
 </footer>
 <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="script.js"></script>
+<script src="nagr.js"></script>
 <script src="aviii.js"></script>
   <script>
        const form = document.querySelector('.contact_form');
