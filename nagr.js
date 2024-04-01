@@ -240,7 +240,35 @@ downloadTSystemsButton.addEventListener("click", () => {
   downloadFile(ecetFileUrls.TSystems, "tractorsys.pdf");
 });
 
+//
+const downloadpgpqpecetButton = document.getElementById("downloadpgpqpecet");
+const downloadpgpqpecettButton = document.getElementById("downloadpgpqpecett");
+const downloadpgpqpecetttButton = document.getElementById("downloadpgpqpecettt");
+const downloadpgpqpecettttButton = document.getElementById("downloadpgpqpecetttt");
+const downloadpgpqpecetttttButton = document.getElementById("downloadpgpqpecettttt");
 
+const pgcetFileUrls = {
+  pgpqpecet: "FT_QP_23.pdf",
+  pgpqpecett: "FT_QP_22.pdf",
+  pgpqpecettt: "FT_QP_21.pdf",
+  pgpqpecetttt: "FT_QP_17.pdf",
+  pgpqpecettttt: "FT_QP_16.pdf"
+};
+downloadpgpqpecetButton.addEventListener("click", () => {
+  downloadFile(pgcetFileUrls.pgpqpecett, "FT_QP_23.pdf");
+});
+downloadpgpqpecettButton.addEventListener("click", () => {
+  downloadFile(pgcetFileUrls.pgpqpecett, "FT_QP_22.pdf");
+});
+downloadpgpqpecetttButton.addEventListener("click", () => {
+  downloadFile(pgcetFileUrls.pgpqpecettt, "FT_QP_21.pdf");
+});
+downloadpgpqpecettttButton.addEventListener("click", () => {
+  downloadFile(pgcetFileUrls.pgpqpecetttt, "FT_QP_17.pdf");
+});
+downloadpgpqpecetttttButton.addEventListener("click", () => {
+  downloadFile(pgcetFileUrls.pgpqpecettttt, "FT_QP_16.pdf");
+});
 
 
 // Function to download a file
