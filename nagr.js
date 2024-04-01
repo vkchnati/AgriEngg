@@ -196,28 +196,52 @@ downloadAIBUButton.addEventListener("click", () => {
   }
 //ecet
 const downloadSurveyECETButton = document.getElementById("downloadsurveyecet");
-const downloadAgriImplementsButton = document.getElementById("downloadAgriImplements");
-const downloadTractorSystemsButton = document.getElementById("downloadTractorSystems");
+const downloadAgriImpECETButton = document.getElementById("downloadAgriImp");
+const downloadTSystemsButton = document.getElementById("downloadTrSystems");
+const downloadpqpecetButton = document.getElementById("downloadpqpecet");
+const downloadpqpecettButton = document.getElementById("downloadpqpecett");
+const downloadpqpecetttButton = document.getElementById("downloadpqpecettt");
+const downloadpqpecettttButton = document.getElementById("downloadpqpecetttt");
+
+
+
 
 // Define the file URLs for ECET materials
 const ecetFileUrls = {
   SurveyECET: "Surveying&levelingecet.pdf",
-  AgriImplements: "AgriImplements.pdf",
-  TractorSystems: "TractorSystems.pdf"
+  AgriImpECET: "AGIMPLEMENT.pdf",
+  pqpecet: "ACEQP2020.pdf",
+  pqpecett: "ACE_QP_23.pdf",
+  pqpecettt: "ACE_QP_21.pdf",
+  pqpecetttt: "ACE_QP_22.pdf",
+  TSystems: "tractorsys.pdf"
 };
 
 // Add event listeners to the download buttons
 downloadSurveyECETButton.addEventListener("click", () => {
   downloadFile(ecetFileUrls.SurveyECET, "Surveying&levelingecet.pdf");
 });
-
-downloadAgriImplementsButton.addEventListener("click", () => {
-  downloadFile(ecetFileUrls.AgriImplements, "AgriImplements.pdf");
+downloadpqpecetButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.pqpecet, "ACEQP2020.pdf");
+});
+downloadpqpecettButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.pqpecett, "ACE_QP_23.pdf");
+});
+downloadpqpecetttButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.pqpecettt, "ACE_QP_21.pdf");
+});
+downloadpqpecettttButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.pqpecetttt, "ACE_QP_22.pdf");
+});
+downloadAgriImpECETButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.AgriImpECET, "AGIMPLEMENT.pdf");
+});
+downloadTSystemsButton.addEventListener("click", () => {
+  downloadFile(ecetFileUrls.TSystems, "tractorsys.pdf");
 });
 
-downloadTractorSystemsButton.addEventListener("click", () => {
-  downloadFile(ecetFileUrls.TractorSystems, "TractorSystems.pdf");
-});
+
+
 
 // Function to download a file
 function downloadFile(fileUrl, fileName) {
@@ -299,6 +323,7 @@ function showMaterials() {
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("afolist").style.display = "none";
   document.getElementById("pgcetlist").style.display = "none"; 
+  history.pushState({ page: "materials" }, "Materials", "#materials");
 }
 
 function openQuiz() {
@@ -310,6 +335,7 @@ function openQuiz() {
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("afolist").style.display = "none";
   document.getElementById("pgcetlist").style.display = "none"; 
+  history.pushState({ page: "quiz" }, "Quiz", "#quiz");
 }
 
 function showContactDetails() {
@@ -321,6 +347,14 @@ function showContactDetails() {
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("afolist").style.display = "none";
   document.getElementById("pgcetlist").style.display = "none"; 
+  history.pushState({ page: "contact" }, "Contact", "#contact");
+  var navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach(function(link) {
+    link.classList.remove("active");
+  });
+
+  // Add the "active" class to the clicked link
+  document.querySelector("nav a[href='#contact']").classList.add("active");
 }
 
 function showHome() {
@@ -332,6 +366,7 @@ function showHome() {
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("afolist").style.display = "none";
   document.getElementById("pgcetlist").style.display = "none"; 
+  history.pushState({ page: "home" }, "Home", "#home");
 }
 function showbtech() {
   document.getElementById("btechlist").style.display = "block";
@@ -374,3 +409,34 @@ function showpgcet() {
   document.getElementById("contact-details").style.display = "none";
 }
 window.onload = showHome;
+
+
+window.onpopstate = function(event) {
+  if (event.state) {
+    const page = event.state.page;
+    if (page === "materials") {
+      showMaterials();
+    } else if (page === "quiz") {
+      openQuiz();
+    } else if (page === "contact") {
+      showContactDetails();
+    } else {
+      showHome();
+    }
+  } else {
+    showHome(); // Handle initial load or if there's no state
+  }
+};
+
+window.onload = function() {
+  const hash = window.location.hash;
+  if (hash === "#materials") {
+    showMaterials();
+  } else if (hash === "#quiz") {
+    openQuiz();
+  } else if (hash === "#contact") {
+    showContactDetails();
+  } else {
+    showHome();
+  }
+};
