@@ -40,6 +40,7 @@
     </div>
 
     <div>
+<img src="ugadi.jpg" alt="Additional Image" id="additionalImage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; width: 600px; height: 600px;">
       <h2 class="latest">Latest News</h2>
       <p>Stay informed with the latest advancements in agricultural engineering and related research.</p>
       <ul>
@@ -428,6 +429,16 @@
       }
           // Add event listener
       form.addEventListener('submit', sendMsg);
+
+          // Add event listener
+          function showAdditionalImage() {
+      var additionalImage = document.getElementById('additionalImage');
+      additionalImage.style.display = 'block';
+      setTimeout(function() {
+        additionalImage.style.display = 'none';
+      }, 4500); // 45 seconds in milliseconds
+    }
+    setTimeout(showAdditionalImage, 100);
   </script>
 </body>
 </html>
