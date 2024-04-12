@@ -416,3 +416,12 @@
 .materials-button:nth-of-type(4n) {
     background-color: #e74c3c;
 }
+.blur {
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+  pointer-events: none; /* Prevent interaction with blurred elements */
+}
+
+.upi{
+  width: 8cm; /* Set the width of the QR code */
+  height: 8cm; /* Set the height of the QR code */
+}
