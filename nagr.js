@@ -345,6 +345,7 @@ function downloadFile(fileUrl, fileName) {
 function showMaterials() {
   document.getElementById("materials-list").style.display = "block";
   document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("register").style.display = "none";
   document.getElementById("home-details").style.display = "none";
   document.getElementById("contact-details").style.display = "none";
   document.getElementById("btechlist").style.display = "none";
@@ -357,6 +358,7 @@ function showMaterials() {
 function openQuiz() {
   document.getElementById("materials-list").style.display = "none";
   document.getElementById("quiz-details").style.display = "block";
+  document.getElementById("register").style.display = "none";
   document.getElementById("home-details").style.display = "none";
   document.getElementById("contact-details").style.display = "none";
   document.getElementById("btechlist").style.display = "none";
@@ -369,6 +371,7 @@ function openQuiz() {
 function showContactDetails() {
   document.getElementById("materials-list").style.display = "none";
   document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("register").style.display = "none";
   document.getElementById("home-details").style.display = "none";
   document.getElementById("contact-details").style.display = "block";
   document.getElementById("btechlist").style.display = "none";
@@ -388,6 +391,7 @@ function showContactDetails() {
 function showHome() {
   document.getElementById("materials-list").style.display = "none";
   document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("register").style.display = "none";
   document.getElementById("home-details").style.display = "block";
   document.getElementById("contact-details").style.display = "none";
   document.getElementById("btechlist").style.display = "none";
@@ -397,7 +401,30 @@ function showHome() {
   history.pushState({ page: "home" }, "Home", "#home");
 }
 function showbtech() {
-  document.getElementById("btechlist").style.display = "block";
+  var userId = prompt("Enter your user ID:");
+  var securityCode = prompt("Enter the security code:");
+
+  // Validate user ID and security code
+  if ((userId === "vkachanti" && securityCode === "agriengg") || (userId === "vamsi" && securityCode === "vamsi")) {
+    // If both are correct, show the materials list
+    document.getElementById("materials-list").style.display = "block";
+    document.getElementById("btechlist").style.display = "block";
+  } else {
+    // If not, inform the user to do payment
+    alert("Please make the payment to access the materials.");
+  }
+  
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
+  document.getElementById("materials-list").style.display = "none";
+  document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("home-details").style.display = "none";
+  document.getElementById("contact-details").style.display = "none";
+}
+function getregister(){
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("register").style.display = "block";
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("afolist").style.display = "none";
   document.getElementById("pgcetlist").style.display = "none"; 
@@ -409,6 +436,7 @@ function showbtech() {
 function showecet() {
   document.getElementById("btechlist").style.display = "none";
   document.getElementById("ecetlist").style.display = "block";
+  document.getElementById("register").style.display = "none";
   document.getElementById("afolist").style.display = "none";
   document.getElementById("pgcetlist").style.display = "none"; 
   document.getElementById("materials-list").style.display = "none";
@@ -419,6 +447,7 @@ function showecet() {
 function showafo() {
   document.getElementById("btechlist").style.display = "none";
   document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("register").style.display = "none";
   document.getElementById("afolist").style.display = "block";
   document.getElementById("pgcetlist").style.display = "none";
   document.getElementById("materials-list").style.display = "none";
@@ -429,6 +458,7 @@ function showafo() {
 function showpgcet() {
   document.getElementById("btechlist").style.display = "none";
   document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("register").style.display = "none";
   document.getElementById("pgcetlist").style.display = "block";
   document.getElementById("afolist").style.display = "none"; 
   document.getElementById("materials-list").style.display = "none";
