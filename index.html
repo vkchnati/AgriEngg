@@ -40,7 +40,7 @@
     </div>
 
     <div>
-<!--<img src="ugadi.jpg" alt="Additional Image" id="additionalImage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; width: 600px; height: 600px;">-->
+    <!-- <img src="ugadi.jpg" alt="Additional Image" id="additionalImage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; width: 600px; height: 600px;">-->
       <h2 class="latest">Latest News</h2>
       <p>Stay informed with the latest advancements in agricultural engineering and related research.</p>
       <ul>
@@ -76,9 +76,18 @@
 </div>
 
 <div>
-  <div id="materials-list" style="display: none;">
+ 
+  
    <br><br><br>
-      <a href="#" onclick="showbtech()"><button class="materials-button">JNTUK B.Tech Materials</button></a>
+   <div id="materials-list" style="display: none;">
+   <!-- <div id="security-code">
+      <label for="code">Enter security code:</label>
+      <input type="password" id="code">
+      <button onclick="checkSecurityCode()"></button>
+    </div>-->
+     <a href="#" onclick="showbtech()"><button class="materials-button">JNTUK B.Tech Materials</button></a>
+
+     <a href="#" onclick="getregister()"><button class="materials-button">Click here to get User Id</button></a>
     
       <a href="#" onclick="showafo()"><button class="materials-button">AFO MCQ</button></a>
      
@@ -88,12 +97,12 @@
       <br>
       <h3 class="blinking-text">AFO MCQ PDFs are Not Will be  update As Earliest As Possible.Rest assured, we are working to update our offerings.</h3>
   </div>
-  
+ 
       <div id="btechlist" style="display: none;">    
         <br>
         <br>
         <button style="border-radius: 20px; color: white; background-color: #001e4d;">
-          <a href="#materials" onclick="showMaterials()" style="text-decoration: none; color: inherit; display: block;"><b>Go Back</b></a>
+          <a href="#materials" onclick="showMaterials()" style="text-decoration: none; color: inherit; display: block;"><button>Go Back</button></a>
         </button><br>
     <h2>JNTUK B.Tech Agricuture Available Materials</h2>
     <div class="search-container">
@@ -216,7 +225,38 @@
         </tbody>
     </table>
             </div>
-           
+            <!--Register ID-->
+            <div id="register" style="display: none;">
+              <a href="#materials" onclick="showMaterials()" style="text-decoration: none; color: inherit; display: block;"><button>Go Back</button></a>
+              <div class="contactcontainer">
+                <h2>Register</h2>
+                <form id="contactForm" class="contact_form" action="#">
+                  <label for="name">Your Name:</label>
+                  <input type="text" class="uname" name="name" required><br>
+            
+                  <label for="email">Your Email:</label>
+                  <input type="email" class="email" name="email" required><br>
+            
+                  <label for="subject">Mobile No:</label>
+                  <input type="text" id="subject" name="subject" required><br>
+                  <a class="blinking-text">Click on Image To Get QR</a>
+                  <a Style="color:red;">Pay &#8377;49 to Get Access</a>
+                  <br>
+                  <img src="upii.jpg" alt="UPI" class="upi" id="upi" style="filter: blur(5px); cursor: pointer;">  <h1>OR</h1>
+            
+                  <h2>UPI ID:agritech@freecharge</h2>
+            
+                  <label for="message">UTR NO:</label>
+                  <textarea class="message" name="message" required></textarea><br>
+            
+                  <h2 class="blinking-text">Upon successful completion of your payment within 24 hours, your login credentials (user ID and password) will be sent to your registered email address or phone number.</h2>
+            
+                  <button type="submit">Send</button>
+                </form>
+                <div id="response"></div>
+              </div>
+            </div>
+              <!--Register ID close-->
             <div  id="ecetlist" style="display: none;">
               <br>
               <br>
@@ -342,13 +382,11 @@
 				</div>
 			</div>
 		</div>	
-  
 	</div>
 	<h2></h2>
   <br>
 <h6></h6>
 </div>
-
 </div>
 <!--Quiz Section Ended-->
 <!--Contact-->
@@ -357,9 +395,7 @@
    <H1><img src="contact.png">Meet Us<br>Share Your Excitement With Us</h2>
 </div>
 <div class="container">
-
 <div class="containerr">
-
         <div class="contactcontainer">
           <h2>Contact Us</h2>
           <form id="contactForm" class="contact_form" action="#">
@@ -384,9 +420,7 @@
 </div>
 <br>
 <div class="followus">
-
   </div>
-  
 <footer>
   <h4>Follow Us  On Social Media</h4>
   <div class="footer__sociall">
@@ -402,7 +436,7 @@
 <script src="nagr.js"></script>
 <script src="aviii.js"></script>
   <script>
-       const form = document.querySelector('.contact_form');
+     const form = document.querySelector('.contact_form');
       function sendMsg(e) {
           e.preventDefault();
           const name = document.querySelector('.uname').value,
@@ -430,7 +464,6 @@
       }
           // Add event listener
       form.addEventListener('submit', sendMsg);
-
           // Add event listener
           function showAdditionalImage() {
       var additionalImage = document.getElementById('additionalImage');
@@ -440,6 +473,11 @@
       }, 4500); // 45 seconds in milliseconds
     }
     setTimeout(showAdditionalImage, 100);
+    const upiImage = document.getElementById("upi");
+
+upiImage.addEventListener("click", function() {
+  this.style.filter = "none"; // Remove blur on click
+});
   </script>
 </body>
 </html>
