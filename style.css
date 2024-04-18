@@ -425,3 +425,9 @@
   width: 8cm; /* Set the width of the QR code */
   height: 8cm; /* Set the height of the QR code */
 }
+.jntuk{
+  width: 700px;
+  height: 300%;
+  border: 4px solid ;
+  border-color: red rgb(240 30 50 / 70%) green ;
+}
