@@ -405,7 +405,7 @@ function showbtech() {
   var securityCode = prompt("Enter the security code:");
 
   // Validate user ID and security code
-  if ((userId === "vkachanti" && securityCode === "agriengg@1") || (userId === "vamsi" && securityCode === "vamsi@1")|| (userId === "saida" && securityCode === "96403")) {
+  if ((userId === "vkachanti" && securityCode === "agriengg@1") || (userId === "saida" && securityCode === "96403")) {
     // If both are correct, show the materials list
     document.getElementById("materials-list").style.display = "block";
     document.getElementById("btechlist").style.display = "block";
