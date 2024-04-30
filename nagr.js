@@ -402,7 +402,7 @@ function showHome() {
 }
 function showbtech() {
   var userId = prompt("Enter your user ID:");
-  var securityCode = prompt("Enter the security code:");
+  var securityCode = prompt("Enter the PASSWORD:");
 
   // Validate user ID and security code
   if ((userId === "vkachanti" && securityCode === "agriengg@1") || (userId === "saida" && securityCode === "96403")|| (userId === "8309127255" && securityCode === "83091")||(userId === "7993979558" && securityCode === "79939")) {
