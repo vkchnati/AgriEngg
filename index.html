@@ -452,6 +452,27 @@
 <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="nagr.js"></script>
 <script src="aviii.js"></script>
+<script>
+      const openButtons = document.querySelectorAll('.open-button');
+      const viewerContainers = document.querySelectorAll('.viewer-container');
+  
+      // Function to load the PDF in the viewer
+      function loadPdf(documentId, containerId) {
+        CloudPDF({ documentId, darkMode: true }, document.getElementById(containerId)).then((instance) => {});
+      }
+  
+      openButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+          const documentId = button.getAttribute('data-document-id');
+          const containerId = `viewer${index + 1}`;
+          loadPdf(documentId, containerId);
+          viewerContainers.forEach(container => {
+            container.style.display = 'none'; // Hide all viewer containers
+          });
+          document.getElementById(containerId).style.display = 'block'; // Display the selected viewer container
+        });
+      });
+    </script>
   <script>
      const form = document.querySelector('.contact_form');
       function sendMsg(e) {
