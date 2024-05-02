@@ -498,3 +498,28 @@ window.onload = function() {
     showHome();
   }
 };
+function showjntukpqp() {
+  // Check if the papers are available (replace this condition with your logic)
+  var papersAvailable = false;
+
+  if (papersAvailable) {
+    // If papers are available, do something (e.g., redirect to another page)
+    window.location.href = "papers-page.html";
+  } else {
+    // If papers are not available, display a message
+    alert("Currently unavailable. Please try again later.");
+  }
+}
+
+function showdiplomamaterils() {
+  // Check if the papers are available (replace this condition with your logic)
+  var papersAvailable = false;
+
+  if (papersAvailable) {
+    // If papers are available, do something (e.g., redirect to another page)
+    window.location.href = "papers-page.html";
+  } else {
+    // If papers are not available, display a message
+    alert("Currently unavailable. Please try again later.");
+  }
+}
