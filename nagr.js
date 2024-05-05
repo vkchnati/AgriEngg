@@ -37,7 +37,6 @@ const downloadAIBUButton = document.getElementById("downloadAIBU");
 
 
 
-
   const fileUrls = {
         GWH: "GWH.pdf",
   ES: "Electrical Systems.pdf",
@@ -77,9 +76,22 @@ const downloadAIBUButton = document.getElementById("downloadAIBU");
   PVTS: "PVT&S.pdf"
   };
 
-  downloadGWHButton.addEventListener("click", () => {
+  function embedFileWithObjectTag(fileUrl, containerId) {
+    const objectContainer = document.getElementById(containerId);
+    objectContainer.innerHTML = `<object data="${fileUrl}" type="application/pdf" width="100%" height="600px"></object>`;
+}
+
+
+
+downloadGWHButton.addEventListener("click", () => {
+    embedFileWithObjectTag(fileUrls.GWH, "embedContainer");
+});
+
+
+
+ /* downloadGWHButton.addEventListener("click", () => {
     downloadFile(fileUrls.GWH, "GWH.pdf");
-  });
+  });*/
  downloadESButton.addEventListener("click", () => {
     downloadFile(fileUrls.ES, "Electrical Systems.pdf");
   });
@@ -193,6 +205,10 @@ downloadAIBUButton.addEventListener("click", () => {
     link.href = fileUrl;
     link.download = fileName;
     link.click();
+  }
+  //disableing download option 
+  function openFile(fileUrl) {
+    window.open(fileUrl, '_blank');
   }
 //ecet
 const downloadSurveyECETButton = document.getElementById("downloadsurveyecet");
@@ -351,6 +367,7 @@ function showMaterials() {
   document.getElementById("btechlist").style.display = "none";
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("afolist").style.display = "none";
+  document.getElementById("").style.display = "none";
   document.getElementById("pgcetlist").style.display = "none"; 
   history.pushState({ page: "materials" }, "Materials", "#materials");
 }
@@ -400,19 +417,9 @@ function showHome() {
   document.getElementById("pgcetlist").style.display = "none"; 
   history.pushState({ page: "home" }, "Home", "#home");
 }
-// function showbtech() {
-//   var userId = prompt("Enter your user ID:");
-//   var securityCode = prompt("Enter the PASSWORD:");
 
-//   // Validate user ID and security code
-//   if ((userId === "vkachanti" && securityCode === "agriengg123") || (userId === "saida" && securityCode === "96403")|| (userId === "8309127255" && securityCode === "83091")||(userId === "7993979558" && securityCode === "79939")) {
-//     // If both are correct, show the materials list
-//     document.getElementById("materials-list").style.display = "block";
-//     document.getElementById("btechlist").style.display = "block";
-//   } else {
-//     // If not, inform the user to do payment
-//     alert("Please make the payment to access the materials.");
-//   }
+// 
+// JavaScript
 function showLoginForm() {
   // Hide materials list and display login form
   document.getElementById("btechlist").style.display = "none";
@@ -455,15 +462,6 @@ function validateLogin() {
   }
 }
 
-  
-  document.getElementById("ecetlist").style.display = "none";
-  document.getElementById("afolist").style.display = "none";
-  document.getElementById("pgcetlist").style.display = "none"; 
-  document.getElementById("materials-list").style.display = "none";
-  document.getElementById("quiz-details").style.display = "none";
-  document.getElementById("home-details").style.display = "none";
-  document.getElementById("contact-details").style.display = "none";
-}
 function getregister(){
   document.getElementById("btechlist").style.display = "none";
   document.getElementById("register").style.display = "block";
@@ -540,6 +538,22 @@ window.onload = function() {
     showHome();
   }
 };
+
+const pdfObject = document.getElementById("pdf-viewer");
+
+// Disable right-click context menu
+document.addEventListener('contextmenu', (event) => {
+  event.preventDefault();
+});
+
+// Try to disable download option from toolbar (limited effectiveness)
+if (pdfObject.contentDocument && pdfObject.contentDocument.defaultView) {
+  try {
+    pdfObject.contentDocument.defaultView.document.execCommand("SaveAs", false, null); // Disable "Save As"
+  } catch (error) {
+    console.error("Disabling download might be restricted by browser:", error);
+  }
+}
 function showjntukpqp() {
   // Check if the papers are available (replace this condition with your logic)
   var papersAvailable = false;
