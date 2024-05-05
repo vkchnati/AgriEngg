@@ -449,7 +449,7 @@ function validateLogin() {
 
   // Add your login validation logic here
   // For demonstration purposes, assuming the validation always fails
-  if ((userId === "vkachanti" && securityCode === "agriengg")|| (userId === "vamsi" && securityCode === "vamsi") || 
+  if ((userId === "vkachanti" && securityCode === "agriengg")|| (userId === "saida" && securityCode === "96403") || 
         (userId === "8309127255" && securityCode === "83091") || 
        (userId === "7993979558" && securityCode === "79939")) {
     // If login succeeds, display the B.Tech materials list
