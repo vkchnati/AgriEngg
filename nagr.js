@@ -400,19 +400,61 @@ function showHome() {
   document.getElementById("pgcetlist").style.display = "none"; 
   history.pushState({ page: "home" }, "Home", "#home");
 }
-function showbtech() {
-  var userId = prompt("Enter your user ID:");
-  var securityCode = prompt("Enter the PASSWORD:");
+// function showbtech() {
+//   var userId = prompt("Enter your user ID:");
+//   var securityCode = prompt("Enter the PASSWORD:");
 
-  // Validate user ID and security code
-  if ((userId === "vkachanti" && securityCode === "agriengg123") || (userId === "saida" && securityCode === "96403")|| (userId === "8309127255" && securityCode === "83091")||(userId === "7993979558" && securityCode === "79939")) {
-    // If both are correct, show the materials list
-    document.getElementById("materials-list").style.display = "block";
-    document.getElementById("btechlist").style.display = "block";
+//   // Validate user ID and security code
+//   if ((userId === "vkachanti" && securityCode === "agriengg123") || (userId === "saida" && securityCode === "96403")|| (userId === "8309127255" && securityCode === "83091")||(userId === "7993979558" && securityCode === "79939")) {
+//     // If both are correct, show the materials list
+//     document.getElementById("materials-list").style.display = "block";
+//     document.getElementById("btechlist").style.display = "block";
+//   } else {
+//     // If not, inform the user to do payment
+//     alert("Please make the payment to access the materials.");
+//   }
+function showLoginForm() {
+  // Hide materials list and display login form
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("login-form-container").style.display = "block";
+}
+
+function showBtechList() {
+  // Hide login form and display materials list
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
+  document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("home-details").style.display = "none";
+  document.getElementById("contact-details").style.display = "none";
+  document.getElementById("materials-list").style.display = "none";
+  document.getElementById("login-form-container").style.display = "none";
+  document.getElementById("btechlist").style.display = "block";
+}
+
+function showRegistrationForm() {
+  // Implement your logic to show the registration form here
+}
+
+function validateLogin() {
+  var userId = document.getElementById("userId").value;
+  var securityCode = document.getElementById("securityCode").value;
+
+  // Add your login validation logic here
+  // For demonstration purposes, assuming the validation always fails
+  if ((userId === "vkachanti" && securityCode === "agriengg")|| (userId === "vamsi" && securityCode === "vamsi") || 
+        (userId === "8309127255" && securityCode === "83091") || 
+       (userId === "7993979558" && securityCode === "79939")) {
+    // If login succeeds, display the B.Tech materials list
+    showBtechList();
+    document.getElementById("login-message").style.display = "none";
   } else {
-    // If not, inform the user to do payment
-    alert("Please make the payment to access the materials.");
+    // If login fails, display error message
+    document.getElementById("login-message").innerText = "Please enter the correct user ID and password.";
+    document.getElementById("login-message").style.display = "block";
   }
+}
+
   
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("afolist").style.display = "none";
