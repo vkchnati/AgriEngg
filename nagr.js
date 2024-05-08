@@ -451,7 +451,7 @@ function validateLogin() {
   // For demonstration purposes, assuming the validation always fails
   if ((userId === "vkachanti" && securityCode === "agriengg")|| (userId === "saida" && securityCode === "96403") || 
         (userId === "8309127255" && securityCode === "83091") ||
-      (userId === "19JQ1A3528" && securityCode === "12345")||
+      (userId === "19JQ1A3528" && securityCode === "12345")||(userId === "Mohith8472" && securityCode === "Chandana@123")||
        (userId === "7993979558" && securityCode === "79939")) {
     // If login succeeds, display the B.Tech materials list
     showBtechList();
