@@ -453,7 +453,7 @@ function validateLogin() {
         (userId === "8309127255" && securityCode === "83091") ||
       (userId === "19JQ1A3528" && securityCode === "12345")||(userId === "Mohith8472" && securityCode === "Chandana@123")||
        (userId === "7993979558" && securityCode === "79939") || (userId === "Aravind" && securityCode === "Aravind@123")||(userId === "7993979558" && securityCode === "79939") || 
-       (userId === "Prasad@2004" && securityCode === "Chinni@143")) {
+       (userId === "Prasad@2004" && securityCode === "Chinni@143")||(userId === "Jayasri" && securityCode === "jayasri237")) {
     // If login succeeds, display the B.Tech materials list
     showBtechList();
     document.getElementById("login-message").style.display = "none";
