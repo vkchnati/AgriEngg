@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AgriConnects_Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    footer {
+      background-color: #001e4d; /* Adjust the color as needed */
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      bottom: 0;
+      width: 100%;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .viewer-container{
+      display: none;
+    }
+    </style>
+</head>
+<body>
+  <img src="agrilogo.png" alt="Logo" class="logo">
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showHome()">Home</a></li>
+        <li><a href="#materials" onclick="showMaterials()">Course Materials</a></li>
+        <li><a href="#" onclick="openQuiz()" >Quiz</a></li>
+        <!-- <li><a href="#" onclick="showContactDetails()">Contact</a></li> -->
+        <li><a href="mailll.html" onclick="return confirmNavigation()">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+<br>
+  <button style="border-radius: 20px; color: white;background-color: #001e4d;">
+    <a href="index.html"  style="text-decoration: none; color: inherit; display: block;"><b>Go Back </b></a>
+  </button><br>
+<div class="container">
+    <div class="containerr">
+        <div class="contactcontainer">
+            <h2>Contact Us</h2>
+            <form id="contactFormclient" class="clientcontact_form" action="#">
+                <label for="name">Your Name:</label>
+                <input type="text" class="uname" name="name" required><br>
+
+                <label for="email">Your Email:</label>
+                <input type="email" class="email" name="email" required><br>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required><br>
+
+                <label for="message">Your Message</label>
+                <textarea class="message" name="message" required></textarea><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    const formClient = document.getElementById('contactFormclient');
+
+    formClient.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.querySelector('.uname').value;
+        const email = document.querySelector('.email').value;
+        const subject = document.querySelector('#subject').value;
+        const message = document.querySelector('.message').value;
+
+        Email.send({
+            SecureToken: "064f92f8-c0fc-46cb-bdfe-15370a23b630",
+            To: 'agriengg.noreply@gmail.com',
+            From: "agriengg.noreply@gmail.com",
+            ReplyTo: email,
+            Subject: subject,
+            Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
+        }).then(
+            response => {
+                if (response == 'OK') {
+                    alert("Message sent successfully!");
+                    formClient.reset();
+                } else {
+                    throw new Error(response);
+                }
+            }
+        ).catch(
+            error => alert("Error: " + error)
+        );
+    });
+</script>
+</body>
+</html>
