@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>AgriConnects</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+  
+ </head>
+ <body>
+  
+  <header>
+    <img src="AgriConnects.jpg" alt="AgriConnects Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
+        <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Course Materials</a></li>
+        <li><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
+        <li><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Material Section -->
+  <!--MAterial Content  -->
+  <br>
+    <div id="materials-list">
+                <h2 style="color: darkslateblue;">New users can gain access to sign up for an account and obtain JNTUK B.Tech materials with four months validation for a payment of ₹49. <a href="#" onclick="getregister()"><button class="materials-button">Click here to get User Id</button></a> </h2><br><br>
+                <a href="#" onclick="showLoginForm()"><button class="materials-button">JNTUK B.Tech Materials</button></a>
+                <div id="login-form-container" style="display: none;">
+                <div id="login-message" style="color: red; display: none;">Please make the payment to access the materials.</div>
+                <form id="login-form">
+                    <label for="userId">User ID:</label><br>
+                    <input type="text" id="userId" name="userId"><br>
+                    <label for="securityCode">Password:</label><br>
+                    <input type="password" id="securityCode" name="securityCode"><br><br>
+                    <button type="button" onclick="validateLogin()">Login</button>
+                    <br>
+                <button <a href="#" onclick="getregister()">Register Now</a></<button>
+            <button onclick="window.location.href='mailto:agriengg.noreply@gmail.com?subject=Forgot%20Password%2C%20Reset%20ASAP'">
+                <h6>If you Forgot PASSWORD, Send Mail to <a href="mailto:agriengg.noreply@gmail.com" class="footer__icon" target="_blank"><i class='bx bxl-gmail'></i></a></h6>
+            </button><br><br>
+                </form>
+                </div>
+                <br><br><a href="#" onclick="showdiplomamaterils()"><button class="materials-button">Diploma Agri Engg Materials</button></a><br><br>
+            <a href="#" onclick="showjntukpqp()"><button class="materials-button">JNTUK B.Tech Previous Question Papers</button></a><br><br>
+            <a href="#" onclick="getregister()"><button class="materials-button">Click here to get User Id</button></a><br><br>
+            <a href="#" onclick="showafo()"><button class="materials-button">AFO MCQ</button></a><br><br>
+            <a href="#" onclick="showecet()"><button class="materials-button">E-CET MCQ</button></a><br><br>
+            <a href="#" onclick="showpgcet()"><button class="materials-button">PG-CET MCQ</button></a><br>
+            <h3 class="blinking-text">AFO MCQ PDFs are Not Will be  update As Earliest As Possible.Rest assured, we are working to update our offerings.</h3>
+    </div>
+    <div id="embedContainer">
+      <div id="btechlist" style="display: none;">    
+      
+        <br>
+        <br>
+        <button style="border-radius: 20px; color: white;background-color: #001e4d;">
+          <a href="IndexAgrMaterial.html" style="text-decoration: none; color: inherit; display: block;"><b>Go Back </b></a>
+        </button><br>
+        <h2>JNTUK B.Tech Agricuture Available Materials</h2>
+        <div class="search-container">
+          <input type="text" id="search-bar" placeholder="Search materials">
+          <button onclick="searchMaterials()">Search</button>
+        </div>
+            <br>
+            <br>
+            <br>
+            <div id="pdf-container">
+      
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Material Name</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>  
+                      <!-- Add more rows as needed -->
+                  <td>Maths-III</td><td><button  style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="6a8ef2a2-a3d6-4869-bbc5-1daa9728fd1e">open</button></td></tr>
+                <tr><td>Surveying</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="1042f6d1-c0a7-46a0-a5a7-cf36a7569e15">open</button></td></tr>
+                <tr><td>Fluid Mechanics&Open Channels</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="ee183d75-7725-4fae-8b59-2a51ba48b7ac">open</button></td></tr>
+                <tr><td>Electrical Systems</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="16d0fb35-acec-412b-bf98-1b0fe2515fbc">open</button></td></tr>
+                <tr><td>Properties and Strength of Material</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="9f96821b-ec97-4a92-87a3-ff692cd23877">open</button></td></tr>
+                <tr><td>Suface Water Hydrology</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="3b5a0d7e-0ed7-400d-8d04-2f4930b84065">open</button></td></tr>
+                <tr><td>Watershed Management</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="'db266774-3fcc-434c-a0c7-5e1e78875c49">open</button></td></tr>
+                <tr><td>Soil & Water Conservation Engineering</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="feb1daa2-acf8-4432-bf7c-32ca5d8161a2">open</button></td></tr>
+                <tr><td>Thermodynamics and Refrigeration Systems</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="188b83bb-8080-4312-b88d-bc676aeb17a5">open</button></td></tr>
+                <tr><td>Theory Of Machines</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="7d5ecdf0-b416-4f35-a99a-03d472542be8">open</button></td></tr>
+                <tr><td>Theory of Structure</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="7b6adea7-f754-41d5-899b-8783804e1a75">open</button></td></tr>
+                <tr><td>Ground water Hydrology</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="b958940b-a193-41b5-b76d-26a45112eb33">open</button></td></tr>
+                <tr><td>Soil Mechanics</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="9994ad4d-6588-4c1c-8055-76c21d83972a">open</button></td></tr>
+                <tr><td>Farm Power & Tractor Systems</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="816c66c9-ccae-4d66-b819-2f5b6e3870be">open</button></td></tr>
+                <tr><td>Farm Machinery Equipment-I</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="a3c691a5-b15b-42d6-9e34-4a0da7984cb7">open</button></td></tr>
+                <tr><td>Farm Machinery Equipment-II</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="bd2d9687-2e1d-45aa-a87c-951d92a7fe6e">open</button></td></tr>
+                <tr><td>Agricultural process Engineering</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="c1eafbc7-9f85-4430-b7e4-f89b42c5772e">open</button></td></tr>
+                <tr><td>Dairy & Food Engineering</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="f7bbc978-23dc-4033-abb6-ff8408c85c27">open</button></td></tr>
+                <tr><td>Food Quality&Control</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="b1813f8a-14e3-4b1f-a2f7-b06f0411aa23">open</button></td></tr>
+                <tr><td>Micro Irrigation</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="9fc9d2af-0f84-458b-a411-5149758ccbc4">open</button></td></tr>
+                <tr><td>GIS & Remote Sensing</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="fc690059-37a9-4cfc-a002-de8480b3c806">open</button></td></tr>
+                <tr><td>Green House Technoogy</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="94aec084-49c5-476d-abff-5ba76f2f5e24">open</button></td></tr>
+                <tr><td>Human Engineering Safety</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="8361499a-3940-4d5b-8f86-59dfc025a1ad">open</button></td></tr>
+                <tr><td>Heat and Mass Transfer </td><td><button id="downloadHMT">DOWNLOAD</button></td></tr>
+                <tr><td>Operation Research</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="1f8b03f0-1eb4-4c1c-858a-40f66ffdbcea">open</button></td></tr>
+                <tr><td>Food Packing Technology</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="d9faa0c1-16fa-4c78-8df6-7033b36ae7ce">open</button></td></tr>
+                <tr><td>Food Plant Design and Management</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="63f536e0-c98a-46b1-8874-979b90e97429">open</button></td></tr>
+                <tr><td>Irrigation & Drinage Engineering</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="587ca87b-1100-4425-bd8a-97061306ec00">open</button></td></tr>
+                <tr><td>Managerial Economics and Financial Analysis</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="de4f7175-43ae-42b6-b97d-afb7b4a2ea1b">open</button></td></tr>
+                <tr><td>Engineering Properties of Biological Materials</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="18b794e8-80d3-4cca-bf04-0656f67c6c21">open</button></td></tr>
+                <tr><td>Mechanical Measurements and Instrumentation</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="de4f7175-43ae-42b6-b97d-afb7b4a2ea1b">open</button></td></tr>
+                <tr><td>Photo Voltic Technology & System</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="73e2592d-e7f9-483b-9fd8-5cc14e3fc1f3">open</button></td></tr>
+                <tr><td>Design of Agriculture Machinery</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="c365f03c-a555-4f22-97a4-5f6b476797cb">open</button></td></tr>
+                <tr><td>Agro Industries and By-Products Utilization</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="75308569-160b-49a1-8e95-46a953f6b679">open</button></td></tr>
+                <tr><td>Post Harvesting Engineering & Horticulture Produce</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="4cac706d-a8ca-4c94-b644-274d7d1353ba">open</button></td></tr>
+                <tr><td>Design of Soil and Water Conservation and Form Systems</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="d3956833-03b3-46e6-9c3d-4a4be62b1a22">open</button></td></tr>
+                <tr><td>Agricultural Extension Techniques and Business Management</td><td><button style="border-radius: 20px; color: white;background-color: #001e4d;" class="open-button" data-document-id="48470b40-34f2-4193-8ef3-cdef12cfa1b7">open</button></td></tr>
+              
+                    </tbody>
+                </table>
+                  
+                  <div id="viewer1" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer2" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                  <div id="viewer3" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer4" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer5" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer6" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer7" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer8" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer9" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer10" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer11" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer12" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer13" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer14" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer15" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer16" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer17" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer18" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer19" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer20" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer21" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer22" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer23" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer24" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer25" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer26" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer27" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer28" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer29" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer30" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer31" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer32" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer33" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer34" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer35" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer36" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                <div id="viewer37" class="viewer-container" style="width: 100%; height: 1000px;"></div>
+                </div>
+              
+              </div>    
+          
+            <!--Register ID-->
+            <div id="register" style="display: none;">
+              <a href="IndexAgrMaterial.html" style="text-decoration: none; color: inherit; display: block;"><button>Go Back</button></a>
+              <div class="contactcontainer">
+                <h2>Register</h2>
+                <form id="contactForm1" class="contact_form1" action="#">
+                  <label for="uid">Set User ID:</label><br>
+                  <input type="text" class="uid" name="uid" required><br>
+                  
+                  <label for="upassword">Set Password:</label><br>
+                  <input type="password" class="upassword" name="upassword" required><br>
+              
+                  <label for="name">Your Name:</label><br>
+                  <input type="text" class="uname" name="name" required><br>
+              
+                  <label for="email">Your Email:</label><br>
+                  <input type="email" class="email" name="email" required><br>
+              
+                  <label for="subject">Mobile No:</label><br>
+                  <input type="text" id="subject" name="subject" required><br>
+              
+                  <a class="blinking-text">Click on Image To Get QR</a><br>
+                  <a style="color:red;">Pay &#8377;49 to Get Access</a><br>
+                  <img src="upii.jpg" alt="UPI" class="upi" id="upi" style="filter: blur(5px); cursor: pointer;"><br>
+                  <h1>OR</h1>
+              
+                  <h2>UPI ID: agritech@freecharge</h2>
+              
+                  <label for="message">UTR NO / Transaction No:</label><br>
+                  <textarea class="message" name="message" required></textarea><br>
+                  <p>If UTR NO / Transaction No You Can't Find, send Screenshot to agriengg.noreply@gmail.com <br>Note: Mention Subject as payment done for Material access</p>
+              
+                  <h2 class="blinking-text">Upon successful completion of your payment within 24 hours, your login credentials (user ID and password) will be sent to your registered email address or phone number.</h2>
+              
+                  <button type="submit">Send</button>
+              </form>
+              
+              <div id="response"></div>
+                
+              </div>
+            </div>
+              <!--Register ID close-->
+            <div  id="ecetlist" style="display: none;">
+              <br>
+              <br>
+              <button style="border-radius: 20px; color: white; background-color: #001e4d;">
+                <a href="IndexAgrMaterial.html"  style="text-decoration: none; color: inherit; display: block;"><b>Go Back </b></a>
+              </button>
+              <br>
+              <h3 class="blinking-text">Few Subject MCQ PDFs are Not Available,Will be  update As Earliest As Possible.Rest assured, we are working to update our offerings.<br><b>Sorry for Inconvenience</b></h3>
+              <br>
+              <h2>E-CET MCQs</h2>
+            <table> 
+              <tbody>
+                <thead>
+                  <tr>
+                      <th>Material Name</th>
+                      <th>Action</th>
+                  </tr>
+                </thead>
+                <tr><td>Surveying & Leveling</td><td><button id="downloadsurveyecet">DOWNLOAD</button></td></tr>
+                <tr><td>
+                Ecet Agri Implements</td><td><button id="downloadAgriImp">DOWNLOAD</button>
+                </td></tr>
+                <tr><td>
+                 Tractor Systems</td><td><button id="downloadTrSystems">DOWNLOAD</button>
+                </td></tr>
+                <th>Previous Question Papers</th>
+                <tr><td><b>PQP Ecet 2020</b></td><td><button id="downloadpqpecet">DOWNLOAD</button></td></tr>
+                <tr><td><b>PQP Ecet 2021</b></td><td><button id="downloadpqpecettt">DOWNLOAD</button></td></tr>
+                <tr><td><b>PQP Ecet 2022</b></td><td><button id="downloadpqpecetttt">DOWNLOAD</button></td></tr>
+                <tr><td><b>PQP Ecet 2023</b></td><td><button id="downloadpqpecett">DOWNLOAD</button></td></tr>
+              </tbody>
+            </table>
+    
+              </tbody>
+            </table>
+
+            </div>
+          
+            <div  id="pgcetlist" style="display: none;">
+              <br>
+              <br>
+              <button style="border-radius: 20px; color: white; background-color: #001e4d;">
+                <a href="IndexAgrMaterial.html" onclick="showMaterials()" style="text-decoration: none; color: inherit; display: block;"><b>Go Back</b></a>
+              </button>
+              <br>
+              <h3 class="blinking-text">Few Subject MCQ PDFs are Not Available,Will be  update As Earliest As Possible.Rest assured, we are working to update our offerings.<br><b>Sorry for Inconvenience.</b></h3>
+              <br>
+              
+              <h1>PG E-CET MCQs</h1>
+              <table> 
+                <tbody>
+                  <thead>
+                    <tr>
+                        <th>Material Name</th>
+                        <th>Action</th>
+                    </tr>
+                  </thead>
+                  <th>Previous Question Papers</th>
+                  <tr><td><b>PQP PG-Ecet 2023</b></td><td><button id="downloadpgpqpecet">DOWNLOAD</button></td></tr>
+                  <tr><td><b>PQP PG-Ecet 2022</b></td><td><button id="downloadpgpqpecett">DOWNLOAD</button></td></tr>
+                  <tr><td><b>PQP PG-Ecet 2021</b></td><td><button id="downloadpgpqpecettt">DOWNLOAD</button></td></tr>
+                  <tr><td><b>PQP PG-Ecet 2017</b></td><td><button id="downloadpgpqpecetttt">DOWNLOAD</button></td></tr>
+                  <tr><td><b>PQP PG-Ecet 2016</b></td><td><button id="downloadpgpqpecettttt">DOWNLOAD</button></td></tr>
+                </tbody>
+              </table>
+      
+                </tbody>
+              </table>
+            </div>
+            <div  id="afolist" style="display: none;">
+              <br><br>
+              <button style="border-radius: 20px; color: white; background-color: #001e4d;">
+                <a href="#materials" onclick="showMaterials()" style="text-decoration: none; color: inherit; display: block;"><b>Go Back</b></a>
+              </button><br>
+              <h3 class="blinking-text">AFO  MCQ PDFs are Not Will be  update As Earliest As Possible.Rest assured, we are working to update our offerings.</h3>
+            </div>
+  </div>
+  <!-- ------------------Footer------------------- -->
+  <footer>
+    <p>&copy; 2023 AgriConnects Education Hub</p>
+    <div class="social-icons">
+      <a href="mailto:agriengg.noreply@gmail.com" class="footer__icon"><i class='bx bxl-gmail' target="_blank"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100065116946238&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
+      <a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="nagr.js"></script>
+<script src="https://cdn.cloudpdf.com/webviewer/cloudpdf.min.js"></script>
+<script src="aviii.js"></script>
+  
+<script>
+      const openButtons = document.querySelectorAll('.open-button');
+      const viewerContainers = document.querySelectorAll('.viewer-container');
+  
+      // Function to load the PDF in the viewer
+      function loadPdf(documentId, containerId) {
+        CloudPDF({ documentId, darkMode: true }, document.getElementById(containerId)).then((instance) => {});
+      }
+  
+      openButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+          const documentId = button.getAttribute('data-document-id');
+          const containerId = `viewer${index + 1}`;
+          loadPdf(documentId, containerId);
+          viewerContainers.forEach(container => {
+            container.style.display = 'none'; // Hide all viewer containers
+          });
+          document.getElementById(containerId).style.display = 'block'; // Display the selected viewer container
+        });
+      });
+    </script>
+  <script>
+    function selectNavItem(element) {
+       // Remove 'selected' class from all navigation items
+       var navItems = document.querySelectorAll('nav ul li a');
+       navItems.forEach(function(item) {
+         item.classList.remove('selected');
+       });
+       // Add 'selected' class to the clicked navigation item
+       element.classList.add('selected');
+     }</script>
+ 
+  <script>
+    //Clent
+      
+    const formClient = document.getElementById('contactFormclient');
+
+formClient.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.querySelector('.uname').value;
+    const email = document.querySelector('.email').value;
+    const subject = document.querySelector('#subject').value;
+    const message = document.querySelector('.message').value;
+
+    Email.send({
+      SecureToken: "a3225944-54a5-4e77-806b-7c1394da7717",
+      To: 'agriengg.noreply@gmail.com',
+      From: "agriengg.noreply@gmail.com",
+      ReplyTo: email,
+      Subject: subject,
+      Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
+    }).then(
+        response => {
+            if (response == 'OK') {
+                alert("Message sent successfully!");
+                formClient.reset();
+            } else {
+                throw new Error(response);
+            }
+        }
+    ).catch(
+        error => alert("Error: " + error)
+    );
+});
+    //ClientClose
+          // Add event listener
+          function showAdditionalImage() {
+      var additionalImage = document.getElementById('additionalImage');
+      additionalImage.style.display = 'block';
+      setTimeout(function() {
+        additionalImage.style.display = 'none';
+      }, 4500); // 45 seconds in milliseconds
+    }
+    setTimeout(showAdditionalImage, 100);
+    const upiImage = document.getElementById("upi");
+
+upiImage.addEventListener("click", function() {
+  this.style.filter = "none"; // Remove blur on click
+});
+function loadPdf(documentId, containerId) {
+            CloudPDF({ documentId, containerId });
+        }
+//new User Register
+// New User Register
+const formm = document.querySelector('.contact_form1');
+
+function sendMsg(e) {
+    e.preventDefault();
+    const uid = document.querySelector('.uid').value,
+        upassword = document.querySelector('.upassword').value,
+        name = document.querySelector('.uname').value,
+        email = document.querySelector('.email').value,
+        message = document.querySelector('.message').value,
+        subject = document.querySelector('#subject').value,
+        to = email;
+    
+    // Format message with subheadings
+    const bodyContent = `
+        <h2>User Details:</h2>
+        <p><strong>User ID:</strong> ${uid}</p>
+        <p><strong>Password:</strong> ${upassword}</p>
+        
+        <h2>Contact Information:</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Mobile No:</strong> ${subject}</p>
+        
+        <h2>Payment Details:</h2>
+        <p><strong>UTR No / Transaction No:</strong> ${message}</p>
+    `;
+    
+    // Function to send mail
+    Email.send({
+        SecureToken: "064f92f8-c0fc-46cb-bdfe-15370a23b630",
+        To: 'agriengg.noreply@gmail.com',
+        From: "agriengg.noreply@gmail.com",
+        ReplyTo: email,
+        Subject: subject,
+        Body: bodyContent,
+        ContentType: "text/html; charset=utf-8"
+    }).then(
+        message => {
+            alert("Payment Details sent successfully! Wait for 24 Hrs"); // Display popup message
+            form.reset(); // Reset the form after successful submission
+        }
+    ).catch(
+        error => alert("Error: " + error) // Display error message if sending fails
+    );
+}
+// Add event listener
+formm.addEventListener('submit', sendMsg);
+
+</script>
+ </body>
+</html>
