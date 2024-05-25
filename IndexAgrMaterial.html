@@ -350,19 +350,19 @@ formClient.addEventListener('submit', function(e) {
 });
     //ClientClose
           // Add event listener
-          function showAdditionalImage() {
-      var additionalImage = document.getElementById('additionalImage');
-      additionalImage.style.display = 'block';
-      setTimeout(function() {
-        additionalImage.style.display = 'none';
-      }, 4500); // 45 seconds in milliseconds
-    }
-    setTimeout(showAdditionalImage, 100);
-    const upiImage = document.getElementById("upi");
+        //  function showAdditionalImage() {
+      //var additionalImage = document.getElementById('additionalImage');
+     // additionalImage.style.display = 'block';
+      //setTimeout(function() {
+        //additionalImage.style.display = 'none';
+      //}, 4500); // 45 seconds in milliseconds
+    //}
+    //setTimeout(showAdditionalImage, 100);
+    //onst upiImage = document.getElementById("upi");
 
-upiImage.addEventListener("click", function() {
-  this.style.filter = "none"; // Remove blur on click
-});
+//upiImage.addEventListener("click", function() {
+  //this.style.filter = "none"; // Remove blur on click
+//});
 
 //new User Register
 // New User Register
@@ -415,6 +415,19 @@ function sendMsg(e) {
 formm.addEventListener('submit', sendMsg);
 
 </script>
+<script>       function showAdditionalImage() {
+  var additionalImage = document.getElementById('additionalImage');
+  additionalImage.style.display = 'block';
+  setTimeout(function() {
+    additionalImage.style.display = 'none';
+  }, 4500); // 45 seconds in milliseconds
+}
+setTimeout(showAdditionalImage, 100);
+const upiImage = document.getElementById("upi");
 
+upiImage.addEventListener("click", function() {
+this.style.filter = "none"; // Remove blur on click
+});
+</script>
  </body>
 </html>
