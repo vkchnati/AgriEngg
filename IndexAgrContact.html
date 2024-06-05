@@ -23,16 +23,16 @@
       height: 24px;
     }
     .custom-box {
-    margin-right:10px;
-    margin-left:20px;
-    margin-top:5px;
-    text-align:center;
+      margin-right:10px;
+      margin-left:20px;
+      margin-top:5px;
+      text-align:center;
       border: 2px solid #ccc;
       padding: 10px;
       border-radius: 10px;
       background-color: #f8f8f8;
     }
-</style>
+  </style>
   <!-- Ensure this link is correct and loads Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM2z4h0F2D6FRRfWflDhXzjoK7txZq5fQeD5i6b" crossorigin="anonymous">
   <!-- Ensure this link is correct and loads Bootstrap Icons -->
@@ -44,8 +44,8 @@
         <nav>
           <ul>
             <li><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
-            <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
-            <li><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Job/Trainings</a></li>
+            <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Course Materials</a></li>
+            <li><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Training Programs</a></li>
             <li><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
             <li><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
           </ul>
@@ -66,6 +66,8 @@
 
                 <label for="email">Your Email:</label>
                 <input type="email" class="email" name="email" required><br>
+                <label for="mbno">Your Mobile Number/WhatsApp Number:</label>
+                <input type="tel" class="mbno" name="mbno" required><br>
 
                 <label for="subject">Subject</label>
                 <input type="text" id="subject" name="subject" required><br>
@@ -107,6 +109,7 @@
         
         const name = document.querySelector('.uname').value;
         const email = document.querySelector('.email').value;
+        const mbno = document.querySelector('.mbno').value;
         const subject = document.querySelector('#subject').value;
         const message = document.querySelector('.message').value;
 
@@ -116,7 +119,7 @@
             From: "agriengg.noreply@gmail.com",
             ReplyTo: email,
             Subject: subject,
-            Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
+            Body: `Name: ${name}<br>Email: ${email}<br>Mobile Number: ${mbno}<br>Message: ${message}`
         }).then(
             response => {
                 if (response == 'OK') {
