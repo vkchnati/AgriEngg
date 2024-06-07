@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriConnects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="AgriConnects.jpg" alt="AgriConnects Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="IndexAgr.html" onclick="selectNavItem(this)">Home</a></li>
+        <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
+        <li><a href="result.html" onclick="selectNavItem(this)">Result Updates</a></li>
+        <li><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Training Programs</a></li>
+        <li><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
+        <li><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<h3>Jntuk Results Info </h3>
+<div class="jntuk">
+<h3 class="latest">Results Info(Tentative Dates)</h3>
+          <ol>
+            <li>JNTUK B tech 2-1 supply Results will Release before: <strong>29-06-2024</strong></li>
+            <br>
+            <li>JNTUK B tech 2-2 regular Results will Release before:<strong>29-06-2024</strong></li>
+            <br>
+            <li>JNTUK B tech 4-1 supply Results will Release before: <strong>29-06-2024</strong></li><br>
+            <li>JNTUK B tech 4-2 regular Results will Release before:<strong>29-06-2024</strong></li><br>
+          </ol>
+</div>
+<br>
+<p>Note:Results Will not Update in our Website.After Releasing Results, Result Sheet PDF Will sent to our College.</p>
+<br>
+  <footer>
+    <p>&copy; 2023 AgriConnects Education Hub</p>
+    <div class="social-icons">
+        <a href="mailto:agriengg.noreply@gmail.com" class="footer__icon"><i class='bx bxl-gmail' target="_blank"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100065116946238&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
+
+      <a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="nagr.js"></script>
+  <script src="https://cdn.cloudpdf.com/webviewer/cloudpdf.min.js"></script>
+  <script src="aviii.js"></script>
+  <script>
+  function selectNavItem(element) {
+      // Remove 'selected' class from all navigation items
+      var navItems = document.querySelectorAll('nav ul li a');
+      navItems.forEach(function(item) {
+        item.classList.remove('selected');
+      });
+      // Add 'selected' class to the clicked navigation item
+      element.classList.add('selected');
+  }</script>
+</body>
+</html>
