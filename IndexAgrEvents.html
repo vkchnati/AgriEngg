@@ -6,103 +6,101 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
-      <style>
+  <style>
     /* General styles */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
-}
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
 
-.image-container {
-  position: relative;
-  text-align: center;
-  color: white;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #fff;
-}
+    .image-container {
+      position: relative;
+      text-align: center;
+      color: white;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #fff;
+    }
 
-.image-container img {
-  max-width: 100%;
-  position: relative;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
+    .image-container img {
+      max-width: 100%;
+      position: relative;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
 
-.image-container .imagedis {
-  margin-top: 10px;
-  width: 70%;
-  height: auto;
-}
+    .image-container .imagedis {
+      margin-top: 10px;
+      width: 70%;
+      height: auto;
+    }
 
-.image-container .text {
-  margin-top: 10px;
-  color: #000;
-  display: inline-block;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
+    .image-container .text {
+      margin-top: 10px;
+      color: #000;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-.hidden {
-  display: none;
-}
+    .hidden {
+      display: none;
+    }
 
-.disimage {
-  width: 50%;
-  height: 50%;
-}
+    .disimage {
+      width: 50%;
+      height: 50%;
+    }
 
-/* Media queries for responsiveness */
+    /* Media queries for responsiveness */
 
-/* For tablets and smaller devices */
-@media (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
+    /* For tablets and smaller devices */
+    @media (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
 
-/* For phones and smaller devices */
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 10px;
-  }
+    /* For phones and smaller devices */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+      }
 
-  .image-container {
-    padding: 5px;
-  }
+      .image-container {
+        padding: 5px;
+      }
 
-  .image-container img {
-    border-radius: 5px;
-  }
+      .image-container img {
+        border-radius: 5px;
+      }
 
-  .image-container .text {
-    padding: 3px 5px;
-    font-size: 14px;
-  }
-}
+      .image-container .text {
+        padding: 3px 5px;
+        font-size: 14px;
+      }
+    }
 
-/* For very small devices */
-@media (max-width: 480px) {
-  .image-container .text {
-    padding: 2px 4px;
-    font-size: 12px;
-  }
+    /* For very small devices */
+    @media (max-width: 480px) {
+      .image-container .text {
+        padding: 2px 4px;
+        font-size: 12px;
+      }
 
-  .disimage {
-    width: 80%;
-    height: auto;
-  }
-}
+      .disimage {
+        width: 80%;
+        height: auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -112,7 +110,6 @@
       <ul>
         <li><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
         <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
-  <li><a href="result.html" onclick="selectNavItem(this)">Result Updates</a></li>
         <li><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Job/Trainings</a></li>
         <li><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
         <li><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
@@ -125,19 +122,27 @@
     <!-- Image section with text overlay -->
     <div class="image-container" id="image-container1">
       <img src="ABMDP Telangana a3.png" id="hidden-image1" class="hidden-image" alt="ABMDP Telangana Image">
-    
       <div class="text" id="show-detail-text1">Click here to get Full Detail </div>
     </div>
 
     <div class="image-container" id="image-container2">
-      <img src="haccp.jpg" id="hidden-image2" class="hidden-image" alt="ABMDP Telangana Image">
-    
+      <img src="haccp.jpg" id="hidden-image2" class="hidden-image" alt="HACCP Image">
       <div class="text" id="show-detail-text2">Click here to get Full details</div>
+    </div>
+
+    <div class="image-container" id="image-container3">
+      <img src="big.jpg" id="hidden-image3" class="hidden-image" alt="Big Data Analytics Image">
+      <div class="text" id="show-detail-text3">Click here to get Full Detail </div>
+    </div>
+  
+    <div class="image-container" id="image-container4">
+      <img src="CEFF.webp" id="hidden-image4" class="hidden-image" alt="Rice Fortification Image">
+      <div class="text" id="show-detail-text4">Click here to get Full Detail </div>
     </div>
   </div>
 
   <div id="detail-container1" class="hidden">
-    <h6>Uploaded Dated:05/06/2024</h6>
+    <h6 style="color:red">Uploaded Dated:05/06/2024</h6>
     <h3 style="color:green">Agribusiness Management Development Program (ABMDP)* designed exclusively for prospective CEOs of Farmers Producer Organizations (FPOs)</h3>
     <img src="ABMDP Telangana a3.png" class="disimage">
     <p>Agribusiness Management Development Program (ABMDP), a unique course for Prospective CEOs of FPOs offered by a-IDEA, ICAR-NAARM with the support of NABARD TS RO 
@@ -162,16 +167,49 @@
     <br><br>
   </div>
 
-<!-- haccp Img -->
-<div id="detail-container2" class="hidden">
-<h6 style="color:red">Uploaded Dated:05/06/2024</h6>
+  <div id="detail-container2" class="hidden">
+    <h6 style="color:red">Uploaded Dated:05/06/2024</h6>
     <h3 style="color:green">ONLINE TRAINING ON SETTING UP HACCP PLAN AND MICROBIOLOGICAL FOOD SAFETY FOR SMALL SCALE FOOD INDUSTRIES</h3>
     <img src="haccp.jpg" class="disimage">
     <p>National Institute of Food Technology, Entrepreneurship and Management - Thanjavur (NIFTEM-T) announces Online Training on Setting up HACCP Plan and Microbiological Food Safety for Small Scale Food Industries on 21st May 2024</p><br>
-    \
     <p>E- Certificate  will be provided<br>
         Last date of Ref..  22 June 2024</p><br>
-    <a href="https://niftem-t.ac.in/haccp.php">Link:Click to Register</a><br><br>
+    <a href="https://niftem-t.ac.in/haccp.php">Link: Click to Register</a><br>
+  </div>
+  
+  <div id="detail-container3" class="hidden">
+    <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+    <h3 style="color:green">Big Data Analytics for Agriculture Research</h3>
+    <p><strong>The Department of Agriculture (DA) </strong> at 360 Research Foundation works to develop plans and policies for the development of agriculture, animal husbandry, dairy, fisheries, agricultural land policies, and food processing for farmers’ welfare.
+    It works in close coordination with the agriculture departments of national and state partners as well as regional.</p><br>
+    <img src="big.jpg" class="disimage">
+    <p><strong>Note:</strong></p>
+    <ol>
+      <li>All Fees are neither refundable nor transferable.</li>
+      <li>The 360 Research Foundation accepts online payments exclusively through the provided bank account; we disclaim responsibility for payments to any individual and are not liable for transactions made to unauthorized sources.</li>
+    </ol>
+    <p><strong>Bank Account Details:</strong><br>
+    Name: 360 Research Foundation<br>
+    Account Number: 6262101002995<br>
+    Bank Name: Canara Bank<br>
+    IFSC Code: CNRB0006262<br>
+    Branch: Narkatiaganj</p><br>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJAPgJYzrqBimRoOFMSeszLzAWgxOfNaW-U0B_Eh1w-ms9JQ/viewform">Link: https://docs.google.com/forms/d/e/1FAIpQLScJAPgJYzrqBimRoOFMSeszLzAWgxOfNaW-U0B_Eh1w-ms9JQ/viewform</a><br><br>
+  </div>
+
+  <div id="detail-container4" class="hidden">
+    <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+    <h3 style="color:green">One-Day Hands on Workshop on “Rice Fortification in India: Progression and Insights”</h3>
+        <img src="CEFF.webp" class="disimage">
+    <p><strong>Registration Open Date:</strong>04-Jun-2024</p>
+    <p><strong>Registration Close Date</strong>19-Jun-2024</p>
+    <p><strong>Event Start Date:</strong>20-Jun-2024</p>
+    <p><strong>Event End Date:</strong>20-Jun-2024</p>
+    <p><strong>Mode of Event:</strong>Physical</p>
+    <p><strong>Venue:</strong>FRK Unit, CEFF, NIFTEM-K</p>
+    <p><strong>Mobile:</strong>8607620106</p>
+    
+    Link:<a href="http://www.ceffniftem.com/Home/training/MjY%3D"> http://www.ceffniftem.com/Home/training/MjY%3D</a><br><br>
   </div>
 
   <footer>
@@ -179,7 +217,6 @@
     <div class="social-icons">
       <a href="mailto:agriengg.noreply@gmail.com" class="footer__icon"><i class='bx bxl-gmail' target="_blank"></i></a>
       <a href="https://www.facebook.com/profile.php?id=100065116946238&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
       <a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
@@ -192,7 +229,6 @@
   <script>
     document.getElementById('show-detail-text1').addEventListener('click', function() {
       var detailContainer = document.getElementById('detail-container1');
-     
       var gridContainer = document.getElementById('grid-container');
       detailContainer.classList.toggle('hidden');
       gridContainer.classList.toggle('hidden');
@@ -203,12 +239,17 @@
       detailContainer.classList.toggle('hidden');
       gridContainer.classList.toggle('hidden');
     });
-    document.getElementById('show-detail-text2').addEventListener('click', function() {
-      var image = document.getElementById('hidden-image2');
-      var text = document.getElementById('show-detail-text2');
-      if (image.style.display === 'none' || image.style.display === '') {
-        image.style.display = 'block';
-      }
+    document.getElementById('show-detail-text3').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container3');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text4').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container4');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
     });
   </script>
 </body>
