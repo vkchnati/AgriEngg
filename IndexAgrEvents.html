@@ -120,28 +120,42 @@
   <!-- Image grid container -->
   <div class="grid-container" id="grid-container">
     <!-- Image section with text overlay -->
-<div class="image-container" id="image-container3">
-<h6 style="color:red">Uploaded Date:08/06/2024</h6>
-      <img src="big.jpg" id="hidden-image3" class="hidden-image" alt="Big Data Analytics Image">
-      <div class="text" id="show-detail-text3">Click here to get Full Detail </div>
+    <div class="image-container" id="image-container6">
+      <h6 style="color:red">Uploaded Date:19/06/2024</h6>
+      <img src="isaayu farm.jpeg" id="hidden-image" class="hidden-image" alt="ABMDP Telangana Image">
+      <div class="text" id="show-detail-text6"><h2>Click here to get Full Detail</h2> </div>
+      <div class="blinking-text" id="show-detail-text6"><h2>Click here to get Full Detail</h2> </div>
     </div>
-  
-    <div class="image-container" id="image-container4">
-<h6 style="color:red">Uploaded Date:08/06/2024</h6>
-      <img src="CEFF.webp" id="hidden-image4" class="hidden-image" alt="Rice Fortification Image">
-      <div class="text" id="show-detail-text4">Click here to get Full Detail </div>
+
+    <div class="image-container" id="image-container5">
+      <h6 style="color:red">Uploaded Date:19/06/2024</h6>
+      <img src="CGP.jpeg" id="hidden-image" class="hidden-image" alt="ABMDP Telangana Image">
+      <div class="text" id="show-detail-text5">Click here to get Full Detail </div>
     </div>
+
     <div class="image-container" id="image-container1">
+      <h6 style="color:red">Uploaded Date:08/06/2024</h6>
       <img src="ABMDP Telangana a3.png" id="hidden-image1" class="hidden-image" alt="ABMDP Telangana Image">
       <div class="text" id="show-detail-text1">Click here to get Full Detail </div>
     </div>
 
     <div class="image-container" id="image-container2">
+      <h6 style="color:red">Uploaded Date:08/06/2024</h6>
       <img src="haccp.jpg" id="hidden-image2" class="hidden-image" alt="HACCP Image">
       <div class="text" id="show-detail-text2">Click here to get Full details</div>
     </div>
 
-    
+    <div class="image-container" id="image-container3">
+      <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+      <img src="big.jpg" id="hidden-image3" class="hidden-image" alt="Big Data Analytics Image">
+      <div class="text" id="show-detail-text3">Click here to get Full Detail </div>
+    </div>
+  
+    <div class="image-container" id="image-container4">
+      <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+      <img src="CEFF.webp" id="hidden-image4" class="hidden-image" alt="Rice Fortification Image">
+      <div class="text" id="show-detail-text4">Click here to get Full Detail </div>
+    </div>
   </div>
 
   <div id="detail-container1" class="hidden">
@@ -209,11 +223,52 @@
     <p><strong>Event Start Date:</strong>20-Jun-2024</p>
     <p><strong>Event End Date:</strong>20-Jun-2024</p>
     <p><strong>Mode of Event:</strong>Physical</p>
-    <p><strong>Venue:</strong>FRK Unit, CEFF, NIFTEM-K</p>
-    <p><strong>Mobile:</strong>8607620106</p>
-    
+    <p><strong>Venue</strong>FRK Unit, CEFF, NIFTEM-K</p>
+    <p><strong>Mobile</strong>8607620106</p>
+    <p><strong>Registration Open Date:</strong>04-Jun-2024</p>
     Link:<a href="http://www.ceffniftem.com/Home/training/MjY%3D"> http://www.ceffniftem.com/Home/training/MjY%3D</a><br><br>
   </div>
+
+  <div id="detail-container5" class="hidden">
+    <h6 style="color:red">Uploaded Date:19/06/2024</h6>
+    <h1 style="color:green">Career Guidance Program</h1>
+    <p><h2>"Sow Your Future: Cultivate a Career in Agriculture"</h2><br>
+      A career guidance program in agriculture aims to provide individuals with the necessary skills, knowledge, and resources to pursue
+      fulfilling careers in various sectors of the agricultural industry. Here's a structured outline for such a program
+  </p>
+        <img src="CGP.jpeg" class="disimage">
+        <ul>
+    <p>
+      <strong>  
+       <li>Introduction to Agriculture</li>
+       <li>Exploring Agricultural Specializations</li>
+       <li>Understanding Agricultural Systems</li>
+       <li>Farm Management and Operations</li>
+       <li>Agribusiness and Marketing</li>
+       <li>Technology and Innovation in Agriculture</li>
+       <li>Sustainable Agriculture Practices</li>
+       <li>Policy and Regulation in Agriculture</li>
+       <li>Entrepreneurship in Agriculture</li>
+       <li>Professional Development and Networking</li>
+       <li>Industry Insights and Guest Speakers</li>
+       <li>Capstone Projects and Career Planning</li>
+      </strong>
+    </p>
+    Apply Here ⏳👇:<br><a href="https://icfa.org.in/cgp.php"> https://icfa.org.in/cgp.php</a><br><br>
+  </div>
+<!-- SIX -->
+<div id="detail-container6" class="hidden">
+  <h6 style="color:red">Uploaded Date:27/06/2024</h6>
+  <h1 style="color:green">JOB Notification</h1>
+  <p><h2>Company name: Isaayu Agritech Pvt Ltd </p>
+      <img src="isaayu farm.jpeg" class="disimage">
+      <ul>
+        <P><b>JOB Role:</b>Agronomy Associate and Microbiology Research Associate</P>
+        <p>Last date to Apply 30 June 2024</p><br>
+        <p>Semd resume to:isaayufarms@gmail.com</p>
+  <p>
+
+</div>
 
   <footer>
     <p>&copy; 2023 AgriConnects Education Hub</p>
@@ -250,6 +305,18 @@
     });
     document.getElementById('show-detail-text4').addEventListener('click', function() {
       var detailContainer = document.getElementById('detail-container4');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text5').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container5');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text6').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container6');
       var gridContainer = document.getElementById('grid-container');
       detailContainer.classList.toggle('hidden');
       gridContainer.classList.toggle('hidden');
