@@ -42,13 +42,24 @@
     <header>
         <img src="AgriConnects.jpg" alt="AgriConnects Logo" class="logo">
         <nav>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+               <li><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
+              <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
+              <li><a href="result.html" onclick="selectNavItem(this)">Result Updates</a></li>
+              <li><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Training Programs</a></li>
+              <li><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
+              <li><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
+          </ul>
           <ul>
-            <li><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
-            <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
-<li><a href="result.html" onclick="selectNavItem(this)">Result Updates</a></li>
-            <li><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Job/Training</a></li>
-            <li><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
-            <li><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
+            <!-- <li><a href="#">Coding2go</a></li> -->
+            <li class="hideOnMobile"><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
+            <li class="hideOnMobile"><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
+            <li class="hideOnMobile"><a href="result.html" onclick="selectNavItem(this)">Result Updates</a></li>
+            <li class="hideOnMobile"><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Training Programs</a></li>
+            <li class="hideOnMobile"><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
+            <li class="hideOnMobile"><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
           </ul>
         </nav>
       </header>
