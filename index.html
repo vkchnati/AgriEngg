@@ -9,6 +9,48 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+  <style>
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px; /* Add padding to create space around the container */
+      margin-top: 20px; /* Add margin to create space between sections */
+      background-color: #f9f9f9; /* Example background color */
+    }
+    .center-container h3 {
+  color: #12AD2B;
+}
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+    .image-container {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* Display one column per row on smaller screens */
+      }
+      .center-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,7 +60,7 @@
         <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
            <li><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
           <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
-          <li><a href="result.html" onclick="selectNavItem(this)">JNTUK Result Updates</a></li>
+          <li><a href="result.html" onclick="selectNavItem(this)">Result Updates</a></li>
           <li><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Training Programs</a></li>
           <li><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
           <li><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
@@ -27,13 +69,14 @@
         <!-- <li><a href="#">Coding2go</a></li> -->
         <li class="hideOnMobile"><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
         <li class="hideOnMobile"><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
-        <li class="hideOnMobile"><a href="result.html" onclick="selectNavItem(this)">JNTUK Result Updates</a></li>
+        <li class="hideOnMobile"><a href="result.html" onclick="selectNavItem(this)">Result Updates</a></li>
         <li class="hideOnMobile"><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Training Programs</a></li>
         <li class="hideOnMobile"><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
         <li class="hideOnMobile"><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
         <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
       </ul>
     </nav>
+  
   </header>
   <div  id="home-details" >
     <div>
@@ -50,57 +93,36 @@
         <li>Groundbreaking Research on Precision Agriculture Engineering.</li><br>
         <li>New Collaborations with Industry Leaders</li>
       </ul>
-<!--       <h3 class="blinking-text" style="color:orange">NABARD Intership</h3><a href="https://drive.google.com/file/d/1TRUxWcaOwa8PdgxJ6B-Dn1o3zv3Kaykr/view?usp=drive_link" target="_blank"><button >Download</button></a>
-      <h3 class="blinking-text" style="color:orange">AP Ryss Intership</h3><a href="https://drive.google.com/file/d/1ryXJF4hlX-iSTE_OM_AZ0iW7MocX0VXr/view?usp=sharing" target="_blank"><button >Download</button></a> -->
-    </div>
-      <div >
-      <h2 class="latest">JNTUK Updates</h2>
-      <p style="color:#FC8019;">Upcoming exams conduct by JNTUK </p>
-      <div class="jntuk">
-      <ul>
-<!--           <li><strong>JNTUK B tech 3-1 supply exams:</strong> May 2nd week</li>
-          <li><strong>JNTUK B tech 3-2 Reg/supply exams:</strong> 20-05-2024 to 01-06-2024</li>
-          <li><strong>JNTUK B tech 4-1 advance supply exams:</strong> May 3rd week</li>
-          <li><strong>JNTUK B tech 4-2 Reg/supply exam:</strong> 29-04-2024 to 04-05-2024 (date will change)</li> -->
-          <h3 class="latest">DOWNLOAD Time Tables</h3>
-          <h3 class="latest">2-1 Time Tables</h3>
-          <ol>
-            <li type="1"><strong>JNTUK B tech 2-1 R16 supply exam:</strong><a href="https://drive.google.com/file/d/1PzT5txZFPK8EKYoy8XUcuUPKlw7DYqaU/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-            <li><strong>JNTUK B tech 2-1 R19 supply exam:</strong><a href="https://drive.google.com/file/d/1lVRSPq5V0059k06T-ssfBx9WHfMNvaR0/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-            <li><strong>JNTUK B tech 2-1 R20 supply exam:</strong><a href="https://drive.google.com/file/d/1NMEOrsCp5yl4-4uiIOFKvFQCua5EbxP7/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-          </ol>
-            <h3 class="latest">2-2 Time Tables</h3>
-          <ol>
-            <li type="4"><strong>JNTUK B tech 2-2 R16 supply exam:</strong><a href="https://drive.google.com/file/d/1fObGyGrNWiz90h5WjZqVxwYFaPrllLF3/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-             <li><strong>JNTUK B tech 2-2 R19 supply exam:</strong><a href="https://drive.google.com/file/d/1BHlmy49vBnGz8v2VqD844AnuKWN-M3mq/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-            <li><strong>JNTUK B tech 2-2 R20 supply exam:</strong><a href="https://drive.google.com/file/d/1iAYjMQRr6B3nd10m-djnoP98WhxIa-is/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-          </ol>
-            <h3 class="latest">3-1 Time Tables</h3>
-            <ol>
-            <li><strong>JNTUK B tech 3-1 R16 supply exam:</strong><a href="https://drive.google.com/file/d/1HsQWsTUx7in8EJBIQhbiwj0t7ntjvl3O/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-             <li><strong>JNTUK B tech 3-1 R19 supply exam:</strong><a href="https://drive.google.com/file/d/1SoBcq5tJHdpu6X-c-1QnNAfgX5z3MyqU/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-            <li><strong>JNTUK B tech 3-1 R20 supply exam:</strong><a href="https://drive.google.com/file/d/1S-60qQjxdEDRvrtUFy7eeiOB221psc1u/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-              </ol>
-            <h3 class="latest">3-2 Time Tables</h3>
-            <ol>
-            <li><strong>JNTUK B tech 3-2 R16 supply exam:</strong><a href="https://drive.google.com/file/d/1AOHXQDzitPnRaiGDcTJShX_Va-BSJXla/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-             <li><strong>JNTUK B tech 3-2 R19 supply exam:</strong><a href="https://drive.google.com/file/d/1HRrYzqGvg0mc0FDycQvBWls_PrALF8nr/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-            <li><strong>JNTUK B tech 3-2 R20 supply exam:</strong><a href="https://drive.google.com/file/d/1AVYJ2rynnLMpTc80SCxblTtK2H6HgYhy/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-            </ol>
-            <h3 class="latest">4-1 ADV SUPPLY Time Table</h3>
-		 <ol>
-		<li><strong>JNTUK B tech 4-1 R16 ADV supply exam:</strong><a href="https://drive.google.com/file/d/1Cc1IyoHvRsWyipm_hBciK3QLM9FYDhUw/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-		<li><strong>JNTUK B tech 4-1 R19 ADV supply exam:</strong><a href="https://drive.google.com/file/d/13tB5K5MwB3pNv_csqlziYZfTuTjY-i-u/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-		<li><strong>JNTUK B tech 4-1 R20 ADV supply exam:</strong><a href="https://drive.google.com/file/d/16hPhcT85c-Jw5dHAREY3GEOpBdvFxbJD/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-		 </ol>
-		<h3 class="latest">4-2 Time Table</h3>
-		 <ol>
-		<li><strong>JNTUK B tech 4-2 R19 supply exam:</strong><a href="https://drive.google.com/file/d/1OoZT9CoKhMr7hgMCThdgHkoJ4g8j8MJm/view?usp=drive_link" target="_blank"> <button style="background-color: #001e4d" >Download</button> </a> </li><br>
-		 </ol>
-
-      </ul>
+  </div>
+  <!-- what we're Offer -->
+  <div class="center-container">
+    <h1>What we're Offering</h1>
+    <div class="grid-container">
+      <div class="image-container" style="background-image: url('book.png');">
+        <i class="fas fa-book fa-4x" style="color:#12AD2B;"></i>
+        <h3>Agri Engg Materials</h3>
+        <p>Empower students with top-quality materials designed for easy understanding and practical application, making learning enjoyable and effective.</p>
+      </div>
+      <div class="image-container" style="background-image: url('marksheet.png');">
+        <i class="fas fa-file-alt fa-4x" style="color:#12AD2B;"></i>
+        <h3>JNTUK Results Updates</h3>
+        <p>Stay Informed with Our Latest Results</p>
+      </div>
+      <div class="image-container" style="background-image: url('training.png');">
+        <i class="fas fa-chalkboard-teacher fa-4x" style="color:#12AD2B;"></i>
+        <h3>Job/Training</h3>
+        <p>Empowering Students with Knowledge, Level up Skills. Grow Your Knowledge: Expert-led training.</p>
+      </div>
+      <div class="image-container" style="background-image: url('quiz.png');">
+        <i class="fas fa-question-circle fa-4x" style="color:#12AD2B;"></i>
+        <h3>Quiz</h3>
+        <p>Test Your Knowledge: Take the Quiz. Upleveling the Knowledge of Agriculture.</p>
+      </div>
     </div>
   </div>
+
+  <!-- closed what we Offer -->
+
       <div>
       <h2 class="unavailablee">Subject Unavailability</h2>
       <ul>
