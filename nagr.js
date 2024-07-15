@@ -1,3 +1,12 @@
+function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+
 const downloadGWHButton = document.getElementById("downloadGWH");
 const downloadMEFAButton = document.getElementById("downloadMEFA");
 const downloadFMOHButton = document.getElementById("downloadFMOH");
