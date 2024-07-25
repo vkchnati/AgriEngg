@@ -121,6 +121,16 @@
   <!-- Image grid container -->
   <div class="grid-container" id="grid-container">
     <!-- Image section with text overlay -->
+    <div class="image-container" id="image-container7">
+      <h2 style="color:green">Job Update</h2>
+      <h3 style="color:green">Uploaded Date:25-July-2024</h3>
+      <img src="bigbasket.jpeg" alt="ABMDP Telangana Image" class="hidden-image" id="hidden-image">
+      <div class="text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div>
+      <div class="blinking-text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div>
+
+    </div>
+
+
     <div class="image-container" id="image-container6">
       <h2 class="blinking-text" style="color:red">JOB NOTICATION</h2>
       <h6 style="color:red">Uploaded Date:27/06/2024</h6>
@@ -269,6 +279,30 @@
         <p>Last date to Apply 30 June 2024</p><br>
         <p>Semd resume to:isaayufarms@gmail.com</p>
   <p>
+</div>
+
+<div id="detail-container7" class="hidden">
+  <h6 style="color:red">Uploaded Date:25-July-2024</h6>
+  <h1 style="color:green">JOB Notification</h1>
+  <p><h2>Company name: BIG BASKET(TATA sponsored Company)</h2></p>
+      <img src="bigbasket.jpeg" class="disimage">
+    
+        <p>Bigbasket is hiring Agriculture Freshers. Lets join your hand with us to contribute to future of agriculture.</p>
+        <P><b>JOB Role:</b>QC Incharge</P>
+        <P><b>JOB Location:</b>North India(Haryana/UP/Himachal/Delhi)</P>
+        <P><b>Salary:</b>Upto 4LPA</P>
+        <p><b>Job description given below</b><p>
+          <ol>
+          <li>Assortment plan.</li>
+          <li> Maintain DC fill rate.</li>
+          <li>Analysis & control out of stock.</li>
+          <li>Products life cycle, Growth/D-Growth.</li>
+          <li>Control write off.</li>
+          <li> Purchase order creation & new vender management.</li>
+          </ol>
+
+          <p>To apply for this job email your details to: <b>Apoorva.shukla@bigbasket.com</p>
+  <p>
 
 </div>
 
@@ -319,6 +353,12 @@
     });
     document.getElementById('show-detail-text6').addEventListener('click', function() {
       var detailContainer = document.getElementById('detail-container6');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text7').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container7');
       var gridContainer = document.getElementById('grid-container');
       detailContainer.classList.toggle('hidden');
       gridContainer.classList.toggle('hidden');
