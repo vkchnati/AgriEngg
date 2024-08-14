@@ -121,26 +121,23 @@
   <!-- Image grid container -->
   <div class="grid-container" id="grid-container">
     <!-- Image section with text overlay -->
-<div class="image-container" id="image-container8">
-      <h2 style="color:green">Job Update</h2>
-      <h3 style="color:green">Uploaded Date:14-August-2024</h3>
-      <img src="captin JPG.jpg" alt="ABMDP Telangana Image" class="hidden-image" id="hidden-image">
-      <!-- <div class="text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div>
-      <div class="blinking-text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div> -->
-
+    <div class="image-container" id="image-container11">
+      <h1 style="color:green">Job Upadate</h1>
+      <h2 style="color:red">Uploaded Date:14-Aug-2024</h2>
+      
+      <img src="CSA-New-Transparent-BG.png" id="hidden-image" class="hidden-image" alt="ABMDP Telangana Image">
+      <div class="text" id="show-detail-text11">Click here to get Full Detail </div>
     </div>
-
-
 
     <div class="image-container" id="image-container9">
       <h2 style="color:green">Job Update</h2>
-      <h3 style="color:green">Uploaded Date:13-August-2024</h3>
+      <h3 style="color:green">Uploaded Date:25-July-2024</h3>
       <img src="KRISHYANI.jpg" alt="ABMDP Telangana Image" class="hidden-image" id="hidden-image">
       <!-- <div class="text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div>
       <div class="blinking-text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div> -->
 
     </div>
-    <div class="image-container" id="image-container8">
+    <div class="image-container" id="image-container9">
       <h2 style="color:green">Job Update</h2>
       <h3 style="color:green">Uploaded Date:13-August-2024</h3>
       <img src="OGROOTS.jpg" alt="ABMDP Telangana Image" class="hidden-image" id="hidden-image">
@@ -335,6 +332,60 @@
 
 </div>
 
+<div id="detail-container11" class="hidden" style="font-weight: normal;"">
+  <h6 style="color:red">Uploaded Date: 14-Aug-2024</h6>
+  <h3 style="color:green">Livelihood Coordinator</h3>
+  <img src="CSA-New-Transparent-BG.png" class="disimage">
+  
+  <p><b>Job Title:</b> Livelihood Coordinator</p>
+  <p><b>Upper Age Limit:</b> 45 years</p>
+  <p><b>Working Locations:</b> Konaseema and West Godavari districts in Andhra Pradesh.</p>
+  <p><b>Reporting to:</b> Project Coordinator</p>
+  <p><b>Period of Contract:</b> Contract will be for a period of 18 months after an initial probation period of 3 months but can be extended.</p>
+  <p><b>Salary:</b> Salary will be decided based on the profile of the candidate.</p>
+  
+  <p><b>About Us:</b></p>
+  <p>The Centre for Sustainable Agriculture (CSA) (https://csa-india.org/) was established in 2004 with the goal of promoting sustainable food systems that are ecologically, economically, and socially viable. CSA implemented experimental approaches, including innovative practices, processes, and institutions, to build resilience against climate and market risks for farmer households. The primary work of CSA is spread across Andhra Pradesh, Telangana, and Maharashtra.</p>
+  
+  <p><b>Job Summary:</b></p>
+  <p>The Livelihood Coordinator will be responsible for designing, implementing, and monitoring programs aimed at improving agricultural practices and increasing household income for rural communities. This role involves working closely with local farmers, entrepreneurs, women’s groups, and other stakeholders to develop sustainable livelihood strategies and ensure effective program delivery.</p>
+  
+  <p><b>Key Responsibilities:</b></p>
+  <ul>
+    <li>Conduct feasibility studies for understanding potential interventions with various farmers.</li>
+    <li>Identify entrepreneurs and implement livelihood-related initiatives, focusing on agriculture and income generation.</li>
+    <li>Collaborate with local communities, NGOs, and government agencies to design tailored interventions.</li>
+    <li>Organize and facilitate training sessions for farmers on improved agricultural practices, value addition, and market linkages.</li>
+    <li>Support the establishment and strengthening of women entrepreneurs, farmer groups, cooperatives, and women’s self-help groups.</li>
+    <li>Develop and implement M&E frameworks to track program progress and impact.</li>
+    <li>Build and maintain strong relationships with local communities, partners, and other stakeholders.</li>
+    <li>Represent the organization at meetings, workshops, and conferences related to livelihood and agriculture.</li>
+    <li>Identify and pursue funding opportunities to support women entrepreneurs.</li>
+  </ul>
+  
+  <p><b>Desired Candidate Profile:</b></p>
+  <ul>
+    <li>Bachelor’s degree in Agriculture, Rural Development, or a related field (Master’s degree preferred).</li>
+    <li>At least 3 years of experience in livelihood programming, particularly in agriculture.</li>
+    <li>Preference for Women candidates.</li>
+    <li>Strong understanding of sustainable agricultural practices and rural livelihoods.</li>
+    <li>Experience working with local communities, NGOs, and government agencies.</li>
+    <li>Excellent project management, training, and facilitation skills.</li>
+    <li>Strong analytical and problem-solving abilities.</li>
+    <li>Ability to work independently and as part of a team.</li>
+    <li>Proficiency in Telugu and English is a must.</li>
+    <li>Ability to work effectively with diverse groups and stakeholders.</li>
+    <li>Excellent organizational and time management skills.</li>
+    <li>Ability to travel to project sites.</li>
+  </ul>
+
+  <p><b>How to Apply:</b></p>
+  <p>Email to send the CVs/applications: <a href="mailto:jobs@csa-india.org">jobs@csa-india.org</a> with a subject line: "Application for the post of Livelihood Coordinator".</p>
+  <p>Last date for Submission of applications: 24th August 2024.</p>
+  <p>Contact Numbers for further clarifications: 8500683300.</p>
+</div>
+
+
   <footer>
     <p>&copy; 2023 AgriUnity Education Hub</p>
     <div class="social-icons">
@@ -388,6 +439,12 @@
     });
     document.getElementById('show-detail-text7').addEventListener('click', function() {
       var detailContainer = document.getElementById('detail-container7');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text11').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container11');
       var gridContainer = document.getElementById('grid-container');
       detailContainer.classList.toggle('hidden');
       gridContainer.classList.toggle('hidden');
