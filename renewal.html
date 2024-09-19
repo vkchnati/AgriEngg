@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriUnity</title>
+  <link rel="icon" href="AgriUnity.jpg" type="image/icon type">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="navstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="AgriUnity.jpg" alt="AgriConnects Logo" class="logo">
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
+        <li><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
+        <li><a href="result.html" onclick="selectNavItem(this)">Exam/Result Updates</a></li>
+        <li><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Job/Training Programs</a></li>
+        <li><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
+        <li><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="index.html" onclick="selectNavItem(this)">Home</a></li>
+        <li class="hideOnMobile"><a href="IndexAgrMaterial.html" onclick="selectNavItem(this)">Agri Materials</a></li>
+        <li class="hideOnMobile"><a href="result.html" onclick="selectNavItem(this)">Exam/Result Updates</a></li>
+        <li class="hideOnMobile"><a href="IndexAgrEvents.html" onclick="selectNavItem(this)">Training Programs</a></li>
+        <li class="hideOnMobile"><a href="IndexAgrQuiz.html" onclick="selectNavItem(this)">Quiz</a></li>
+        <li class="hideOnMobile"><a href="IndexAgrContact.html" onclick="selectNavItem(this)">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2 style="color: darkslateblue;">Renewal users can use old USER ID JNTUK B.Tech materials for four months at a discounted price of ₹69 (regular price ₹<strike>100</strike>) <a href="#" onclick="renewaccount()"><button class="materials-button">Renew Account</button></a></h2><br><br>
+
+  <!--Renewal ID-->
+  <div id="renewal" style="display: none;">
+    <a href="IndexAgrMaterial.html" style="text-decoration: none; color: inherit; display: block;"><button>Go Back</button></a>
+    <div class="contactcontainer">
+      <h2>Renewal</h2>
+      <form id="contactForm2" class="contact_form" action="#">
+        <label for="uid">Enter User ID:</label><br>
+        <input type="text" class="uid" name="uid" required><br>
+
+        <label for="name">Your Name:</label><br>
+        <input type="text" class="uname" name="name" required><br>
+
+        <a class="blinking-text">Click on Image To Get QR</a><br>
+        <a style="color:red;">"Limited-time offer: Get access for only ₹69 (originally <strike>₹100</strike>)</a><br>
+        <img src="69upi.jpg" alt="UPI" class="upi" id="upi" style="filter: blur(5px); cursor: pointer;"><br>
+        <h1>OR</h1>
+
+        <h2>UPI ID: agriunity@freecharge</h2>
+
+        <label for="message">UTR NO / Transaction No:</label><br>
+        <textarea class="message" name="message" required></textarea><br>
+        <p>If UTR NO / Transaction No You Can't Find, send Screenshot to agriengg.noreply@gmail.com <br>Note: Mention Subject as payment done for Material access</p>
+
+        <h2 class="blinking-text">Upon successful completion of your payment within 24 hours, your login credentials (user ID and password) will be sent to your registered email address or phone number.</h2>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div id="response"></div>
+    </div>
+  </div>
+  <!--Renewal ID close-->
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 AgriUnity Education Hub</p>
+    <div class="social-icons">
+      <a href="mailto:agriengg.noreply@gmail.com" class="footer__icon"><i class='bx bxl-gmail' target="_blank"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100065116946238&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="nagr.js"></script>
+<script src="https://cdn.cloudpdf.com/webviewer/cloudpdf.min.js"></script>
+<script src="aviii.js"></script>
+
+<script>
+  // List of valid user IDs
+  const validUserIDs = [
+    '8309127255', '7993979558', 'Mohith 8472', '19JQ1A3528',
+    'Aravind', 'Prasad@2004', 'Jayasri', '20NQ1A3501',
+    '21A01A3503', 'Khanitha@2024', 'Vasu8310', '898544'
+  ];
+
+  // Form submission for renewal with validation
+  const form2 = document.querySelector('.contact_form');
+
+  function sendMsg(e) {
+    e.preventDefault();
+    
+    const uid = document.querySelector('.uid').value,
+          name = document.querySelector('.uname').value,
+          message = document.querySelector('.message').value;
+    
+    // Validate if User ID is in the list
+    if (!validUserIDs.includes(uid)) {
+      alert("Please register as a new user.");
+      return; // Stop form submission if user ID is invalid
+    }
+
+    const bodyContent = `
+      <h2>User Details:</h2>
+      <p><strong>User ID:</strong> ${uid}</p>
+      <p><strong>Name:</strong> ${name}</p>    
+      <h2>Payment Details:</h2>
+      <p><strong>UTR No / Transaction No:</strong> ${message}</p>
+    `;
+
+    Email.send({
+      SecureToken: "064f92f8-c0fc-46cb-bdfe-15370a23b630",
+      To: 'agriengg.noreply@gmail.com',
+      From: "agriengg.noreply@gmail.com",
+      Subject: "Payment for Renewal",
+      Body: bodyContent,
+      ContentType: "text/html; charset=utf-8"
+    }).then(
+      message => {
+        alert("Payment Details sent successfully! Wait for 24 Hrs");
+        form2.reset();
+      }
+    ).catch(
+      error => {
+        alert("Error: " + error);
+        console.error(error);
+      }
+    );
+  }
+
+  form2.addEventListener('submit', sendMsg);
+
+
+  
+    form2.addEventListener('submit', sendMsg);
+  
+    // Unblur UPI image
+    const upiImage = document.getElementById("upi");
+    upiImage.addEventListener("click", function() {
+      this.style.filter = "none";
+    });
+  </script>
+</body>
+</html>
