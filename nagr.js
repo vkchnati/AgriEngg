@@ -461,7 +461,7 @@ function validateLogin() {
   // Add your login validation logic here
   // For demonstration purposes, assuming the validation always fails
   if ((userId === "vkachanti" && securityCode === "agriengg@790")|| (userId === "saida" && securityCode === "96403") || 
-  (userId === "8309127255" && securityCode === "83091")||(userId === "Jayasri" && securityCode === "jayasri237")
+  (userId === "8309127255" && securityCode === "83091")
 ||(userId === "20NQ1A3501" && securityCode === "1432")||(userId === "898544" && securityCode === "898544")||(userId === "21A01A3503" && securityCode === "Bujjigadu1436")||
 (userId === "Vasu8310" && securityCode === "Vasu8310")||(userId === "Khanitha@2024" && securityCode === "kh@n6355")
 ) {
