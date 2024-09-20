@@ -368,6 +368,7 @@ function downloadFile(fileUrl, fileName) {
 
 // JavaScript code
 function showMaterials() {
+document.getElementById("renewal").style.display = "none";
   document.getElementById("materials-list").style.display = "block";
   document.getElementById("quiz-details").style.display = "none";
   document.getElementById("register").style.display = "none";
@@ -382,6 +383,7 @@ function showMaterials() {
 }
 
 function openQuiz() {
+document.getElementById("renewal").style.display = "none";
   document.getElementById("materials-list").style.display = "none";
   document.getElementById("quiz-details").style.display = "block";
   document.getElementById("register").style.display = "none";
@@ -395,6 +397,7 @@ function openQuiz() {
 }
 
 function showContactDetails() {
+document.getElementById("renewal").style.display = "none";
   document.getElementById("materials-list").style.display = "none";
   document.getElementById("quiz-details").style.display = "none";
   document.getElementById("register").style.display = "none";
@@ -415,6 +418,7 @@ function showContactDetails() {
 }
 
 function showHome() {
+document.getElementById("renewal").style.display = "none";
   document.getElementById("materials-list").style.display = "none";
   document.getElementById("quiz-details").style.display = "none";
   document.getElementById("register").style.display = "none";
@@ -436,6 +440,7 @@ function showLoginForm() {
 }
 
 function showBtechList() {
+document.getElementById("renewal").style.display = "none";
   // Hide login form and display materials list
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("afolist").style.display = "none";
@@ -480,7 +485,23 @@ function getregister(){
   document.getElementById("quiz-details").style.display = "none";
   document.getElementById("home-details").style.display = "none";
   document.getElementById("contact-details").style.display = "none";
+document.getElementById("renewal").style.display = "none";
 }
+function renewaccount(){
+  document.getElementById("renewal").style.display = "block";
+  document.getElementById("btechlist").style.display = "none";
+  document.getElementById("register").style.display = "none";
+  document.getElementById("ecetlist").style.display = "none";
+  document.getElementById("afolist").style.display = "none";
+  document.getElementById("pgcetlist").style.display = "none"; 
+  document.getElementById("materials-list").style.display = "none";
+  document.getElementById("quiz-details").style.display = "none";
+  document.getElementById("home-details").style.display = "none";
+  document.getElementById("contact-details").style.display = "none";
+  document.getElementById("renewal").style.display = "none";
+document.getElementById("renewal").style.display = "none";
+}
+
 function showecet() {
   document.getElementById("btechlist").style.display = "none";
   document.getElementById("ecetlist").style.display = "block";
@@ -491,8 +512,10 @@ function showecet() {
   document.getElementById("quiz-details").style.display = "none";
   document.getElementById("home-details").style.display = "none";
   document.getElementById("contact-details").style.display = "none";
+document.getElementById("renewal").style.display = "none";
 }
 function showafo() {
+document.getElementById("renewal").style.display = "none";
   document.getElementById("btechlist").style.display = "none";
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("register").style.display = "none";
@@ -504,6 +527,7 @@ function showafo() {
   document.getElementById("contact-details").style.display = "none";
 }
 function showpgcet() {
+document.getElementById("renewal").style.display = "none";
   document.getElementById("btechlist").style.display = "none";
   document.getElementById("ecetlist").style.display = "none";
   document.getElementById("register").style.display = "none";
