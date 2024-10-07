@@ -463,7 +463,7 @@ function validateLogin() {
   if ((userId === "vkachanti" && securityCode === "agriengg@790")|| (userId === "saida" && securityCode === "96403") || 
   (userId === "8309127255" && securityCode === "83091")
 ||(userId === "898544" && securityCode === "898544")||
-(userId === "Vasu8310" && securityCode === "Vasu8310")||(userId === "Khanitha@2024" && securityCode === "kh@n6355")
+(userId === "Vasu8310" && securityCode === "Vasu8310")
 ) {
     // If login succeeds, display the B.Tech materials list
     showBtechList();
